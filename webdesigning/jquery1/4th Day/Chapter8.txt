@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" 
+   src="jquery-1.3.2.js"></script>
+   <script>
+$(document).ready(function(){
+  $("button").click(function(){
+  $(".target").fadeTo(1000,0.5);
+  });
+});
+</script>
+   </head>
+<body>
+ <button >fadeTo</button>
+   
+  <div class="target">
+      <img src="index.jpg"  />
+   </div>
+   </body>
+</html>

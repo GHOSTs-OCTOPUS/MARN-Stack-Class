@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Checkboxes</title>
+		<script language="javascript">
+			function validateForm()
+			{	
+				if(!document.iceCream.terms.checked);
+				{
+					alert("please select the check box");
+					return false;
+				}
+				
+			}
+		</script>
+	</head>
+<body>
+<h1>Ice Cream Form</h1>
+	<form method="post" name="iceCream" onSubmit="return validateForm(this);">
+	 <input type="checkbox" name="terms" value='terms'>
+	 I understand that I'm really not going to get any ice cream.
+	 <br/><br/>
+	 <input type="submit" value="Place Order">
+	</form>
+
+</body>
+</html>
+		

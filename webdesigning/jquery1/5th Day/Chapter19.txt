@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").text("<b><i>Welcome</i></b>");
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Click</button>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+

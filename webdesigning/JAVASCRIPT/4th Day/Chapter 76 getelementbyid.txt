@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function myfun(){
+    var div1 = document.getElementById("demo");
+    demo.style.background = "#E9EEBF";
+    demo.style.width = "100px";
+    demo.style.padding = "20px";
+    demo.innerHTML ="Change background color";
+}
+</script>
+</head>
+<body>
+<div id="demo" style="background:#C2E2FC;">welcome</div>
+<button onclick="myfun();">Try It</button>
+</body>
+</html>

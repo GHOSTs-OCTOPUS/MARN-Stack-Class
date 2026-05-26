@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //if if-else nested-if switch 
+
+        a = 10
+        b = 10
+        c = 9
+
+        if (a < b) {
+            console.log("Q.1 :condition  true")
+            document.write("Q.1 :condition  true" + "<br><br>")
+        } else {
+            console.log("Q.1 :condition false")
+            document.write("Q.1 :condition  false" + "<br><br>")
+        }
+
+        ////////////////////////////////////////////
+
+        if (a == b) {
+            console.log("Q.2: true 1")
+            document.write("Q.2: true 1" + "<br><br>")
+        } else if (b == c) {
+            console.log("Q.2: true 2")
+            document.write("Q.2: true 2" + "<br><br>")
+        } else if (c == a) {
+            console.log("Q.2: true 3")
+            document.write("Q.2: true 3" + "<br><br>")
+        } else {
+            console.log("Q.2: false....")
+            document.write("Q.2: false...." + "<br><br>")
+        }
+
+
+        //switch 
+
+        a = 3
+        b = 9
+        x = "o"
+
+        switch (x) {
+            case "a":
+                console.log("case 1" + a * b)
+                document.write(": " + "<br><br>")
+                break;
+            case 2:
+                console.log("case 2" + a - b)
+                break;
+
+            case "cnc":
+                console.log("case 3 " + a / b)
+                break;
+
+            case 4:
+                console.log("case 4 " + a * b)
+                break;
+
+
+            default:
+                console.log("Q.3: default case ")
+                document.write("Q.3: default case" + "<br><br>")
+
+        }
+
+        //////////////////////////////////////////////////////////////////////
+        //Question find given no is positive and negative n=7
+        v = 7
+        if (v > 0) {
+            console.log("Q.4 Given Number Is: Positive number")
+            document.write("Q.4 Given Number Is: Positive number" + "<br><br>")
+        } else {
+            console.log("Q.4 Given Number Is: Negative Number")
+            document.write("Q.4 Given Number Is: Negative Number" + "<br><br>")
+        }
+
+        //Question find given no is even or odd n=6
+        k = 6
+        if (k % 2 == 0) {
+            console.log("Q.5 Even Number")
+            document.write("Q.5: Given Number Is: Even" + "<br><br>")
+        } else {
+            console.log("Q.5 odd Number")
+            document.write("Q.5: Given Number Is: Odd" + "<br><br>")
+        }
+
+
+        //Question find given character is vowel or not vowel a,e,i,o ,u 
+
+        let ch = 'b';
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            console.log("Q.6 Vowel");
+            document.write("Q.6: Vowel" + "<br><br>");
+
+        } else {
+            console.log("Q.6 Not Vowel");
+            document.write("Q.6: Not Vowel" + "<br><br>");
+        }
+
+
+        //Question 2,56,4,7 find greatest no of given no
+        let numbers = [2, 56, 4, 7];
+
+        let greatest = numbers[0];
+
+        for (let numbers = 0 ; i < numbers.length; i++) {
+            if (numbers[i] > greatest) {
+                greatest = numbers[i];
+            }
+        }
+
+        console.log("Q.7: Greatest number is: " + greatest);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

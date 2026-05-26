@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+width:170px;
+height:150px;background:#f7f7f7;
+margin-left:50px;
+margin-top:50px;
+position:relative;
+}
+#d1{
+width:90px;
+height:70px;
+background:#f7f7f7;
+color:grey;
+position:absolute;
+top:40px;left:50px;
+}
+#slider{
+width:15px;
+height:50px;
+background:#f7f7f7;
+position:absolute;
+top:10px;
+left:20px;
+-webkit-animation: myani 2s  infinite;
+  animation: myani 2s infinite;
+}
+
+@-webkit-keyframes myani {
+  0% {opacity:0;left:20px;}
+  100% {opacity:1;left:70px;}
+}
+
+@keyframes myani {
+ 0% {opacity:0.3;left:0px;}
+  100% {opacity:1;left:70px;}
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="d1">
+<h4> Loading...</h4>
+<div id="slider"></div>
+</div>
+
+</div>
+</body>
+</html>

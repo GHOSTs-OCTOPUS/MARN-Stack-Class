@@ -1,0 +1,40 @@
+<html>
+<head>
+<style type="text/css">
+#content
+{
+width:75%;
+padding:10px;
+}
+#sidebar
+{
+float:right;
+width:25%;
+background-color:powderblue;
+border:1px solid red;
+padding:10px;
+}
+
+</style>
+
+<p>
+<div id="content">
+Good Morning or Good after Noon or Good evening ……..
+Welcome to India’s First one 2 one Training centre in Pune.
+We are IT Development Company & Training center.Here training would be provide by our Developer.
+How may I assist you?
+
+<div id="sidebar">
+Fee: 
+We have 4 Types of training Modules.
+1>	Only Training   - 2 Months
+2>	Training + 1  Live Project – 3 Months
+3>	Industrial Training (Training + Unlimited number of sponsored  live Projects  with 6 months of experience) – 6 Months
+4>	On Job Training (Training + Unlimited number of sponsored  live Projects  with 1 Year of experience) – 1 Year
+</div>
+</div>
+</p>
+
+</body>
+</html>
+

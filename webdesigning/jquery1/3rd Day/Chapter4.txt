@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<script src="jquery-1.3.2.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>welcome to cncwebworld</p>
+<p>welcome to cnc</p>
+</body>
+</html>

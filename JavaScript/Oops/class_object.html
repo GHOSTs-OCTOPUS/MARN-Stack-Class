@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // class: blue print of object virtual 
+        // object:- instance of a class  real world entity
+        //attributes 
+        //this:- current object
+
+
+        class animal{
+
+            x=100
+
+            run(){
+                console.log("animal run....")
+                console.log(this.color)
+                console.log(this.x)
+               
+
+            }
+
+            eat(a){
+                console.log("animal eat...")
+                console.log(a)
+            }
+        }
+
+        dog=new animal()
+        dog.color="red"
+        dog.x=300
+        dog.run()
+        dog.eat("apple")
+
+
+        cat=new animal()
+        cat.color="white"
+        //cat.x=400
+        cat.run()
+        cat.eat("kivu")
+        ////////////////////////////////////////////////////////////////////////////
+
+
+        //2.constructor
+        /*
+
+        const is same like as a function 
+        define constructor()
+        const never return any value directly 
+        no need to call cosnt,
+        when we creating object of the class , object run.., that time const will be automatically
+        invoke/call
+
+        type:- default paramter 
+
+        */
+
+
+        class employee{
+
+            name="jj"
+            id=0
+
+            constructor(a,b){
+                console.log("const call")
+                this.name=a 
+                this.id=b
+            }
+
+
+            emp_details(){
+                console.log(this.name)
+                console.log(this.id)
+            }
+
+
+        }
+
+
+    ajay=new employee("ajayyyy",301)
+    //ajay.name="ajay"
+    //ajay.id=201
+    ajay.emp_details()
+
+    vijay=new employee("vijayyy",302)
+    //vijay.name="vijay"
+    //vijay.id=202
+    vijay.emp_details()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

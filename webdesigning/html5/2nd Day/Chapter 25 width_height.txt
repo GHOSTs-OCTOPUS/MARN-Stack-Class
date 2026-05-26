@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="">
+  Username: <input type="text" name="uname"><br>
+  Password: <input type="text" name="pass"><br>
+  <input type="image" src="pic.gif" alt="Submit" width="48" height="48">
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<style type="text/css">
+
+
+table {
+   border-collapse:separate;
+   width:400px;
+   border-spacing:10px 50px;
+}
+</style>
+</head>
+<body>
+<table border="1">
+<tr><td> NAME</td></tr>
+<tr><td> CITY</td></tr>
+</table>
+</body>
+</html>

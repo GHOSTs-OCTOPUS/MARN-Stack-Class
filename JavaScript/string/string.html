@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // string:- collection of characters  "" ' '   index-0 , length-1
+
+        // st=new String("welcome to javascript")
+        // console.log(st)
+        // console.log(st.length)
+
+
+        str="javascript"
+        console.log(str)
+
+        for(i=0;i<str.length;i++){
+            console.log(str[i])
+        }
+
+
+        console.log(str[0])
+
+        //////////////////////////////////////////////////////////
+         str="    javascript is a programming is language    "
+
+        console.log(str.charAt(0))
+        console.log(str.charCodeAt(0))
+        console.log(str.localeCompare("javascripkit"))   //-1 totally diff 1 - small diff 0 -same
+         console.log(str.indexOf("is"))
+         console.log(str.lastIndexOf("is"))
+         console.log(str.search("is"))
+         console.log(str.slice(2,6))  //index index  , last -1
+          console.log(str.slice(-5)) 
+
+          console.log(str.toUpperCase())
+          console.log(str.toLowerCase())
+          console.log(str.replace("is","too"))
+
+          s=str.slice(2,10)
+          console.log(s.toUpperCase())
+          //console.log(s)
+
+
+          console.log(str.split("is"))
+          console.log(str.split(" "))
+          console.log(str.split(""))
+
+          c=str.split("")
+         
+          console.log(c.join(""))
+
+          console.log(str.length)
+
+        v=str.trim()
+        console.log(v)
+        console.log(v.length)
+        //////////////////////////////////////////////////////////////////////////
+/*
+        str="WELcome To CnC wEB WOrld "
+
+        1)find how many capital letters in given string  
+        2)find how many space in given string
+
+
+        str="my name is apple"
+        1)reverse
+
+
+
+        //print charcater capital 
+
+
+        */ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

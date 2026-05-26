@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div
+{
+border:1px solid black;
+padding:35px;
+background-image:url('index.jpg');
+background-repeat:no-repeat;
+background-position:left;
+}
+#div1
+{
+background-origin:border-box;
+}
+#div2
+{
+background-origin:content-box;
+}
+</style>
+</head>
+<body>
+
+<div id="div1">
+CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting of a website to the browser..
+</div>
+<br/>
+<br/>
+<div id="div2">
+CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting of a website to the browser..
+</div>
+</body>
+</html>

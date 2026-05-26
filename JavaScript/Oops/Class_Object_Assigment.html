@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Class & Object Assignment </title>
+    <script>
+        /* class: blue print of object virtual 
+         object:- instance of a class  real world entity
+        attributes 
+        this:- current object
+         constructor: special method called when an object of a class is created
+         methods: functions defined within a class
+        */
+
+        /////////////////////////////////////////////////////////////////////////////////////////
+        /* Q1. Create a class called "Car" with attributes brand and color, and a method to display the car's details. 
+         Create two car objects and display their details. 
+         */
+        class Car {
+            constructor() {
+                this.brand = "";
+                this.color = "";
+            }
+
+            showDetails() {
+                console.log(`Car Brand: ${this.brand}, Color: ${this.color}`);
+            }
+        }
+
+        // Create object
+        const car1 = new Car();
+        car1.brand = "Toyota";
+        car1.color = "Red";
+
+        car1.showDetails();
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q5. Create a class called "Rectangle" with attributes length and breadth, and a method to calculate the area of the rectangle. 
+        Create an object of the Rectangle class and display the area. 
+        */
+        class Rectangle {
+            constructor() {
+                this.length = 0;
+                this.width = 0;
+            }
+
+            area() {
+                return this.length * this.width;
+            }
+
+            perimeter() {
+                return 2 * (this.length + this.width);
+            }
+        }
+
+        // Object 1
+        const rect1 = new Rectangle();
+        rect1.length = 10;
+        rect1.width = 5;
+
+        // Object 2
+        const rect2 = new Rectangle();
+        rect2.length = 7;
+        rect2.width = 3;
+
+        console.log("Rectangle 1 Area:", rect1.area());
+        console.log("Rectangle 1 Perimeter:", rect1.perimeter());
+
+        console.log("Rectangle 2 Area:", rect2.area());
+        console.log("Rectangle 2 Perimeter:", rect2.perimeter());
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q6. Create a class called "Student" with attributes name and mark, and a method to display the student's details. 
+        Create two student objects and display their details. 
+        */
+        class Student {
+            constructor() {
+                this.name = "";
+                this.marks = 0;
+            }
+
+            display() {
+                console.log(`Student Name: ${this.name}, Marks: ${this.marks}`);
+            }
+        }
+
+        const student1 = new Student();
+        student1.name = "Vikas";
+        student1.marks = 85;
+
+        student1.display();
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q7. product class with constructor and display method
+        Create two product objects and display their details
+        */
+        class Product {
+            constructor() {
+                this.name = "";
+                this.price = 0;
+            }
+
+            showPrice() {
+                console.log(`Product: ${this.name}, Price: ₹${this.price}`);
+            }
+        }
+
+        const product1 = new Product();
+        product1.name = "Laptop";
+        product1.price = 50000;
+
+        product1.showPrice();
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q8. Mobile class with constructor and display method
+        Create two mobile objects and display their details
+        */
+        class Mobile {
+            constructor() {
+                this.brand = "";
+                this.model = "";
+                this.price = 0;
+            }
+
+            showInfo() {
+                console.log(`${this.brand} ${this.model} - ₹${this.price}`);
+            }
+        }
+
+        // Object 1
+        const mobile1 = new Mobile();
+        mobile1.brand = "Samsung";
+        mobile1.model = "Galaxy S21";
+        mobile1.price = 70000;
+
+        // Object 2
+        const mobile2 = new Mobile();
+        mobile2.brand = "Apple";
+        mobile2.model = "iPhone 14";
+        mobile2.price = 80000;
+
+        mobile1.showInfo();
+        mobile2.showInfo();
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q9. Book class with constructor and display method
+        Create two book objects and display their details
+        */
+        class Book {
+            constructor() {
+                this.title = "";
+                this.author = "";
+            }
+
+            display() {
+                console.log(`Book: ${this.title}, Author: ${this.author}`);
+            }
+        }
+
+        const book1 = new Book();
+        book1.title = "Atomic Habits";
+        book1.author = "James Clear";
+
+        book1.display();
+        ////////////////////////////////////////////////////////////////////////////
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

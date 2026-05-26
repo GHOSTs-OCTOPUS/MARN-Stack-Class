@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form-section {
+            flex: 1;
+            background: #eef0f4;
+            padding: 20px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .input-group {
+            flex: 1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: #fff;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #3b5bcc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: #2f49a0;
+        }
+
+        .map-section {
+            flex: 1;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            width: 22%;
+            min-width: 150px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: #3b5bcc;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+        }
+
+        @media(max-width: 768px) {
+            .contact-box {
+                flex-direction: column;
+            }
+
+            .info-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .info-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Contact Form #06</h2>
+
+        <div class="contact-box">
+
+            <!-- FORM -->
+            <div class="form-section">
+                <form method="post" action="" autocomplete="off" novalidate>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" name="fname" placeholder="First Name" required pattern="[A-Z a-z]{3,}"
+                                title="Please enter a valid name (at least 3 characters)">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name="lname" placeholder="Last Name" required pattern="[A-Z a-z]{3,}"
+                                title="Please enter a valid name (at least 3 characters)">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required pattern="^\d{10}$"
+                                title="Please enter a valid 10-digit mobile number">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="Please enter a valid email address">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="datetime-local" name="datetime" placeholder="Date and Time" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="url" name="website" placeholder="Website URL" required
+                                pattern="https?://.+"
+                                title="Please enter a valid URL (starting with http:// or https://)">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="number" name="age" placeholder="Age" required min="1" max="120"
+                                title="Please enter a valid age between 1 and 120">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name="city" placeholder="City" list="city" required 
+                                title="Please enter a valid city name (at least 3 characters)">
+                            <datalist id="city">
+                                <option value="New York">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                                <option value="Houston">
+                                <option value="Phoenix">
+                                <option value="Philadelphia">
+                                <option value="San Antonio">
+                                <option value="San Diego">
+                                <option value="Dallas">
+                                <option value="San Jose">
+                                <option value="Austin">
+                                <option value="Jacksonville">
+                                <option value="Fort Worth">
+                                <option value="Columbus">
+                                <option value="San Francisco">
+                                <option value="Charlotte">
+                                <option value="Indianapolis">
+                                <option value="Seattle">
+                                <option value="Denver">
+                                <option value="Washington">
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="password" name="password" placeholder="Password" required
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                title="Password must be at least 8 characters long and contain both letters and numbers">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" name="confirm_password" placeholder="Confirm Password" required
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                title="Passwords must match and contain both letters and numbers">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <!-- Gender -->
+                        <div class="radio-group">
+                            <strong>Gender:</strong><br>
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female" required> Female</label>
+                        </div>
+
+                        <!-- Hobbies -->
+                        <div class="checkbox-group">
+                            <strong>Hobbies:</strong><br>
+                            <label><input type="checkbox" name="hobby" value="reading" required> Reading</label>
+                            <label><input type="checkbox" name="hobby" value="sports" required> Sports</label>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+            <!-- MAP -->
+            <div class="map-section">
+                <iframe
+                    src="https://maps.google.com/maps?q=Nerul%20New%20mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="info-section">
+            <div class="info-box">
+                <div class="icon">📍</div>
+                <p>Nerul, Navi Mumbai, Maharashtra</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">📞</div>
+                <p>+91 7219447058</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">✉️</div>
+                <p>kolevikasxyz@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">🌐</div>
+                <p>vikaskoledev.vercel.app</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

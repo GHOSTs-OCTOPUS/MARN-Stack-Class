@@ -1,0 +1,14 @@
+<html>
+<head>
+<title></title>
+<script tyep="text/javascript">
+function myfun()
+{
+alert("Welcome");
+}
+</script>
+</head>
+<body>
+<input type="submit" name="submit" value="Tray" onclick="myfun()">
+</body>
+</html>

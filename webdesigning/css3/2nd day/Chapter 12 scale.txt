@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:75px;
+background-color:yellow;
+border:1px solid black;
+}
+div#div2
+{
+margin:100px;
+transform:scale(2,6);
+-ms-transform:scale(2,6); /* IE 9 */
+-webkit-transform:scale(2,6); /* Safari and Chrome */
+}
+</style>
+</head>
+<body>
+
+<div>welcome</div>
+
+<div id="div2">welcome</div>
+
+</body>
+</html>
+

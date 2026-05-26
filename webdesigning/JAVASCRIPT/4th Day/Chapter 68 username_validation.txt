@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+ var a = document.f1.user.value;
+ if(a=="")
+ {
+  alert("Enter the username");
+  return false;
+  }
+if(!isNaN(a))
+{
+ alert("Please enter only character");
+ return false;
+} 
+if((a.length < 4)||(a.length > 12))
+{
+alert("Character must be 4 to 12 ");
+}
+ 
+}
+</script>
+</head>
+<body>
+<form name="f1" action="" method="post" onsubmit="return validate()">
+Username:
+<input type="text" name="user">
+<input type="submit" name="submit" value="Submit">
+<input type="reset" name="reset" value="Cancle">
+</form>
+</body>
+
+</html>
+

@@ -1,0 +1,11 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+<div id="divTest1"></div>
+<script type="text/javascript">
+var str = "CNCWEBWORLD";
+var str1 = str.charCodeAt(2)
+$("#divTest1").text(str1);
+</script>
+</head>
+</html>

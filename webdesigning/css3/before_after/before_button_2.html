@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: gray;
+        }
+
+
+        .main{
+            width:100%;
+            height:100vh;
+            /* background-color: pink; */
+            position: relative;
+
+        }
+
+        .btn{
+            width:200px;
+            height:50px;
+            position: absolute;
+            left:500px;
+            top:40%;
+            border:2px solid white;
+             border-radius: 5px;
+            box-shadow: 2px 2px 8px orange ;
+            color:black;
+            z-index: 1;
+        
+            
+        }
+
+        .btn::before{
+            content: "";
+            /* width:100%; */
+            width:10%;
+            height:100%;
+            background-color:orange;
+            position: absolute;
+            top:0;
+            left:0;
+            transition: all 0.5s ease;
+            border-radius: 5px 5px 5px 5px;
+            z-index: -1;
+
+        }
+
+        .btn:hover::before{
+            width:100%;
+           
+        }
+
+        .btn:hover{
+             border:none;
+        }
+    </style>
+</head>
+<body>
+    
+  <div class="main">
+
+    <button class="btn">click here</button>
+  </div>
+
+
+</body>
+</html>

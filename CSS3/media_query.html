@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        h2,h3,h4{
+            display:none;
+        }
+
+
+        @media(max-width:1024px){
+
+            body{
+                background-color: yellow;
+            }
+
+            h1{
+                display: none;
+            }
+
+            h2{
+                display: block;
+            }
+
+
+        }
+
+
+         @media(max-width:768px){
+
+            body{
+                background-color: rgb(49, 206, 209);
+            }
+
+            h1,h2,h4{
+                display: none;
+            }
+
+            h3{
+                display: block;
+            }
+
+
+        }
+
+
+
+         @media(max-width:500px){
+
+            body{
+                background-color: rgb(231, 129, 61);
+            }
+
+            h1,h2,h3{
+                display: none;
+            }
+
+            h4{
+                display: block;
+            }
+
+
+        }
+
+
+
+       
+
+    </style>
+</head>
+<body>
+
+    <h1>desktop</h1>
+    <h2>laptop</h2>
+    <h3>tablet</h3>
+    <h4>mobile</h4>
+</body>
+</html>

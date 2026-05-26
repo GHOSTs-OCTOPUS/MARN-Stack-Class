@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<article>
+  MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+</article>
+
+</body>
+</html>

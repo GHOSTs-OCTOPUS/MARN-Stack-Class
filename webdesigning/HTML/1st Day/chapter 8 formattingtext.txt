@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Formatting text</title>
+</head>
+<body>
+<p><b>This is a Bold <!--The <b> tag specifies bold text.-->
+<p><em>This is a Emphasized Text</em></p><!--em tag emphasized text-->
+<p><strong>This is a Strong Text</strong></p><!-- strong Defines important text-->
+<p><i>This is a Italic Text</i></p><!--<i> tag is  displayed in italic.The <i> tag can be used to indicate a technical term, a phrase from another language-->
+<p>X<sup>2</sup></p><!--The <sup> tag defines superscript text.-->
+<p>X<sub>2</sub></p><!--The <sub> tag defines subscript text.-->
+<p><del>This is a struckthrough Text</del></p>
+<p><code>This is a Computer Code Text</code></p><!-- code tag Defines a piece of computer code-->
+<p>THis is a <small>Small</small> Text</p>
+<p><s> welcome</s></p>
+
+
+</body>
+</html>

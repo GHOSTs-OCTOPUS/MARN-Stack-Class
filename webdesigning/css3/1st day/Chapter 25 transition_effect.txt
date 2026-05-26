@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+
+    	<title>Title Name will go here</title>
+
+		<style>
+			
+			div.swapnil
+			{
+				width: 20px;
+				height: 20px;
+				margin: 20px auto;
+			}
+			
+			div.swapnil div.raja img
+			{
+				width: 20px;
+				height: 20px;
+				color: #fff;
+				padding: 10px;
+				border-radius: 5px;
+				margin-left: 0;
+				-webkit-transition: 3s linear;
+				-moz-transition: 3s linear;
+				-o-transition: 3s linear;
+				-ms-transition: 3s linear;
+				transition: 3s linear;
+			}
+			
+			div.swapnil:hover div.raja img
+			{
+				width: 240px;
+				height: 220px;
+				-webkit-transform:rotate(360deg);
+				-moz-transform:rotate(360deg);
+				-o-transform:rotate(360deg);
+				-ms-transform:rotate(360deg);
+				transform:rotate(360deg);
+			}
+			
+		</style>
+	
+    </head>
+    <body>
+
+		<p>Hover on object to see it in action</p>
+		<div class="swapnil">
+			<div class="raja">
+			<img src="index.jpg" width="20" height="20"/>
+			</div>
+		</div>
+
+    </body>
+    
+</html>

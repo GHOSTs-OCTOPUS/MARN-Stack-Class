@@ -1,0 +1,54 @@
+(function (global) {
+    if (!Array.prototype.indexOf) {
+        Array.prototype.indexOf = function(obj, start) {
+            var i, j;
+            i = start || 0;
+            j = this.length;
+            while (i < j) {
+                if (this[i] === obj) {
+                    return i;
+                }
+                i++;
+            }
+            return -1;
+        };
+    }
+    if(!global.Spothopper) { global.Spothopper = {}; };
+    var spothopper = global.Spothopper;
+
+    if(!spothopper.processedScripts) { spothopper.processedScripts = []; };
+    var processedScripts = spothopper.processedScripts;
+
+    var scriptTags = document.getElementsByTagName('script');
+    var thisRequestUrl = 'https://www.spothopperapp.com/spots/222057/widgets/newsletter.js?template=newsletter_widget2';
+    for(var i = 0; i < scriptTags.length; i++) {
+        var scriptTag = scriptTags[i];
+        if (scriptTag.src == thisRequestUrl && processedScripts.indexOf(scriptTag) < 0) {
+            processedScripts.push(scriptTag);
+            var div = document.createElement('div');
+            div.id = 'email_subscription_222057_newsletter_widget2_2749eda43d77fecfed0aa4acad852ce7';
+            div.className = 'spothopper-embeddable';
+            scriptTag.parentNode.insertBefore(div, scriptTag);
+            div.innerHTML = '<div data-id="newsletter-widget-2" class="sph-email-subscription">    <div class="sph-email-form">        <h2>Sign up for our newsletter &amp; get exclusive offers and invites!</h2>      <div class="sh-form-group">        <label          for="sph-newsletter-input-2749eda43d77fecfed0aa4acad852ce7"          class="sh-form-label"        >          Email (required):        </label>        <span          id="sph-newsletter-email-error-2749eda43d77fecfed0aa4acad852ce7"          class="sh-form-error"          aria-live="assertive"          style="display: none;"        ></span>        <input          type="email"          id="sph-newsletter-input-2749eda43d77fecfed0aa4acad852ce7"          class="sph-email-input sh-form-field"          placeholder="e.g. email@example.com"          aria-describedby="sph-newsletter-email-error-2749eda43d77fecfed0aa4acad852ce7"        />      </div>        <div class="sh-form-group">          <label            for="sph-newsletter-phone-2749eda43d77fecfed0aa4acad852ce7"            class="sh-form-label"          >            Phone number:          </label>          <span            id="sph-newsletter-phone-error-2749eda43d77fecfed0aa4acad852ce7"            class="sh-form-error"            aria-live="assertive"            style="display: none;"          ></span>          <input            type="tel"            id="sph-newsletter-phone-2749eda43d77fecfed0aa4acad852ce7"            class="sph-email-input sh-form-field"            aria-describedby="sph-newsletter-phone-error-2749eda43d77fecfed0aa4acad852ce7"            placeholder="e.g. 1234567890"          />        </div>        <div class="sh-form-group is-inline">          <input            type="checkbox"             id="sph-newsletter-checkbox-phone-2749eda43d77fecfed0aa4acad852ce7"          />          <label            for="sph-newsletter-checkbox-phone-2749eda43d77fecfed0aa4acad852ce7"            class="sh-form-label"          >            <h2>              I&#x27;d like to get texts about specials, events, and other exclusive offers and announcements not available to the general public <a target="_blank" href="https://www.spothopperapp.com/spots/222057/privacy_policy" style="color:inherit;text-decoration:underline;">Privacy Policy</a> <a target="_blank" href="https://www.spothopperapp.com/spots/222057/terms_and_conditions" style="color:inherit;text-decoration:underline;">Terms and Conditions</a>              <ul>                <li>Message and data rates may apply.</li>                <li>Message frequency varies.</li>              </ul>            </h2>          </label>        </div>        <input type="hidden" value=#newsletter />      <button        type="button" style=""        id="2749eda43d77fecfed0aa4acad852ce7"        class="sph-submit-button sph-newsletter-widget-2-btn"        onclick=sendEmail_MT(this.id)      >        <span class="sph-submit-label">Submit</span>        <span class="sph-loading-img">          <img src="https://static.spotapps.co/assets/widgets/loading.gif" alt="Newsletter loader icon" />        </span>      </button>    </div>    <div class="sph-response-message" tabindex="-1"></div></div><style>[data-id="newsletter-widget-2"] .sh-form-group {  display: flex;  flex-wrap: wrap;  column-gap: 0.2rem;  align-items: center;}[data-id="newsletter-widget-2"] .sh-form-group.is-inline {  flex-wrap: nowrap;  align-items: baseline;  gap: 0.5rem;}[data-id="newsletter-widget-2"] .sh-form-group:not(:first-of-type) {  margin-top: 1.5rem;}[data-id="newsletter-widget-2"] .sh-form-label {  display: inline-flex;  font-weight: 600;}[data-id="newsletter-widget-2"] .sh-form-group.is-inline .sh-form-label {  flex-direction: column;  align-items: flex-start;  text-align: left;  font-weight: inherit;}[data-id="newsletter-widget-2"] .sh-form-error {  background: #fff;  padding: 0.1rem 0.3rem;  border-radius: 3px;  display: inline-flex;  font-size: 1rem;  font-weight: 500;  color: hsl(0, 100%, 40%);}[data-id="newsletter-widget-2"] .sh-form-field {  width: 100%;}</style>';
+        }
+    }
+    applyH2ColorToLabelsInWidgets();
+})(this);
+
+function applyH2ColorToLabelsInWidgets() {
+    var font_color = $('.sph-email-subscription h2:first').css('color');
+    var all_labels = document.querySelectorAll('.sph-email-subscription label');
+    all_labels.forEach((label) => {
+        label.style.color = font_color;
+    });
+};
+
+function sphRecaptchaWidget1Callback(param) {
+  $('.sph-newsletter-widget-1-btn').css('display', 'block');
+  $('.sph-newsletter-widget-1-recaptcha').css('display', 'none');
+};
+
+function sphRecaptchaWidget2Callback(param) {
+  $('.sph-newsletter-widget-2-btn').css('display', 'block');
+  $('.sph-newsletter-widget-2-recaptcha').css('display', 'none');
+};

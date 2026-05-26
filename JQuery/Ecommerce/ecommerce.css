@@ -1,0 +1,709 @@
+*{
+
+margin:0;
+padding:0;
+}
+#page1{
+	background-image: url("fashionbg.jpg");
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	
+	}
+	#page1 h1{
+		font-size: 30vw;
+		color: white;
+		white-space: nowrap;
+		font-family: 'Oswald', sans-serif;
+	  background-color: transparent;
+	   
+	}
+
+
+
+
+														/* lower_header */
+.lower_header{
+	width:90%;
+	height:300px;
+	margin-left:5%;
+	margin-top:20px;
+	display:flex;
+
+}
+.left_lower_header{
+	position:relative;
+	height:100%;
+	width:30%;
+	margin-left:2%;
+	background-image:url("https://img.freepik.com/free-photo/designed-sunglasses-red-book-grey-surface_140725-14161.jpg?w=740&t=st=1691496278~exp=1691496878~hmac=435a8e5200c166a70490160fa5305c12991a3098dbbe55f7f478b4e24cd9a36a");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition-duration: 2s;
+	
+}
+
+
+.left_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+	bottom:-8px;
+	right:0;
+	background-color:#F8F0E5;
+	
+}
+.left_lower_header:hover{
+	box-shadow: 1px 1px 0px 15px #ECE5C7 inset;
+}
+
+.middle_lower_header{
+		position:relative;
+	height:100%;
+	width:30%;
+	margin-left:3%;
+	background-image:url("eco_images/headset.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition-duration: 2s;
+}
+
+.middle_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+right:0;
+	
+	background-color:#F8F0E5;
+}
+
+.middle_lower_header:hover{
+	box-shadow: 1px 1px 0px 15px #ECE5C7 inset;
+}
+
+
+
+
+.right_lower_header{
+		position:relative;
+	height:100%;
+	width:30%;
+	margin-left:3%;
+
+	background-image:url("https://img.freepik.com/free-photo/woman-s-feet-elegant-gladiator-sandals_291049-214.jpg?size=626&ext=jpg&ga=GA1.2.420111650.1671272058&semt=ais");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition-duration:2s;
+}
+
+.right_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+right:0;
+	
+	background-color:#F8F0E5;
+	
+}
+.right_lower_header:hover{
+	box-shadow: 1px 1px 0px 15px #ECE5C7 inset;
+}
+
+@media(max-width:600px){
+	main{
+		height:1000px;
+	}
+	.lower_header{
+	width:90%;
+	margin-left:5%;
+	margin-top:10px;
+	display:flex;
+	flex-wrap: wrap;
+	margin-bottom:700px;
+}
+	.left_lower_header{
+	position:relative;
+	height:100%;
+	width:100%;
+	margin-left:0px;
+	background-image:url("https://img.freepik.com/free-photo/designed-sunglasses-red-book-grey-surface_140725-14161.jpg?w=740&t=st=1691496278~exp=1691496878~hmac=435a8e5200c166a70490160fa5305c12991a3098dbbe55f7f478b4e24cd9a36a");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom:10px;
+	
+}
+
+
+.left_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+	bottom:-8px;
+	right:0;
+	background-color:#F8F0E5;
+	
+}
+
+
+.middle_lower_header{
+		position:relative;
+	height:100%;
+	width:100%;
+	margin-left:0%;
+	background-image:url("eco_images/headset.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom:10px;
+}
+
+.middle_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+	left:0;
+text-align:center;
+
+	
+	background-color:#F8F0E5;
+}
+
+
+
+
+
+
+
+	
+.right_lower_header{
+		position:relative;
+	height:100%;
+	width:100%;
+	margin-left:0%;
+
+	background-image:url("https://img.freepik.com/free-photo/woman-s-feet-elegant-gladiator-sandals_291049-214.jpg?size=626&ext=jpg&ga=GA1.2.420111650.1671272058&semt=ais");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.right_lower_header h2{
+	color:#0B666A;
+	position:absolute;
+right:0;
+	background-color:#F8F0E5;
+	
+}
+	
+	
+}
+
+
+
+
+
+														/* main */
+
+.main{
+	width:100%;
+	height:250px;
+
+	margin-top:60px;
+	display:flex;
+	justify-content:space-evenly;
+	margin-bottom:60px;
+}
+.box1,.box2,.box3,.box4{
+	height:100%;
+	width:20%;
+	background-color:white;
+}
+
+@media(max-width:600px){
+	.main{
+	width:100%;
+	height:auto;
+	margin-top:90px;
+	background-color:white;
+	margin-top:20px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+}
+.box1,.box2,.box3,.box4{
+	height:300px;
+	width:100%;
+	margin:40px;
+
+}
+}
+
+																/*popular product*/
+
+
+.popular-products{
+    background-color: black;
+height: 100vh;
+width: 100%;
+position: relative;
+overflow: hidden;
+font-family: 'Oswald', sans-serif;
+
+}
+#top h1, #bottom h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22vw;
+}
+#top-h{
+ bottom: 30%;
+}
+#top{
+    height:50vh;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+	z-index: 1;
+}
+#bottom{
+    height:50vh;
+    width: 100%;
+    background-color: pink;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+#bottom-h{
+bottom:-170%
+}
+
+
+#center{
+    width: 100%;
+    height:100vh;
+
+ 
+}
+a{
+	text-decoration: none;
+}
+
+
+.sec_title{
+	text-align:center;
+	font-size:34px;
+	margin-top:40px;
+	text-decoration: none;
+}
+.sec_box{
+	width:100%;
+	height:450px;
+	margin-top:30px;
+	display:flex;
+	justify-content:space-evenly;
+}
+.sec_box_product{
+	width:22%;
+	height:100%;
+}
+
+.card_text{
+	text-align:center
+}
+.card_text h5{
+	font-size:16px;
+	color: #F5F5F5;
+}
+.offers{
+	display:flex;
+	justify-content:center
+}
+.offers h5{
+	font-size:16px;
+}
+#box1,#box2,#box3,#box4{
+	transition:1s;
+}
+#box1:hover ,#box2:hover,#box3:hover,#box4:hover{
+	box-shadow:8px 10px 5px white;
+}
+
+
+@media(max-width:600px){
+	
+	.popular-products{
+		background-color: black;
+	height: 380vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Oswald', sans-serif;
+	
+	}
+
+
+	#top h1, #bottom h1{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 22vw;
+		display: none;
+	}
+	#top-h{
+	 bottom: 30%;
+	 display: none;
+	}
+	#top{
+		height:50vh;
+		width: 100%;
+		background-color: yellow;
+		position: absolute;
+		top: 0;
+		overflow: hidden;
+		z-index: 1;
+		display: none;
+	}
+	#bottom{
+		height:50vh;
+		width: 100%;
+		background-color: pink;
+		position: absolute;
+		bottom: 0;
+		overflow: hidden;
+		display: none;
+	}
+	#bottom-h{
+	bottom:-170%;
+	display: none;
+	}
+
+
+
+.sec_title{
+	text-align:center;
+	font-size:34px;
+	margin-top:40px;
+	
+}
+.sec_box{
+	width:100%;
+	margin-top:30px;
+	display:flex;
+	flex-wrap:wrap;
+}
+.sec_box_product{
+	width:100%;
+	height:100%;
+	margin:30px 60px 30px 60px ;
+	border: 1px solid white;
+}
+
+.card_text{
+	text-align:center
+}
+.offers{
+	display:flex;
+	justify-content:center
+}
+	
+	
+}
+
+
+																			/*beauty*/
+
+
+.beauty{
+	width:100%;
+	height:500px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.beauty-img{
+	width:1200px;
+	height:500px;
+	background-color: #0B666A;
+	background-image: url("https://franchiseindia.s3.ap-south-1.amazonaws.com/opp/article/english/images/1703935772.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.beauty-img .beauty-text{
+width:100%;
+height:100%;
+background-color: rgba(0,0,0,0.7);
+display: flex;
+align-items: center;
+justify-content: center;
+color:#ECE5C7
+}
+
+.beauty-text h1{
+font-size: 50px;
+margin: 0 20px 0 20px;
+}
+
+
+@media(max-width:600px){
+	.beauty-product{
+		margin-top: 40px;
+	}
+	.beauty{
+		width:100%;
+		height:500px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.beauty-img{
+		width:900px;
+		height:500px;
+		background-color: #0B666A;
+		background-image: url("https://franchiseindia.s3.ap-south-1.amazonaws.com/opp/article/english/images/1703935772.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	
+	.beauty-img .beauty-text{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:#ECE5C7
+	}
+	
+	.beauty-text h1{
+	font-size: 50px;
+	margin: 0 20px 0 20px;
+	}
+}
+
+
+																					/*new arrival*/
+
+
+.new-arrival{
+	width:95%;
+	height:500px;
+	background-color: #0B666A;
+	margin: 0 0px  0  2%;
+	display: flex;
+}
+.left-new-arrival{
+	width:30%;
+	height:100%;
+	background-color: aquamarine;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.varities{
+width:300px;
+height:400px;
+
+background-image: url("https://images.pexels.com/photos/15031646/pexels-photo-15031646/free-photo-of-young-man-sitting-on-steps.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");	
+background-size: 100% 100%;
+}
+
+
+.types{
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	color: #F8F0E5;
+	padding:10px;
+}
+.types-list li{
+	border:2px solid #F8F0E5;
+	
+	margin:0px 0 20px  -33px;
+	list-style: none; 
+}
+#btn-men,#btn-women,#btn-kid,#btn-mobile,#btn-watch{
+	width:100%;
+	padding:15px;
+	background-color: transparent;
+	border: none;
+	color: #F5F5F5;
+}
+#btn-men:hover,#btn-women:hover,#btn-kid:hover,#btn-mobile:hover,#btn-watch:hover{
+	color:  #FB2576;
+	
+	}
+#men-varity:hover,#women-varity:hover,#kid-varity:hover,#mobile-varity:hover,#watch-varity:hover{
+border:2px solid  #FB2576;
+color:  #FB2576;
+
+}
+
+
+.right-new-arrival{
+	width:70%;
+	height:100%;
+	background-color: violet;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icons{
+	display: none;
+}
+#new-arrival-products-men{
+	width:100%;
+	height:450px;
+	background-color: #0B666A;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.product_men-card{
+width:350px;
+height:100%;
+background-color: #1bd8e2;
+margin:10px;
+}
+
+
+
+#new-arrival-products-women{
+	width:100%;
+	height:450px;
+	background-color: #1bd8e2;
+	display: none;
+}
+#new-arrival-products-kid{
+	width:100%;
+	height:450px;
+	background-color: #0B666A;
+	display: none;
+}
+#new-arrival-products-mobile{
+	width:100%;
+	height:450px;
+	background-color: #1bd8e2;
+	display: none;
+}
+#new-arrival-products-watch{
+	width:100%;
+	height:450px;
+	background-color: #0B666A;
+	display: none;
+}
+
+
+@media(max-width:600px){
+	.new-arrival{
+		width:95%;
+		height:500px;
+		background-color: #0B666A;
+		margin: 0 0px  0  2%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.left-new-arrival{
+		width:100%;
+		height:100%;
+		background-color: aquamarine;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}	
+
+
+
+
+
+	.right-new-arrival{
+		width:100%;
+		position: relative;
+		background-color: violet;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#new-arrival-products-men{
+		width:100%;
+		height:450px;
+		background-color: #0B666A;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.product_men-card{
+	width:300px;
+	height:100%;
+	background-color: #1bd8e2;
+	margin:10px;
+	}
+	
+	
+	
+	#new-arrival-products-women{
+		width:100%;
+		height:450px;
+		background-color: #1bd8e2;
+		display: none;
+	}
+	#new-arrival-products-kid{
+		width:100%;
+		height:450px;
+		background-color: #0B666A;
+		display: none;
+	}
+	#new-arrival-products-mobile{
+		width:100%;
+		height:450px;
+		background-color: #1bd8e2;
+		display: none;
+	}
+	#new-arrival-products-watch{
+		width:100%;
+		height:450px;
+		background-color: #0B666A;
+		display: none;
+	}
+	.icons{
+		position: absolute;
+		z-index: 2;
+		background-color: #FB2576;
+		width:55px;
+		height:275px;
+		left: 0;
+		padding: 5px;
+		display: block;
+	}
+	.icon1{
+		width:100%;
+		height:45px;
+		background-color: azure;
+		margin-bottom:10px ;
+		text-align: center;
+		padding-top: 6px;
+		border:1px solid #F5F5F5;
+	}
+
+}

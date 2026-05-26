@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>asfdasf</title>
+		<script language="javascript">
+		function validateEmployee()
+		{
+				if(((document.myform.Email.value.indexOf('@')<0))||(document.myform.Email.value.charAt(document.myform.Email.value.length-4)!='.')&&
+				(document.myform.Email.value.charAt(document.myform.Email.value.length-3)!='.'))
+				{
+					alert('plesae enter valid Email-id');
+						return false;
+				}
+				}
+		</script>
+	</head>
+	<body>
+<form name="myform" onSubmit='return validateEmployee()' >
+
+  EMail:<input type="text" name="Email">
+<input type="submit" value="Submit" >
+
+</form>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+<body>
+<p>&copy;</p>
+<p>&alpha;</p>
+<p>&beta;</p>
+<p>&gamma;</p>
+<p>&dollar;</p>
+<p>&delta;</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":disabled").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+
+<form>
+Address:<textarea disabled="disabled"></textarea>
+</select>
+</form> 
+</body>
+</html>
+

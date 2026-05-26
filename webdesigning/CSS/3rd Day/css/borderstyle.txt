@@ -1,0 +1,85 @@
+<html>
+<head>
+<style type="text/css">
+
+div#content
+{
+width:500px;
+background-color:powderblue;
+
+border-top-width:1px ;
+border-right-width:4px 
+border-bottom-width:9px ;
+border-left-width:4px;
+border-style:solid ;
+border-color:red black ;
+margin:100px;
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+</div>
+</body>
+</html>

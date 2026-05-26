@@ -1,0 +1,30 @@
+<!-- The :first-child selector selects all elements that are the first child of their parent. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p:first-child").css("background-color", "#e0c40b");
+        });
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+
+
+</body>
+
+</html>

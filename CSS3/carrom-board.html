@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Animation</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0e68c; }
+        
+        h1 { position: absolute; top: 20px; font-family: Arial, sans-serif; color: #333; }
+
+        /* Board */
+        .carrom-board { width: 500px; height: 500px; background: #deb887; border: 25px solid #8b4513; border-radius: 20px; position: relative; }
+
+        /* Pockets */
+        .pocket { width: 50px; height: 50px; background: black; border-radius: 50%; position: absolute; }
+
+        .top-left { top: -10px; left: -10px; }
+        .top-right { top: -10px; right: -10px; }
+        .bottom-left { bottom: -10px; left: -10px; }
+        .bottom-right { bottom: -10px; right: -10px; }
+
+        /* Center */
+        .center-circle { width: 100px; height: 100px; background: #8b4513; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+        /* Dice + Sticker Base */
+        .dice { width: 30px; height: 30px; border-radius: 50%; position: absolute; left: 50%; transform: translate(-50%, 0); transition: transform 0.8s ease-in-out; }
+
+        .sticker { width: 30px; height: 30px; border-radius: 50%; position: absolute; left: 50%; transform: translate(-50%, 0); transition: transform 0.8s ease-in-out; }
+
+        /* Dice */
+        .dice { background: black; border: 2px solid white; }
+        
+        /* Individual Dice Position */
+        .dice1 { top: 210px; left: 45%; }
+        .dice2 { top: 210px; left: 53%; }
+        .dice3 { top: 185px; left: 49%; }
+        .dice4 { top: 230px; left: 50%; }
+
+        /* Sticker */
+        .sticker { top: 380px; background: black; border: 6px solid white; cursor: pointer; transition: transform 0.5s ease, background 0.3s; }
+        .sticker:hover { background: red;}
+
+        /* HIT ANIMATION */
+        .hit {transform: translate(-50%, -120px) scale(1.2);}
+
+        /* Dice Movement to pockets */
+        .move-dice1 {transform: translate(-200px, -210px);}
+        .move-dice2 {transform: translate(180px, -210px);}
+        .move-dice3 {transform: translate(-220px, 230px);}
+        .move-dice4 {transform: translate(200px, 190px);}
+    </style>
+</head>
+
+<body>
+    <h1 >Carrom Board Animation</h1>
+    
+    <div class="carrom-board">
+        <!-- Pockets -->
+        <div class="pocket top-left"></div>
+        <div class="pocket top-right"></div>
+        <div class="pocket bottom-left"></div>
+        <div class="pocket bottom-right"></div>
+
+        <!-- Center -->
+        <div class="center-circle">
+            <div
+                style="width: 20px; height: 20px; background-color: #ff0000; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+            <div class="circle-star"
+                style="width: 80px; height: 80px; background-color: transparent; border: 2px solid #000; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+            <div class="circle-star"
+                style="width: 60px; height: 60px; background-color: transparent; border: 2px solid #000; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+            <div class="circle-star"
+                style="width: 40px; height: 40px; background-color: transparent; border: 2px solid #000; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            </div>
+        </div>
+
+        <!-- Starting Fields 
+         <div class="starting-fild"
+            style="width: 450px; height: 450px; background-color: transparent; border: 2px solid #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        </div>-->
+        <div class="starting-fild"
+            style="width: 360px; height: 360px; background-color: transparent; border: 2px solid #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        </div>
+        <div class="starting-fild"
+            style="width: 310px; height: 310px; background-color: transparent; border: 2px solid #000; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        </div>
+
+        <!-- Corner Circles -->
+        <div class="conner-circle"
+            style="width: 15px; height: 15px; background-color: #8b4513; border-radius: 50%; position: absolute; top: 52px; left: 52px;">
+        </div>
+        <div class="conner-circle"
+            style="width: 15px; height: 15px; background-color: #8b4513; border-radius: 50%; position: absolute; top: 52px; right: 52px;">
+        </div>
+        <div class="conner-circle"
+            style="width: 15px; height: 15px; background-color: #8b4513; border-radius: 50%; position: absolute; bottom: 52px; left: 52px;">
+        </div>
+        <div class="conner-circle"
+            style="width: 15px; height: 15px; background-color: #8b4513; border-radius: 50%; position: absolute; bottom: 52px; right: 52px;">
+        </div>
+
+        <!-- Dice -->
+        <div class="dice dice1"></div>
+        <div class="dice dice2"></div>
+        <div class="dice dice3"></div>
+        <div class="dice dice4"></div>
+
+        <!-- Sticker -->
+        <div class="sticker"></div>
+
+    </div>
+    <footer style="position: absolute; bottom: 20px; font-family: Arial, sans-serif; color: #333;">
+        <p>Hover on the sticker to hit the dice!</p>
+         Designed by <a href="https://www.github.com/GHOSTs-OCTOPUS" target="_blank" style="color: #ff0000; text-decoration: underline; font-weight: bold;">GHOSTs-OCTOPUS</a>
+            &copy; 2026. All rights reserved.
+    </footer>
+    
+    <!--JS For Time delay-->
+    <script>
+        const sticker = document.querySelector(".sticker");
+        const dice1 = document.querySelector(".dice1");
+        const dice2 = document.querySelector(".dice2");
+        const dice3 = document.querySelector(".dice3");
+        const dice4 = document.querySelector(".dice4");
+
+        sticker.addEventListener("mouseenter", () => {
+
+            // STEP 1: Hit animation
+            sticker.classList.add("hit");
+
+            // STEP 2: Dice move after delay
+            setTimeout(() => {
+                dice1.classList.add("move-dice1");
+                dice2.classList.add("move-dice2");
+                dice3.classList.add("move-dice3");
+                dice4.classList.add("move-dice4");
+            }, 600);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+  .outer{
+    height:725px;
+    width:100%;
+    background-image: url(https://img.freepik.com/free-vector/school-gymnasium-with-sport-equipment-balls_107791-18108.jpg?semt=ais_incoming&w=740&q=80);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+ .box1{
+
+    height:250px;
+    width:250px;
+      background-image: url(img/cartwheel1.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    transition: all 3s 0s ease-in;
+    border-radius:30%;
+    animation: rotate 0.5s linear infinite;
+ }
+.box2{
+
+    height:250px;
+    width:250px;
+    background-image: url(img/cartwheel2\ -\ Copy.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 3s ease-in;
+    position: absolute;
+    top:450px;
+    right:10px;
+    border-radius: 30%;
+    animation: rotate 0.5s linear infinite;
+ }
+
+ .outer:hover .box1{
+    transform:translate(1250px,0px)
+    rotate(350deg);
+
+    
+ }
+.outer:hover .box2{
+    transform: translate(-1250px,0px)
+    rotate(-350deg);
+}
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    
+    </div>
+</body>
+</html>

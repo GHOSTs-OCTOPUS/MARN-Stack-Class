@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+width:250px;height:150px;background:#f7f7f7;margin-left:50px;margin-top:50px;position:relative;
+}
+#d1{
+width:25px;height:25px;background:#3498db;position:absolute;top:60px;left:50px;
+border-radius:50%;
+animation:myanim 2s 0s	infinite linear;
+-webkit-animation:myanim 2s 0s infinite linear;
+}
+
+@keyframes myanim
+{
+0%   {left:150px;width:20px;height:20px;}
+10% {width:10px;height:10px;}
+20% {width:5px;height:5px;}
+30% {width:0px;height:0px;} 
+35%{width:5px;height:5px;}
+40%{width:10px;height:10px;}
+50%	{left:50px;width:10px;height:10px;}
+60%{width:15px;height:15px;}
+70%{width:25px;height:25px;}
+80%{width:35px;height:35px;}
+90%{width:25px;height:25px;}
+100% {left:150px;width:20px;height:20px;}
+ 
+}
+
+@-webkit-keyframes myanim /* Safari and Chrome */
+{
+0%   {left:150px;width:20px;height:20px;}
+10% {width:10px;height:10px;}
+20% {width:5px;height:5px;}
+30% {width:0px;height:0px;} 
+35%{width:5px;height:5px;}
+40%{width:10px;height:10px;}
+50%	{left:25px;width:10px;height:10px;}
+60%{width:15px;height:15px;}
+70%{width:25px;height:25px;}
+80%{width:35px;height:35px;}
+90%{width:25px;height:25px;}
+100% {left:150px;width:20px;height:20px;}
+}
+
+
+#d2{
+width:25px;height:25px;background:#3498db;position:absolute;top:60px;left:100px;
+border-radius:50%;
+animation:myani 2s 1s	infinite linear;
+-webkit-animation:myani 2s 1s infinite linear;
+}
+
+@keyframes myani
+{0%   {left:150px;width:20px;height:20px;}
+10% {width:10px;height:10px;}
+20% {width:5px;height:5px;}
+30% {width:0px;height:0px;} 
+35%{width:5px;height:5px;}
+40%{width:10px;height:10px;}
+50%	{left:50px;width:10px;height:10px;}
+60%{width:15px;height:15px;}
+70%{width:25px;height:25px;}
+80%{width:35px;height:35px;}
+90%{width:25px;height:25px;}
+100% {left:150px;width:20px;height:20px;}
+}
+
+@-webkit-keyframes myani /* Safari and Chrome */
+{0%   {left:150px;width:20px;height:20px;}
+10% {width:10px;height:10px;}
+20% {width:5px;height:5px;}
+30% {width:0px;height:0px;} 
+35%{width:5px;height:5px;}
+40%{width:10px;height:10px;}
+50%	{left:25px;width:10px;height:10px;}
+60%{width:15px;height:15px;}
+70%{width:25px;height:25px;}
+80%{width:35px;height:35px;}
+90%{width:25px;height:25px;}
+100% {left:150px;width:20px;height:20px;}
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="d1"></div>
+<div id="d2"></div>
+</div>
+</body>
+</html>

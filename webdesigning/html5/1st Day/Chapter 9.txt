@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>It is our policy to provide quality services on <mark>a best effort basis to satisfy </mark>the stated and implied needs of our students.</p>
+
+</body>
+</html>

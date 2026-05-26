@@ -1,0 +1,12 @@
+<html>
+<head>
+<style type="text/css">
+p{text-transform:uppercase;}
+</style>
+</head>
+
+<body>
+<p >this is auxir pvt.</p>
+<p >both are awesome software development comp.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- The toggle() method attaches two or more functions to toggle between for the click event for the selected elements.
+When clicking on an element, the first specified function fires, when clicking again, the second function fires, and so on. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+  $("h1").toggle(
+    function(){$("h1").css({"color":"blue"});},
+    function(){$("h1").css({"color":"red"});},
+    function(){$("h1").css({"color":"pink"});
+  });
+ 
+});
+    </script>
+</head>
+
+<body>
+<h1>welcome</h1>
+
+
+</body>
+
+</html>

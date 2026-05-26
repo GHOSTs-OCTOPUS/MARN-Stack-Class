@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilevel Inheritance</title>
+    <script>
+/*
+        B] Multilevel Inheritance
+
+        Q1.Create a program that demonstrates Multilevel Inheritance using the following hierarchy:
+            1. Base Class: Person 
+                • Constructor: accepts name and age. 
+                • Method: displayPerson() → prints "Name: <name>, Age: <age>". 
+            2. Derived Class: Employee(inherits Person) 
+                • Constructor: accepts name, age, and employeeId. 
+                • Uses super(name, age) to call the parent constructor. 
+                • Method: displayEmployee() → prints "Employee ID: <employeeId>". 
+            3. Derived Class: Manager(inherits Employee) 
+                • Constructor: accepts name, age, employeeId, and department. 
+                • Uses super(name, age, employeeId) to call parent constructor. 
+                • Method: displayManager() → prints "Department: <department>". 
+            4. Task 
+                • Create an object of Manager. 
+                • Call all three methods: 
+                    o displayPerson()(from Person) 
+                    o displayEmployee()(from Employee) 
+                    o displayManager()(from Manager) 
+        
+        Expected Console Output:
+            Name: Akanksha, Age: 28  
+            Employee ID: E102
+            Department: IT
+*/
+class Person{
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    displayPerson() {
+        console.log(`Name: ${this.name}, Age: ${this.age}`);
+    }
+}
+
+class Employee extends Person {
+    constructor(name, age, employeeId) {
+        super(name, age);
+        this.employeeId = employeeId;
+    }
+
+    displayEmployee() {
+        console.log(`Employee ID: ${this.employeeId}`);
+    }
+}
+
+class Manager extends Employee {
+    constructor(name, age, employeeId, department) {
+        super(name, age, employeeId);
+        this.department = department;
+    }
+
+    displayManager() {
+        console.log(`Department: ${this.department}`);
+    }
+}
+
+// Task
+const manager = new Manager("Akanksha", 28, "E102", "IT");
+manager.displayPerson();
+manager.displayEmployee();
+manager.displayManager();
+
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

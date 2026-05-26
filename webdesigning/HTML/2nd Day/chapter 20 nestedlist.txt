@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<h4>An Unordered List:</h4>
+
+<ul type="square">  
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<h4>An Ordered List:</h4>
+
+<ol type="a">    
+  <li>Coffee</li>
+  <li>Tea</li>
+  <ul>
+  <li>Herable tea</li>
+  <li>Black tea</li>
+  </ul>
+  <li>Milk</li>
+</ol>
+
+
+<h4>A Definition List:</h4>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+
+</body>
+</html>

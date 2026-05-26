@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="" method="get">
+City:<input list="city" name="city">
+<datalist id="city">
+  <option value="Pune">
+  <option value="Nagpur">
+  <option value="Mumbai">
+  <option value="Akola">
+  <option value="Amravati">
+</datalist>
+<input type="submit">
+</form>
+</body>
+</html>

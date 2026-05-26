@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $("p:has(span)").css("color","#eee081");
+});
+</script>
+<body>
+<form>
+<p>This is a <span>paragraph</span></p>
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+</form>
+</body>
+</html>
+

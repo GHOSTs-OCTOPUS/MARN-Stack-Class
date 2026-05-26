@@ -1,0 +1,23 @@
+<!DOCTYPE>
+
+<html>
+<head>	
+<script src="jquery-1.3.2.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#txt").scroll(function(){
+    
+	alert("Page scrolling")
+  });
+});
+</script>
+</head>
+<body>
+
+<textarea id="txt" rows="10" cols="10">jQuery is a JavaScript framework, which purpose is to make it much easier to use JavaScript on your website. You could also describe jQuery as an abstraction layer, since it takes a lot of the functionality that you would have to write many lines of JavaScript to accomplish and wraps it into functions that you can call with a single line of code.
+HTML document traversing, event handling, animating, and Ajax interactions for Rapid Web Development.
+</textarea><br/>
+<span id="text1"></span>
+</body>
+</html>

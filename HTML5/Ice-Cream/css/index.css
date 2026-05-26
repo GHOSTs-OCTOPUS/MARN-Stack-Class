@@ -1,0 +1,696 @@
+
+    /* ---------- RESET & BASE (Bootstrap-free, pure CSS) ---------- */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #373736;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: #222;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* layout helpers */
+    .layout_padding {
+      padding: 80px 0 40px 0;
+    }
+
+    .margin_top90 {
+      margin-top: 60px;
+    }
+
+    /* buttons & elements */
+    .btn-primary-custom {
+      display: inline-block;
+      background: #fc95c4;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 40px;
+      text-align: center;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-primary-custom:hover {
+      background: #1e1e1e;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-custom {
+      display: inline-block;
+      background: transparent;
+      border: 1px solid #fc95c4;
+      color: #fc95c4;
+      padding: 8px 24px;
+      border-radius: 40px;
+      font-weight: 500;
+    }
+
+    .btn-outline-custom:hover {
+      background: #fc95c4;
+      color: #fff;
+    }
+
+    /* HEADER & NAVIGATION (pure flex) */
+    .header_section {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #fff9fc;
+    }
+
+    .header_bg {
+      background: #fff;
+      border-bottom: 1px solid #fc95c4;
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+
+
+    }
+
+    .navbar-brand img {
+      max-height: 55px;
+      width: auto;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 17px;
+      font-weight: 500;
+      padding: 5px 14px;
+      color: #222;
+      border-radius: 30px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #d607d2;
+    }
+
+
+    .login_bt a {
+      font-size: 16px;
+      font-weight: 500;
+      color: #222;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .login_bt a:hover {
+      color: #fc95c4;
+    }
+
+    .search-icon {
+      font-size: 18px;
+      cursor: pointer;
+      color: #222;
+    }
+
+    .search-icon:hover {
+      color: #fc95c4;
+    }
+
+    /* mobile menu toggler (hamburger) */
+    .navbar-toggler {
+      display: none;
+      background: none;
+      border: 1px solid #fc95c4;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .navbar-toggler span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #222;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* banner section */
+    .banner_section {
+      padding: 70px 0 100px 0;
+      background-image: url("../images/banner-bg.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner_content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .banner_text_col {
+      flex: 1 1 45%;
+    }
+
+    .banner_img_col {
+      flex: 1 1 45%;
+      text-align: center;
+    }
+
+    .banner_taital {
+      font-size: 56px;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .banner_text {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #444;
+    }
+
+    .pagining {
+      margin-top: 30px;
+      text-align: left;
+      padding-left: 10px;
+    }
+    .pagining ul {
+      display: inline-flex;
+      gap: 15px;
+    }
+    .pagining ul li {
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid #fc95c4;
+      border-radius: 25%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #fc95c4;
+      cursor: pointer;
+    }
+    .pagining ul li.active {
+      background: #fc95c4;
+      color: #fff;
+    }
+    
+
+    /* about */
+    .about_section .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about_img {
+      flex: 1;
+    }
+
+    .about_content {
+      flex: 1;
+    }
+
+    .about_taital {
+      font-size: 40px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .about_taital::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background: #ffd6e1;
+      bottom: -10px;
+      left: 0;
+      border-radius: 4px;
+    }
+
+    .about_text {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    /* cream / products */
+    .cream_section {
+      position: relative;
+    }
+
+    .section_header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .cream_taital, .services_taital, .testimonial_taital, .contact_taital {
+      font-size: 40px;
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+    }
+
+    .cream_taital::after, .services_taital::after {
+      content: '';
+      width: 80px;
+      height: 5px;
+      background: #ffd6e1;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 4px;
+    }
+
+    .products_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .cream_box {
+      background: linear-gradient(0deg, #ffffff 37%, #f2f2f0 37%);
+      padding: 25px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .cream_box:hover {
+      background: linear-gradient(0deg, #ffffff 37%, #faf0c7 37%);
+      transform: translateY(-6px);
+    }
+
+    .cream_img {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .price_text {
+      width: 80px;
+      margin: 10px auto;
+      background: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 50%;
+      color: #fc95c4;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+    }
+
+    .strawberry_text {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 15px 0 10px;
+    }
+
+    /* services */
+    .services_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .services_box {
+      border: 1px solid #fc9cc8;
+      padding: 30px 20px;
+      border-radius: 16px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .services_box:hover {
+      box-shadow: 0 10px 25px rgba(252,149,196,0.1);
+    }
+
+    .icon_img {
+      margin-right: 12px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .tasty_text {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    /* testimonial carousel (css only slider) */
+    .testimonial_slider {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .testimonial_box {
+      background: #fff;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+      padding: 45px 35px;
+      border-radius: 40px;
+      text-align: center;
+    }
+
+    .testimonial_text {
+      font-size: 16px;
+      font-style: italic;
+      color: #555;
+    }
+
+    .client_name {
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 25px;
+      color: #fc95c4;
+    }
+
+    .client_img {
+      margin-top: 15px;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+        display: inline-block;
+
+    }
+
+    /* custom slider controls */
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .slider-btn {
+      background: #fc95c4;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .slider-btn:hover {
+      background: #1e1e1e;
+    }
+
+    /* contact */
+    .contact_section {
+      background-color: #262526;
+      padding: 80px 0;
+    }
+
+    .contact_row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact_form_col {
+      flex: 1.1;
+    }
+
+    .contact_info_col {
+      flex: 2;
+    }
+
+    .contact_taital {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .email-bt, .massage-bt {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #6d6d6d;
+      padding: 12px 0;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .email-bt::placeholder, .massage-bt::placeholder {
+      color: #ccc;
+    }
+
+    .main_bt {
+      margin-top: 20px;
+    }
+
+    .location_list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .location_list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .location_list li i {
+      font-size: 22px;
+      color: #fc95c4;
+    }
+
+    .mail_main iframe {
+      width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .newsletter_text {
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      margin: 20px 0 10px;
+    }
+
+    .subscribe_form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: flex-end;
+    }
+
+    .update_mail {
+      flex: 2;
+      background: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 40px;
+      font-size: 14px;
+    }
+
+    .subscribe_bt a {
+      background: #fc95c4;
+      padding: 12px 28px;
+      border-radius: 40px;
+      color: #fff;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .footer_social_icon {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer_social_icon a {
+      background: #fff;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #222;
+      font-size: 20px;
+    }
+
+    .footer_social_icon a:hover {
+      background: #fc95c4;
+      color: #fff;
+    }
+
+    /* copyright */
+    .copyright_section {
+      background: #262526;
+      border-top: 1px solid #6d6d6d;
+      padding: 25px 0;
+      text-align: center;
+    }
+
+    .copyright_text {
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .copyright_text a {
+      color: #fc95c4;
+    }
+
+    /* responsive design */
+    @media (max-width: 992px) {
+      .navbar-toggler {
+        display: block;
+      }
+      .navbar-collapse {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .navbar-collapse.show {
+        display: flex;
+      }
+      .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      .header-actions {
+        margin-left: auto;
+      }
+      .banner_taital {
+        font-size: 42px;
+      }
+      .about_taital, .cream_taital, .services_taital, .testimonial_taital {
+        font-size: 32px;
+      }
+      .contact_row {
+        flex-direction: column;
+      }
+      .mail_main iframe {
+        height: 220px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .banner_content {
+        flex-direction: column;
+      }
+      .banner_text_col {
+        text-align: center;
+      }
+      .about_section .row {
+        flex-direction: column-reverse;
+      }
+      .products_grid {
+        grid-template-columns: 1fr;
+      }
+      .services_grid {
+        grid-template-columns: 1fr;
+      }
+      .testimonial_box {
+        padding: 30px 20px;
+      }
+      .location_list {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .banner_taital {
+        font-size: 32px;
+      }
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* font-awesome fallback icons via unicode */
+    .fa, .fas, .far {
+      font-family: 'FontAwesome', sans-serif;
+    }
+  

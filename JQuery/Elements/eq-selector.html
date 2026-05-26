@@ -1,0 +1,34 @@
+<!-- The equal_to :eq() selector selects an element with a specific index number.
+The index numbers start at 0, so the first element will have the index number 0 (not 1). -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p:eq(3)").css("color", "blue");
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").toggle();
+  });
+});
+</script>
+</head>
+<body>
+<img src="images.jpg"><br/>
+<button>Click</button>
+</body>
+</html>
+

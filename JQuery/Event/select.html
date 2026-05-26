@@ -1,0 +1,31 @@
+<!-- The select event occurs when a text is selected (marked) in a text area or a text field.
+$(selector).select() -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+  $("#txt").select(function(){
+   	$("#text1").html('Seleted');
+  });
+});
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="txt">
+<span id="text1"></span>
+
+
+
+</body>
+
+</html>

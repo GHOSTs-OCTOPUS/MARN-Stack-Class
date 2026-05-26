@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Freshly Made</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/css/Master.css">
+
+	<style type="text/css">
+		h2 {
+			text-align: center !important;
+			font-weight: bolder;
+			background: white;
+			font-size: 25px;
+			border-bottom: 3px solid #be7910f1;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 25px;
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 28px;
+			text-align: justify;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+
+		.a1 {
+			background: linear-gradient(to left, rgb(70, 41, 18), rgb(197, 137, 81), rgb(163, 61, 13));
+			width: 130px;
+			height: 50px;
+			margin-left: 300px;
+			text-align: center;
+			padding-top: 10px;
+			border-radius: 50px;
+		}
+
+		.a1:hover {
+			background: rgb(71, 44, 2);
+			color: aliceblue;
+			text-decoration: none;
+		}
+
+
+		footer {
+			background-color: rgb(121, 97, 68);
+		}
+
+		.carousel-root,
+		.carousel-root * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		.carousel-root {
+			position: relative;
+			display: none;
+		}
+
+		.carousel-root .viewport {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.carousel-root .slides {
+			position: relative;
+		}
+
+		.carousel-root .slide {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			z-index: 1;
+			transition: opacity 0.5s;
+			background-color: #f0f0f0;
+		}
+
+		.carousel-root .slide.selected {
+			opacity: 1;
+			position: relative;
+			z-index: 10;
+		}
+
+		.carousel-root .slide>img {
+			display: block;
+			width: 100%;
+		}
+
+		.carousel-root .pager {
+			text-align: center;
+			margin-top: 12px;
+		}
+
+		.carousel-root .pager-button {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin: 0 10px;
+			border-radius: 15px;
+			background-color: #ccc;
+			cursor: pointer;
+		}
+
+		.carousel-root .pager-button.selected {
+			background-color: orange;
+			cursor: default;
+		}
+
+		.carousel-root .arrow {
+			position: absolute;
+			top: 50%;
+			margin-top: -36px;
+			cursor: pointer;
+			width: 34px;
+			height: 72px;
+			z-index: 10000;
+		}
+
+		.carousel-root .arrow-previous {
+			left: 0;
+			background: url("../images/arrow_left.png") no-repeat;
+		}
+
+		.carousel-root .arrow-next {
+			right: 0;
+			background: url("../images/arrow_right.png") no-repeat;
+		}
+
+		.carousel-root .viewport {
+			padding: 0 0;
+			min-height: 89px;
+			text-align: center;
+		}
+
+		/*adjust to create left and right open area for arrows, min-height = arrow height*/
+
+		.carousel-root .viewport p {
+			font-style: italic;
+			font-weight: 300;
+			color: #5a2503;
+		}
+
+		.carousel-root .viewport p span {
+			display: block;
+			font-weight: bold;
+			margin-top: 14px;
+			font-style: normal;
+		}
+
+		.carousel-root .pager {
+			display: none;
+		}
+
+		.video-carousel-root,
+		.video-carousel-root * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+
+		.video-carousel-root {
+			width: 100%;
+			max-height: 100vh;
+			margin: 0;
+			position: relative;
+		}
+
+		.video-carousel-viewport {
+			width: 100%;
+			max-height: 100vh;
+			margin: 0 auto;
+			padding: 45px 0;
+			overflow: hidden;
+		}
+
+		.video-carousel-slider {
+			width: 1068px;
+			overflow: hidden;
+			position: relative;
+			height: 634px;
+			margin: 0 auto;
+		}
+
+		.video-carousel-slider>div {
+			float: left;
+			width: 356px;
+			height: 634px;
+			position: relative;
+			z-index: 0;
+		}
+
+		.video-carousel-slider>div p {
+			display: none;
+		}
+
+		.video-carousel-slider div.level1 {
+			z-index: 1;
+			opacity: 0;
+			transition: 1s;
+			transform: scale(0);
+			width: 0;
+			height: 0;
+		}
+
+		.video-carousel-slider div.level2 {
+			z-index: 2;
+		}
+
+		.video-carousel-slider div.level3 {
+			z-index: 3;
+		}
+
+		.video-carousel-slider div .panel {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #000;
+			-moz-transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+			-o-transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+			-webkit-transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+			transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+		}
+
+		.video-carousel-slider div.level2 .panel {
+			width: 80%;
+			height: 80%;
+			top: 10%;
+			left: 10%;
+		}
+
+		.video-carousel-slider div.level3 .panel {
+			width: 100%;
+			height: 100%;
+			top: 0%;
+			left: 0%;
+		}
+
+		.video-carousel-slider div .panel .poster {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.video-carousel-slider div .panel .poster img:first-child {
+			width: 100%;
+			height: 100%;
+			display: block;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			opacity: 0.5;
+		}
+
+		.video-carousel-slider div .panel .poster .button {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -24px;
+			margin-left: -24px;
+			width: 48px;
+			height: 48px;
+		}
+
+
+		.video-carousel-slider div.level3 .panel .poster img {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			opacity: 1;
+			cursor: pointer;
+		}
+
+		.video-carousel-slider div.level3 .panel .poster .button {
+			display: block;
+		}
+
+		.video-carousel-slider div .panel .video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.video-carousel-button-left {
+			position: absolute;
+			top: 45%;
+			left: 40px;
+			cursor: pointer;
+		}
+
+		.video-carousel-button-right {
+			position: absolute;
+			top: 45%;
+			right: 40px;
+			cursor: pointer;
+		}
+
+		.video-carousel-text {
+			width: 280px;
+			margin: 8px auto;
+			text-align: center;
+			font-size: 14px;
+			font-family: Roboto, Arial, sans-serif;
+			color: #4d4e53;
+		}
+
+		.video-carousel-text span {
+			font-weight: bold;
+			display: block;
+		}
+
+		.clearfix:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+
+		.video-carousel-slider div .panel {
+			-webkit-box-shadow: 0 10px 10px -5px rgba(122, 122, 122, 1);
+			-moz-box-shadow: 0 10px 10px -5px rgba(122, 122, 122, 1);
+			box-shadow: 0 10px 10px -5px rgba(122, 122, 122, 1);
+		}
+
+		.video-carousel-slider div.level3 .panel {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.video-carousel-root .vjs-big-play-button {
+			display: none !important;
+		}
+
+		.buttonme {
+			width: 634px;
+			height: 634px;
+			background: black;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+
+
+		@media (max-width: 1100px) {
+			.video-carousel-slider {
+				width: 356px;
+				overflow: hidden;
+				position: relative;
+				height: 634px;
+				margin: 0 auto;
+			}
+
+			.video-carousel-slider div.level2 {
+				z-index: 1;
+				opacity: 0;
+				transition: .25s;
+				transform: scale(0);
+				height: 0px;
+				width: 0px;
+				display: none;
+			}
+
+			.video-carousel-slider div.level1 .panel {
+				z-index: 1;
+				opacity: 0;
+				transition: .25s;
+				transform: scale(0);
+				height: 0px;
+				display: none;
+			}
+
+			.video-carousel-slider div.level3 .panel {
+				width: 100%;
+				height: 100%;
+				left: 0px;
+				top: 0px;
+				transition: .25s;
+			}
+
+			.video-carousel-viewport {
+				width: 100%;
+			}
+
+			.video-carousel-button-left {
+				left: 2px;
+			}
+
+			.video-carousel-button-right {
+				right: 2px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="./assets/images/logo2.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 65px; margin-left: 60px; ">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit"
+								style="background: linear-gradient(to left,rgb(70, 41, 18),rgb(197, 137, 81),rgb(163, 61, 13)); border: none;">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top"
+		style="background: linear-gradient(to left,rgb(70, 41, 18),rgb(197, 137, 81),rgb(163, 61, 13)); ">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active" style="border-bottom: 3px solid #d3a46c; font-size: 17px;"><a
+							class="nav-link" href="./index.html"
+							style="width: 140px; text-align: center;color: white;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="./About.html"
+							style="width: 140px; text-align: center;color: white;">ABOUT US</a></li>
+					<li class="nav-item"><a class="nav-link" href="./Cake.html"
+							style="width: 140px; text-align: center;color: white;">CAKES</a></li>
+					<li class="nav-item"><a class="nav-link" href="./OrderNow.html"
+							style="width: 140px; text-align: center;color: white;">ORDER NOW</a></li>
+					<li class="nav-item"><a class="nav-link" href="./reviews.html"
+							style="width: 140px; text-align: center;color: white;">REVIEWS</a></li>
+					<li class="nav-item"><a class="nav-link" href="./Contact.html"
+							style="width: 140px; text-align: center;color: rgb(250, 249, 247);">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h1
+							style="text-align: center;margin-top: 20px;font-family: garamond;font-weight: bolder;font-size: 50px;">
+							Happy Hours & Discounts: These Are The Mumbai Bakeries Which Slash Their Prices Every
+							Evening</h1>
+					</div><br>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p style="font-size: 20px; line-height: 28px; text-align: justify;">
+							<b>-</b> Cake House Bakery serves its customers with amazing mouth-watering fresh cream
+							cakes which are free from eggs and 100% vegetarian.
+							We have succeeded in providing individual slices to large fresh cream cakes for all
+							occasions that not only look elegant but are truly complimented by a delicious taste.
+							All our cakes are carefully hand crafted to perfection and supplied to our customers in our
+							stylish branded boxes.<br><br>
+
+							<b>-</b> Cake House Bakery offers a vast variety of cakes. These can be pre-ordered or
+							picked up from
+							one of our stores which have ready to go cakes on display. Our cakes are available in a
+							range of sizes, shapes and designs to suit every occasion,
+							and loved by everyone thanks to their unique recipe and quality of taste. <br><br>
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div><br>
+
+
+
+
+		<div id="videos">
+			<div class="inner">
+				<div class="video-carousel-root">
+					<div class="video-carousel-viewport">
+						<div class="video-carousel-slider clearfix" style="left: 0px;">
+
+							<div id="video_desktop_8_GL" class="level1" data-vimeo-id="181712424">
+								<div class="panel">
+									<div class="poster">
+										<iframe src="./assets/videos/video.mp4" style="top:0;left:0;width:100%;height:100%;"
+											frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen>
+										</iframe>
+										<div class="buttonme">a</div>
+									</div>
+								</div>
+								<p>Never experience an outage again</p>
+							</div>
+
+							<!--start of additional video-->
+							<div id="video_desktop_8_GL" class="level1" data-vimeo-id="181712424">
+								<div class="panel">
+									<div class="poster">
+										<iframe src="./assets/videos/video2.mp4" style="top:0;left:0;width:100%;height:100%;"
+											frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen>
+										</iframe>
+										<div class="buttonme">a</div>
+									</div>
+								</div>
+								<p>Never experience an outage again</p>
+							</div>
+							<!--End of additional-->
+
+							<!--start of additional video-->
+							<div id="video_desktop_8_GL" class="level1" data-vimeo-id="181712424">
+								<div class="panel">
+									<div class="poster">
+										<iframe src="./assets/videos/video3.mp4" style="top:0;left:0;width:100%;height:100%;"
+											frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen>
+										</iframe>
+										<div class="buttonme">a</div>
+									</div>
+								</div>
+								<p>Never experience an outage again</p>
+							</div>
+							<!--End of additional-->
+
+							<!--start of additional video-->
+							<div id="video_desktop_8_GL" class="level1" data-vimeo-id="181712424">
+								<div class="panel">
+									<div class="poster">
+										<iframe src="./assets/videos/video4.mp4" style="top:0;left:0;width:100%;height:100%;"
+											frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen>
+										</iframe>
+										<div class="buttonme">a</div>
+									</div>
+								</div>
+								<p>Never experience an outage again</p>
+							</div>
+							<!--End of additional-->
+
+							<!--start of additional video-->
+							<div id="video_desktop_8_GL" class="level1" data-vimeo-id="181712424">
+								<div class="panel">
+									<div class="poster">
+										<iframe src="./assets/videos/video5.mp4" style="top:0;left:0;width:100%;height:100%;"
+											frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+											allowfullscreen>
+										</iframe>
+										<div class="buttonme">a</div>
+									</div>
+								</div>
+								<p>Never experience an outage again</p>
+							</div>
+							<!--End of additional-->
+						</div>
+					</div>
+					<div class="video-carousel-text" style="display: none;">Support your whole home</div>
+					<img class="video-carousel-button-left"
+						src="http://www.installgenerac.com/images/video-carousel/arrow_left.png"
+						alt="video carousel navigate left">
+					<img class="video-carousel-button-right"
+						src="http://www.installgenerac.com/images/video-carousel/arrow_right.png"
+						alt="video carousel navigate right">
+				</div>
+			</div>
+		</div><br><br>
+
+
+
+
+		<div class="container">
+			<div class="Day-1" style="border:3px solid #be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>210 Degrees, Churchgate, Mumbai</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 30px;">This one’s for the night owls who step out for a sweet bite at
+							night. 210 Degrees have their prices slashed by 10% from 10PM to 11PM and 20% from 11PM to
+							midnight.
+							This discount is valid on cakes, pastries and breads. Stock up for the impending munchies
+							that may hit you at 4AM? Yes.
+						</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="#" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+						</div><br>
+
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-2" style="border:3px solid #be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Candies, Bandra West, Mumbai</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery2.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 30px;">The beloved bakery gives 25% discount after 8PM and witnesses
+							hundreds of takers every day.
+							You can stuff you faces with cup cakes, cookies, pastries and more.
+						</p>
+
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+
+							<div class="a1">
+
+								<a href="#" style="color: white;text-decoration: none;">Read More</a>
+							</div><br>
+
+						</div>
+
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-3" style="border:3px solid#be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Sassy Teaspoon</h2>
+					</div>
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery3.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 40px;">The popular upscale bakery has its happy hours from 5PM to 7PM
+							where all cakes and pastries are available at a 25% discount.
+							The offer is only available on pick up and not delivery. You need to work a little for a
+							reward, which is fair.</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="#" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+
+						</div><br>
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-4" style="border:3px solid #be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Shokolaat</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery4.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 40px;">Starting at 9:30PM, Shokolaat has a 20% discount on all the sweet
+							things at all their outlets.
+							Order from their range of cheescakes, pastries, brownies, cakes, tarts and mousse.</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="AboutUs.html" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+
+						</div><br>
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-5" style="border:3px solid #be7910f1;border-radius: 25px;;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Theobroma</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery5.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 40px;">Theobroma has a 1+1 offer every Monday.
+							They have reinvented the happy hour for bakeries and we couldn’t be
+							<a href="Cakes.html"> Read more about it here.</a>
+						</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="AboutUs.html" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+
+						</div><br>
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-6" style="border:3px solid #be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Celejor, All Outlets</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery6.jpg"
+							style="width: 300px;height: 220px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 40px;">Celejor has outlets across the city. They offer a 30% discount post
+							10PM every day.
+							This offer is available across their selection of pastries and breads.</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="#" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+
+						</div><br>
+					</div>
+				</div>
+			</div><br><br>
+
+			<div class="Day-7" style="border:3px solid #be7910f1;border-radius: 25px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h2>Happiness Deli</h2>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+						<img class="img-thumbnail img-fluid mx-auto d-block" src="./assets/images/bakery7.jpg"
+							style="height: 230px; width: 300px;">
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+						<p style="margin-top: 40px;">Happiness Deli in Grant Road offers a discount on their baked goods
+							- pastries and cakes - post 10:30PM.
+							The discount starts at 10% off on selected products, and some products have higher
+							discount..</p>
+
+						<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+
+							<div class="a1">
+
+								<a href="#" style="color: white;text-decoration: none;">Read More</a>
+							</div>
+
+						</div><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><br>
+
+	<footer style="height: 170px;padding-top: 40px;margin-top: 100px;">
+		<div class="row">
+
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p style="font-size: 17px;font-family: centaur;">@ 2024, Bakery Nation. All Copy Rights Reserved. </p>
+				<h6 style="text-align: center;font-size: 18px;font-family: century;">Designed & Managed by <br>
+					Rise Food & Hospitality LLP</h6>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+
+		//start video-carousel.js
+
+		$(document).ready(function () {
+
+			var $root = $(".video-carousel-root"),
+				$slider = $root.find(".video-carousel-slider"),
+				$slides = $slider.children("div"),
+				slideWidth = $slides.width(),
+				$leftButton = $root.find(".video-carousel-button-left"),
+				$rightButton = $root.find(".video-carousel-button-right"),
+				$allSlideButtons = $root.find(".video-carousel-button-left, .video-carousel-button-right"),
+				$slideText = $root.find(".video-carousel-text"),
+				isAnimating = false,
+				transition = { "left": slideLeftTransition, "right": slideRightTransition },
+				slideTimer, myPlayer, video_counter = 0;
+
+			setClasses();
+			setText();
+
+			if (!supportsTransitions()) transition = { "left": slideLeftNoTransition, "right": slideRightNoTransition };
+			$allSlideButtons.click(slideButtonClick);
+			$leftButton.click(transition.left);
+			$rightButton.click(transition.right);
+			$leftSlide.click(transition.left);
+			$rightSlide.click(transition.right);
+			//slideTimer = setInterval(transition.right, 7000);
+
+			function slideButtonClick() {
+				clearInterval(slideTimer);
+				destroyVideoPlayer();
+			}
+			function slideLeftNoTransition() {
+				$slider.prepend($slides.last());
+				setClasses();
+				setText();
+			}
+			function slideRightNoTransition() {
+				$slider.append($slides.first());
+				setClasses();
+				setText();
+			}
+			function slideLeftTransition() {
+				if (isAnimating) return;
+				isAnimating = true;
+				$slideText.empty();
+
+				$slider.css("left", -slideWidth + "px");
+				$slider.prepend($slides.last());
+				setClasses();
+				$slider.animate({ left: "0px" }, 500, function () {
+					setText();
+					isAnimating = false;
+				});
+			}
+			function slideRightTransition() {
+				if (isAnimating) return;
+				isAnimating = true;
+				$slideText.empty();
+
+				$slider.append($slides.first());
+				setClasses();
+				$slider.prepend($slides.last().clone());
+				$slides = $slider.children("div");
+				$slider.animate({ left: -slideWidth + "px" }, 500, function () {
+					$slides.eq(0).remove();
+					setClasses();
+					$slider.css("left", "0px");
+					setText();
+					isAnimating = false;
+				});
+			}
+
+
+			function setClasses() {
+				$slides = $slider.children("div");
+				$slides.removeClass();
+				$slides.eq(0).addClass("level1");
+				$slides.eq(1).addClass("level2");
+				$slides.eq(2).addClass("level3");
+				$slides.eq(3).addClass("level2");
+				$slides.eq(4).addClass("level1");
+
+				var $slideButtonLeft = $slides.eq(1).find("buttonme"),
+					$slideButtonRight = $slides.eq(3).find("buttonme");
+
+				$slideButtonLeft.on("click", function () {
+					slideButtonClick();
+					transition.left();
+					console.log("Left");
+				});
+
+				$slideButtonRight.on("click", function () {
+					slideButtonClick();
+					transition.right();
+					console.log("Right");
+				});
+				$slides.off("click");
+				$slides.eq(2).on("click", function () {
+					var $this = $(this),
+						player_id = $this.attr("id");
+					clearInterval(slideTimer);
+					createVideoPlayer($this.attr("data-vimeo-id"));
+
+					dataLayer.push({ 'event': 'gaPushEvent', 'gaEventCategory': dataLayer[0].siteVersion + '_homepage', 'gaEventAction': 'click', 'gaEventLabel': player_id });
+
+					video_counter++;
+					var s = s_gi(omniture_rsid); s.linkTrackVars = 'eVar5,eVar7,events'; s.eVar5 = video_counter; s.eVar7 = player_id; s.linkTrackEvents = "event5"; s.events = 'event5'; s.tl(this, 'o', 'Home');
+				});
+				$slides.eq(1).on("click", function () {
+					slideButtonClick();
+					transition.left();
+					console.log("Left");
+				});
+				$slides.eq(3).on("click", function () {
+					slideButtonClick();
+					transition.right();
+					console.log("Right");
+				});
+			}
+			function setText() {
+				$slideText.html($slides.eq(2).find("p").html());
+			}
+
+			function createVideoPlayer(source) {
+				var $container = $slides.eq(2).find(".panel"),
+					playerWidth = $container.width(),
+					playerHeight = $container.height(),
+					$iframe = $("<iframe class='video' src='//player.vimeo.com/video/" + source + "?title=0&byline=0&portrait=0' width='300' height='168' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>");
+
+				$container.append($iframe);
+				myPlayer = $f($iframe[0]);
+				$slides.eq(2).off("click");
+				myPlayer.addEvent('ready', function () {
+					myPlayer.api("play");
+					myPlayer.addEvent('finish', destroyVideoPlayer);
+				});
+			}
+			function destroyVideoPlayer() {
+				if (myPlayer) {
+					var $slide = $slides.eq(2);
+					myPlayer.api("pause");
+					myPlayer = null;
+					$slide.find("iframe").remove();
+					$slides.eq(2).on("click", function () {
+						createVideoPlayer($(this).attr("data-vimeo-id"));
+					});
+				}
+			}
+
+			function supportsTransitions() {
+				var b = document.body || document.documentElement,
+					s = b.style,
+					p = 'transition';
+				if (typeof s[p] == 'string') { return true; }
+
+				// Tests for vendor specific prop
+				var v = ['Moz', 'webkit', 'Webkit', 'Khtml', 'O', 'ms'];
+				p = p.charAt(0).toUpperCase() + p.substr(1);
+				for (var i = 0; i < v.length; i++) {
+					if (typeof s[v[i] + p] == 'string') { return true; }
+				}
+				return false;
+			}
+		});
+
+		//start jquery-carousel3.js
+
+		(function ($) {
+
+			$.fn.carousel = function (options) {
+				return this.each(function () {
+					var $root = $(this),
+						$slides = $root.children().addClass("slide"),
+						$viewport = $("<div class='viewport'/>").appendTo($root),
+						$slideContainer = $("<div class='slides'/>").append($slides).appendTo($viewport),
+						$pager = $("<div class='pager'/>").appendTo($root),
+						$arrowPrevious = $("<div class='arrow arrow-previous'/>").appendTo($viewport),
+						$arrowNext = $("<div class='arrow arrow-next'/>").appendTo($viewport),
+						$pagerButtons,
+						defaults = { showPager: true },
+						settings = $.extend({}, defaults, options);
+
+					if (settings.showPager) buildPager();
+					showSlide(0);
+					$root.show();
+
+					$arrowPrevious.click(function () {
+						showSlide($slideContainer.find(".selected").index() - 1);
+					});
+					$arrowNext.click(function () {
+						showSlide($slideContainer.find(".selected").index() + 1);
+					});
+
+					function buildPager() {
+						for (var i = 0, len = $slides.length; i < len; i++) {
+							$pager.append("<div class='pager-button'></div>");
+						}
+						$pagerButtons = $root.find(".pager-button");
+						$pagerButtons.click(function () {
+							showSlide($(this).index())
+						});
+					}
+
+					function showSlide(index) {
+						if (index == -1) index = $slides.length - 1;
+						else if (index == $slides.length) index = 0;
+
+						$slides.removeClass("selected");
+						$slides.eq(index).addClass("selected");
+
+						if (settings.showPager) {
+							$pagerButtons.removeClass("selected");
+							$pagerButtons.eq(index).addClass("selected");
+						}
+					}
+				});
+			};
+		}(jQuery));
+
+		//start mobile-video-carousel-nopage.js
+		$(document).ready(function () {
+
+			var $videoMobileRoot = $(".videos-mobile-root"),
+				$slider = $videoMobileRoot.find(".slider"),
+				$slides = $videoMobileRoot.find(".slide"),
+				$players = $slides.find("iframe"),
+				$arrowLeft = $videoMobileRoot.find(".arrow-left"),
+				$arrowRight = $videoMobileRoot.find(".arrow-right"),
+				$allButtons = $videoMobileRoot.find(".arrow-left,.arrow-right"),
+				slideWidth = $slides.width(),
+				sliderTimer = setInterval(slideRight, 7000),
+				isAnimating, allPlayers = [], video_counter = 0;
+
+
+			//Click Events
+			$allButtons.click(function () { clearInterval(sliderTimer); stopPlayers(); });
+			$arrowLeft.click(slideLeft);
+			$arrowRight.click(slideRight);
+
+			function slideLeft() {
+				var currentIndex = parseInt($slider.css("left")) / -slideWidth;
+				if (currentIndex == 0) slideTo($slides.length - 1);
+				else slideTo(currentIndex - 1);
+			}
+			function slideRight() {
+				var currentIndex = parseInt($slider.css("left")) / -slideWidth;
+				if (currentIndex == $slides.length - 1) slideTo(0);
+				else slideTo(currentIndex + 1);
+			}
+			function slideTo(index) {
+				if (isAnimating) return;
+				isAnimating = true;
+				$slider.animate({ "left": -slideWidth * index }, 500, function () {
+					isAnimating = false;
+				});
+			}
+
+			$(window).resize(function () {
+				slideWidth = $slides.width();
+			});
+
+			$players.each(function () {
+				var currentPlayer = $f(this);
+				allPlayers.push(currentPlayer);
+				currentPlayer.addEvent('ready', playerReady);
+			});
+			function playerReady(player_id) {
+				var player = $f(player_id);
+				player.addEvent('ready', function () {
+					player.addEvent('play', function (e) {
+						clearInterval(sliderTimer);
+
+						//ga('send', 'event', 'v1_homepage', 'video', player_id);
+						dataLayer.push({ 'event': 'gaPushEvent', 'gaEventCategory': dataLayer[0].siteVersion + '_homepage', 'gaEventAction': 'click', 'gaEventLabel': player_id });
+
+						video_counter++;
+						var s = s_gi(omniture_rsid); s.linkTrackVars = 'eVar5,eVar7,events'; s.eVar5 = video_counter; s.eVar7 = player_id; s.linkTrackEvents = "event5"; s.events = 'event5'; s.tl(this, 'o', 'Home');
+
+					});
+				});
+			}
+			function stopPlayers() {
+				var i = 0, len = allPlayers.length;
+				for (i; i < len; i++) {
+					allPlayers[i].api("pause");
+				}
+			}
+
+		});
+	</script>
+
+</body>
+
+</html>

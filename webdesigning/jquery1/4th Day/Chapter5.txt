@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" 
+   src="jquery-1.3.2.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+    $(document).ready(function() {
+
+      $("#in").click(function(){
+         $(".target").fadeIn( 'slow', function(){ 
+             
+          });
+      });
+
+      $("#out").click(function(){
+         $(".target").fadeOut( 'slow', function(){ 
+            
+          });
+      });
+
+   });
+   </script>
+   </head>
+<body>
+ <button id="out"> Fade Out </button>
+   <button id="in"> Fade In</button>
+  <div class="target">
+      <img src="index.jpg"  />
+   </div>
+   </body>
+</html>

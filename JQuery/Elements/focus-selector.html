@@ -1,0 +1,27 @@
+<!-- The :focus selector selects the element that currently has focus<!DOCTYPE html> -->
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").focus();
+            $(":focus").css("background-color", "#eee081");
+        });
+
+    </script>
+</head>
+
+<body>
+    <form>
+        Name:<input type="text" name="name"><br />
+
+    </form>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("#uname").change(function(){
+    $(this).css("background-color","#D6D6FF");
+  });
+});
+</script>
+</head>
+<body>
+
+<div>
+Username:<input type="text" name="uname" id="uname">
+</div>
+
+</body>
+</html>
+

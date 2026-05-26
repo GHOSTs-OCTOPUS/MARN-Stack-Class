@@ -1,0 +1,27 @@
+<html>
+<head>
+<style type="text/css">
+.part .crow{clear:both}<!--The clear property specifies which sides of an element where other floating elements are not allowed.
+left-No floating elements allowed on the left side
+right-No floating elements allowed on the right side
+both-No floating elements allowed on either the left or the right side
+none-Default. Allows floating elements on both sides-->
+.part{display:block;
+float:left;
+border:solid red 1px;}
+</style>
+</head>
+
+<body>
+<div class="part">
+<div class="crow">
+<img src="pic.jpg" height="50" width="50 title="labor Day" alt="picture of labor day"/>
+<img src="img.jpg" height="50" width="50" title="labor Day" alt="picture of labor day"/>
+</div>
+<div class="crow">
+<img src="index1.jpg" height="50" width="50" title="labor Day" alt="picture of labor day"/>
+<img src="index2.jpg" height="50" width="50" title="labor Day" alt="picture of labor day"/>
+</div>
+</div>
+</body>
+</html>

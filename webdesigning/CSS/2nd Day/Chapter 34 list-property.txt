@@ -1,0 +1,19 @@
+<html>
+<head>
+<style type="text/css">
+ul{list-style-type:circle;}
+</style>
+</head>
+<body>
+ <ul>
+ <li>To comply with quality standards.</li>
+<li>To incorporate technological 
+advancements for efficient performance 
+in service delivery.</li>
+<li>To ensure continuous 
+improvement focused on students needs.</li>
+<li>To develop highly motivated and 
+skilled personnel.</li>
+</ul>
+</body>
+</html>

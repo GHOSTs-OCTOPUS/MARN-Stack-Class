@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: #000000;
+            margin-bottom: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quadratic Curve</h1>
+    <canvas id="myCanvas" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            a quadratic curve with HTML5 Canvas, we can use the quadraticCurveTo() method. 
+            Quadratic curves are defined by the context point, a control point, and an ending point.  
+            Quadratic curves can be styled with the lineWidth, strokeStyle, and lineCap properties.
+                1. Start point:moveTo(140,160)
+                2. Control point:quadraticCurveTo(350, -20, 500, 160) first two parameters are control point
+                3. End point:quadraticCurveTo(350, -20, 500, 160) last two parameters are end point
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas');
+        // Get the 2D drawing context
+        var context = canvas.getContext('2d');
+        // Begin a new path
+        context.beginPath();
+        // Move to the starting point
+        context.moveTo(140, 160);
+        // Define the control point and end point for the quadratic curve
+        context.quadraticCurveTo(350, -20, 500, 160);
+        // Style the curve
+        context.lineWidth = 8;
+        context.strokeStyle = 'black';
+        context.lineCap = 'round';
+        // Draw the curve
+        context.stroke();
+
+    </script>
+
+
+
+    <h1>Bezier Curve</h1>
+    <canvas id="myCanvas2" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            a cubic Bezier curve with HTML5 Canvas, we can use the bezierCurveTo() method. 
+            Cubic Bezier curves are defined by the context point, two control points, and an ending point.  
+            Cubic Bezier curves can be styled with the lineWidth, strokeStyle, and lineCap properties.
+                1. Start point:moveTo(140,160)
+                2. Control point 1:bezierCurveTo(200, -20, 400, -20, 500, 160) first two parameters are control point 1
+                3. Control point 2:bezierCurveTo(200, -20, 400, -20, 500, 160) second two parameters are control point 2
+                4. End point:bezierCurveTo(200, -20, 400, -20, 500, 160) last two parameters are end point
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas2');
+        var context = canvas.getContext('2d');
+        context.beginPath();
+        // Start point
+        context.moveTo(140, 160);
+        // Control points and end point
+        context.bezierCurveTo(200, -20, 400, -20, 500, 160);
+        // Style the curve
+        context.lineWidth = 8;
+        context.strokeStyle = 'black';
+        context.lineCap = 'round';
+        // Draw the curve
+        context.stroke();
+        // You can adjust the control points and end point to see how the curve changes
+        // For example, try changing the control points to (150, -50) and (450, -50) to see a different curve shape.
+        // context.bezierCurveTo(150, -50, 450, -50, 500, 160); 
+    </script>
+
+
+
+    <h1>Path & Line Joins(miter, round, or bevel)</h1>
+    <canvas id="myCanvas3" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To create a path with HTML5 Canvas, we can connect multiple subpaths.  
+            The ending point of each new subpath becomes the new context point.  
+            We can use the lineTo(), arcTo(), quadraticCurveTo(), and bezierCurveTo() 
+            methods to construct each subpath which makes up our path.
+
+            To set the line join style of an HTML5 Canvas path, 
+            we can set the lineJoin context property.  
+            Paths can have one of three line joins: miter, round, or bevel.
+            context.lineJoin = 'round';  // You can change this to 'miter' or 'bevel' to see the difference
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas3');
+        var context = canvas.getContext('2d');
+        context.lineWidth = 25;
+        context.beginPath();
+        context.moveTo(99, 150);
+        context.lineTo(149, 50);
+        context.lineTo(199, 150);
+        context.lineJoin = 'miter';
+        context.stroke();
+
+
+        context.beginPath();
+        context.moveTo(239, 150);
+        context.lineTo(289, 50);
+        context.lineTo(339, 150);
+        context.lineJoin = 'round';
+        context.stroke();
+
+
+        context.beginPath();
+        context.moveTo(379, 150);
+        context.lineTo(429, 50);
+        context.lineTo(479, 150);
+        context.lineJoin = 'bevel';
+        context.stroke();
+
+    </script>
+
+
+    <h1>Rectangle </h1>
+    <canvas id="myCanvas4" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To draw a rectangle with HTML5 Canvas, we can use the rect() method.  
+            The rect() method takes four parameters: the x and y coordinates of the upper-left corner of the rectangle, 
+            and the width and height of the rectangle.  
+            We can style the rectangle with the lineWidth, strokeStyle, and fillStyle properties.
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas4');
+        var context = canvas.getContext('2d');
+        // Define the rectangle parameters
+        var x = 50; // x-coordinate of upper-left corner
+        var y = 50; // y-coordinate of upper-left corner
+        var width = 200; // width of the rectangle
+        var height = 100; // height of the rectangle
+        // Style the rectangle
+        context.lineWidth = 5;
+        context.strokeStyle = 'black';
+        context.fillStyle = 'lightgray';
+        // Draw the rectangle
+        context.rect(x, y, width, height);
+        context.fill(); // Fill the rectangle with color
+        context.stroke(); // Draw the outline of the rectangle
+    </script>
+
+    <h1>Circle</h1>
+    <canvas id="myCanvas5" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+           To draw a circle with HTML5 Canvas, we can create a full arc using the arc() method 
+           by defining the starting angle as 0 and the ending angle as 2 * PI.
+                context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+                We can style the circle with the lineWidth, strokeStyle, and fillStyle properties.
+
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas5');
+        // Get the 2D drawing context
+        var context = canvas.getContext('2d');
+        // Define the center and radius of the circle
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        // Define the radius of the circle
+        var radius = 70;
+        // Draw the circle
+        context.beginPath();
+        // Create a full arc to form a circle
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+        // Fill the circle with color
+        context.fillStyle = 'green';
+        // Stroke the circle with a border        
+        context.lineWidth = 5;
+        // Set the stroke color
+        context.strokeStyle = 'black';
+        // Fill the circle and then stroke it
+        context.fill();
+        // Stroke the circle's outline
+        context.stroke();
+    </script>
+
+    <h1>Semicircle</h1>
+    <canvas id="myCanvas6" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To draw a semicircle with HTML5 Canvas, we can use the arc() method by defining the starting angle as 0 and the ending angle as PI.
+                context.arc(centerX, centerY, radius, 0, Math.PI);
+                We can style the semicircle with the lineWidth, strokeStyle, and fillStyle properties.
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas6');
+        var context = canvas.getContext('2d');
+        // Define the center and radius of the semicircle
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 70;
+        // Draw the semicircle
+        context.beginPath();
+        // Create an arc for a semicircle (0 to PI)
+        context.arc(centerX, centerY, radius, 0, Math.PI);
+        // Fill the semicircle with color
+        context.fillStyle = 'blue';
+        // Stroke the semicircle with a border        
+        context.lineWidth = 5;
+        // Set the stroke color
+        context.strokeStyle = 'black';
+        // Fill the semicircle and then stroke it
+        context.fill();
+        // Stroke the semicircle's outline
+        context.stroke();
+    </script>
+
+    <h1>Text Font, Size, and Style</h1>
+    <canvas id="myCanvas8" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To set the font, size, and style of text in HTML5 Canvas, we can use the font property of the canvas context.  
+            The font property accepts a string that specifies the font style, size, and family.  
+            For example: context.font = "italic bold 20px Arial"; 
+            sets the font to italic, bold, 20 pixels in size, and uses the Arial font family.
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas8');
+        var context = canvas.getContext('2d');
+        // Set the font style, size, and family
+        context.font = "italic bold 30px Arial";
+        // Set the fill color for the text
+        context.fillStyle = 'purple';
+        // Draw the text on the canvas at coordinates (50, 100)
+        context.fillText("Hello, Canvas!", 50, 100);
+        // You can experiment with different font styles, sizes, and families by changing the value of context.font
+        // For example, try changing it to "normal 24px Times New Roman" to see a different font style and size.
+    </script>
+
+    <h1>Gradients - LinearGradient </h1>
+    <canvas id="myCanvas9" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To create a linear gradient in HTML5 Canvas, we can use the createLinearGradient() method of the canvas context.  
+            The createLinearGradient() method takes four parameters: the x and y coordinates of the start point, and the x and y coordinates of the end point.  
+            After creating the gradient, we can add color stops to it using the addColorStop() method, which takes a position (between 0 and 1) and a color value.
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas9');
+        var context = canvas.getContext('2d');
+        // Create a linear gradient from left to right
+        var gradient = context.createLinearGradient(0, 0, canvas.width, 0);
+        // Add color stops to the gradient
+        gradient.addColorStop(0, 'red');    // Start with red at position 0
+        gradient.addColorStop(0.5, 'yellow'); // Transition to yellow at position 0.5
+        gradient.addColorStop(1, 'green');   // End with green at position 1
+        // Set the fill style to the created gradient
+        context.fillStyle = gradient;
+        // Fill a rectangle with the linear gradient
+        context.fillRect(50, 50, 500, 100);
+    </script>
+
+    <h1>Gradients - RadialGradient </h1>
+    <canvas id="myCanvas10" width="600" height="200" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To create a radial gradient in HTML5 Canvas, we can use the createRadialGradient() method of the canvas context.  
+            The createRadialGradient() method takes six parameters: the x and y coordinates of the inner circle's center, the radius of the inner circle, 
+            the x and y coordinates of the outer circle's center, and the radius of the outer circle.  
+            After creating the gradient, we can add color stops to it using the addColorStop() method, which takes a position (between 0 and 1) and a color value.
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas10');
+        var context = canvas.getContext('2d');
+        // Create a radial gradient
+        var gradient = context.createRadialGradient(300, 100, 20, 300, 100, 60); // Inner circle at (300, 100) with radius 20, outer circle at (300, 100) with radius 60
+        // Add color stops to the gradient
+        gradient.addColorStop(0, 'blue');   // Start with blue at position 0 (inner circle)
+        gradient.addColorStop(1, 'yellow');  // End with yellow at position 1 (outer circle)
+        // Set the fill style to the created radial gradient
+        context.fillStyle = gradient;
+        // Fill a rectangle with the radial gradient
+        context.fillRect(50, 50, 500, 100);
+
+
+    </script>
+
+    <h1>Image</h1>
+    <canvas id="myCanvas7" width="600" height="450" style="border:2px solid red"></canvas>
+    <script>
+        /*
+            To draw an image with HTML5 Canvas, we can use the drawImage() method.  
+            The drawImage() method takes an image element and the x and y coordinates where the image should be drawn on the canvas.  
+            We can also specify the width and height to scale the image.
+
+        */
+
+        // Get the canvas element and its drawing context
+        var canvas = document.getElementById('myCanvas7');
+        var context = canvas.getContext('2d');
+        // Create a new image object
+        var img = new Image();
+        // Set the source of the image
+        img.src = 'https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png'; // You can replace this URL with any image you want to load
+        // Draw the image on the canvas once it has loaded
+        img.onload = function () {
+            // Draw the image at coordinates (50, 50) with its original size
+            context.drawImage(img, 50, 50);
+            // Optionally, you can scale the image by specifying width and height
+            // context.drawImage(img, 50, 50, 100, 100); // This will draw the image scaled to 100x100 pixels
+        };
+    </script>
+
+</body>
+
+</html>

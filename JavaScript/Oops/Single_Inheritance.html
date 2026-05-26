@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Inheritance</title>
+    <script>
+        /*  Assignment: - Single Inheritance Javascript 
+         
+                Q1.Create two ES6 classes to demonstrate single inheritance Problem Statement
+                1. Parent class: Teacher 
+                - Contains a method named teach() that prints a teaching - related message to the console. 
+                2. Child class: MathTeacher 
+                - Inherits from Teacher using the extends keyword.
+                - Adds its own method named explainMath() that prints a math - specific teaching message to the console. 
+                3. Create an object of MathTeacher and call both: 
+                - The inherited method teach() 
+                - The child class method explainMath() 
+         
+            Expected Console Output:  
+                Teacher is teaching students 
+                Math Teacher is explaining Algebra
+        */
+
+        //single
+        class Teacher {
+
+            teach() {
+                console.log("Teacher is teaching students")
+            }
+        }
+        class MathTeacher extends Teacher {
+
+            explainMath() {
+                console.log("Math Teacher is explaining Algebra")
+            }
+        }
+        const object = new MathTeacher()
+        object.teach()
+        object.explainMath()
+
+
+        /*
+                Q2.Create two classes to demonstrate Single Inheritance with Constructor:
+                1. Parent Class: Vehicle 
+                - Should contain a constructor that accepts brand and model of the vehicle. 
+                - Should have two methods: 
+                    ▪ start() → prints that the vehicle is starting. 
+                    ▪ stop() → prints that the vehicle is stopping. 
+                2. Child Class: Car 
+                - Should inherit from Vehicle using the extends keyword.
+                    o Should have its own constructor that accepts brand, model, and fuelType.
+                    o Inside the constructor, use super(brand, model) to call the parent class constructor. 
+                    o Should have a method displayDetails() that prints all the details: brand, model, and fuel type. 
+                3. Create an object of Car and call: 
+                    o The parent methods(start(), stop()) 
+                    o The child method(displayDetails()) 
+         
+            Expected Console Output: 
+                Toyota Innova is starting... 
+                Car Details: Toyota Innova, Fuel: Diesel 
+                Toyota Innova is stopping...
+        */
+
+        class Vehicle {
+
+            constructor(brand, model) {
+                this.brand = brand
+                this.model = model
+            }
+
+            start() {
+                console.log(`${this.brand} ${this.model} is starting...`)
+            }
+            stop() {
+                console.log(`${this.brand} ${this.model} is stopping...`)
+            }
+        }
+        class Car extends Vehicle {
+
+            constructor(brand, model, fuelType) {
+                super(brand, model)
+                this.fuelType = fuelType
+            }
+
+            displayDetails() {
+                console.log(`Car Details: ${this.brand} ${this.model}, Fuel: ${this.fuelType}`)
+            }
+        }
+        const car = new Car("Toyota", "Innova", "Diesel")
+        car.start()
+        car.displayDetails()
+        car.stop()
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

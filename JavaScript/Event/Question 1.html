@@ -1,0 +1,49 @@
+<!--complete-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript Question 1</title>
+    <script>
+
+        function add() {
+            f1.t3.value = eval(f1.t1.value) + eval(f1.t2.value)
+        }
+
+        function sub() {
+            f1.t3.value = eval(f1.t1.value) - eval(f1.t2.value)
+        }
+
+        function mul() {
+            f1.t3.value = eval(f1.t1.value) * eval(f1.t2.value)
+        }
+
+        function div() {
+            f1.t3.value = eval(f1.t1.value) / eval(f1.t2.value)
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="f1">
+        <label>First Number:</label>
+        <input type="text" name="t1" placeholder="Enter First Number:" />
+
+        <label>Second Number:</label>
+        <input type="text" name="t2" placeholder="Enter Second Number:" /><br>
+        <br>
+        <input type="button" value="ADD" onclick="add()" />
+        <input type="button" value="SUB" onclick="sub()" />
+        <input type="button" value="MUL" onclick="mul()" />
+        <input type="button" value="DIV" onclick="div()" />
+        <br><br>
+        <label>Result:</label>
+        <input type="text" name="t3" placeholder="Result is =" />
+
+    </form>
+</body>
+
+</html>

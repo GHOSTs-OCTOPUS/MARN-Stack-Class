@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":reset").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+<form>
+<input type="reset" name="b1" value="Cancle">
+</select>
+</form> 
+</body>
+</html>

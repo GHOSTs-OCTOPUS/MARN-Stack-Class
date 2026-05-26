@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>JavaScript String indexOf() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+var str1 = new String( "Welcome to cncwebworld" );
+var index = str1.indexOf( "to" );
+document.write("indexOf found String :" + index ); 
+</script>
+</body>
+</html>

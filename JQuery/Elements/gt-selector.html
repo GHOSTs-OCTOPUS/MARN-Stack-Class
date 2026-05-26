@@ -1,0 +1,32 @@
+<!-- The greater_then :gt() selector selects elements with an index number higher than a specified number.The index numbers start at 0. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p:gt(1)").css("color", "blue");
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+    <div>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </div>
+
+
+</body>
+
+</html>

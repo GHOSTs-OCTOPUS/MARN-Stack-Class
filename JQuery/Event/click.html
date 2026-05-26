@@ -1,0 +1,25 @@
+<!-- The click() method attaches an event handler function to an HTML element.The function is executed when the user clicks
+on the HTML element. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>welcome to cncwebworld</p>
+    <p>welcome to cnc</p>
+</body>
+
+</html>

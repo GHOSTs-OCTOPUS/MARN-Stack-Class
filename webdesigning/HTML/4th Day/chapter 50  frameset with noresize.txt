@@ -1,0 +1,11 @@
+<html>
+
+<frameset rows="50%,50%">
+
+  <frame noresize="noresize" scrolling="yes" src="frame_a.htm" />
+  <frame noresize="noresize" src="frame_b.htm" />
+
+</frameset>
+
+</html>
+

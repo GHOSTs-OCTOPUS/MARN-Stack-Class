@@ -1,0 +1,15 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function myfunction() {
+var str = prompt("Hi ! My name is smith and what is your name ", "")
+alert ( "Nice to meet you  " + str + "!")
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="myfunction()" value="Say Hello!">
+</body>
+</html>
+

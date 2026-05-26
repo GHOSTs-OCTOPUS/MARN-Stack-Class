@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+
+    	<title>Title Name will go here</title>
+
+		<style>
+
+			#box_size
+			{
+				width:450px;
+				border: 8px solid red;
+				height: 45px;
+			}
+			
+			#box_inner
+			{
+				box-sizing: border-box;
+				-o-box-sizing: border-box;
+				-icab-box-sizing: border-box;
+				-khtml-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				width:50%;
+				height: 45px;
+				text-align: center;
+				border: 5px solid #6AAFCF;
+				padding: 3px;
+				float:left;
+			}
+			
+		</style>
+	
+    </head>
+    <body>
+
+		<div id="box_size">
+			<div id="box_inner">This div contains the left half.</div>
+			<div id="box_inner">This div contains the right half.</div>				
+		</div>
+		
+    </body>
+    
+</html>
+
+

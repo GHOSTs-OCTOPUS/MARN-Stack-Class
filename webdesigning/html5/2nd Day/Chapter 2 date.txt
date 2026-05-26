@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="index.php">
+  Birthday: <input type="date" name="bday">
+  <input type="submit">
+</form>
+
+</body>
+</html>

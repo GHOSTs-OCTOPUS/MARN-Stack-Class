@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var str="Helloworld";
+if(str=="Helloworld")
+{
+document.write("Welcome");
+}
+
+
+
+</script>
+</body>
+</html>

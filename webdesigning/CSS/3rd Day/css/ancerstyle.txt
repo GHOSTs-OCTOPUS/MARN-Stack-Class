@@ -1,0 +1,14 @@
+<html>
+<head>
+<style type="text/css">
+
+a:link{color:green;text-decoration:none}
+a:visited{color:red;text-decoration:none}
+a:hover{color:blue;text-decoration:none}
+</style>
+<body>
+<a href="http://www.yahoo.com">Yahoo</a>
+
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<html>
+<head>
+<style type="text/css">
+body
+{
+ background-color:black;
+ margin:5px;
+ font-family:arial;
+ 
+}
+div#d1
+{
+width:800px;
+border:1px solid white;
+background-color:powderblue;
+}
+</style>
+</head>
+<body>
+<div id="d1">
+<p>
+About Us
+
+<br/>VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power <br/>pool for all levels of India´s fastest growing industry.
+
+<br/>MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international<br/> standards to help our students build world class careers.
+
+<br/>QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+</p>
+<pre>
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  </pre>
+  </div>
+</body>
+</html>

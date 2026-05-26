@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript">
+function myfun()
+{
+document.write("Javascript");
+}
+
+</script>
+</head>
+<body>
+<script>
+myfun()
+</script>
+</body>
+</html>

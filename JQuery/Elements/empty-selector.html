@@ -1,0 +1,39 @@
+<!-- The :empty selector selects empty elements. -->
+
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(":empty").css("background-color", "#eee081");
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>

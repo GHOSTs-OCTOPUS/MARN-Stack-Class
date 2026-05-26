@@ -1,0 +1,22 @@
+<html>
+<body>
+<script type="text/javascript">
+var d = 2;
+switch (d)
+{
+case 0:
+  document.write("case 0");
+  break;
+ case 1:
+ document.write("case 1");
+  break;
+  case 2:
+  document.write("case 2");
+  break;
+  default :
+  document.write("default case");
+  
+}
+</script>
+</body>
+</html>

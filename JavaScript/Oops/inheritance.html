@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //single 
+
+        class A {
+
+            x = 100
+
+            get() {
+                console.log("this is get from class A")
+
+            }
+        }
+        class B extends A {
+
+
+            put() {
+                console.log("this is put from class B")
+                console.log(this.x)
+
+            }
+        }
+
+        obj = new B()
+        obj.get()
+        obj.put()
+
+
+
+        //const 
+
+
+
+        class Aa {
+
+            x = 100
+
+            constructor(bb) {
+                console.log("con Aa call", bb)
+            }
+
+
+            get() {
+                console.log("this is get from class Aa")
+
+            }
+        }
+        class Bb extends Aa {
+
+            constructor(aa, bb) {
+                console.log("con Bb call", aa)
+
+                super(bb)
+                //this.name=aa
+            }
+
+
+
+            put() {
+                console.log("this is put from class Bb")
+                // console.log(this.name)
+
+            }
+        }
+
+        obj = new Bb("apple", "mango")
+        obj.get()
+        obj.put()
+
+
+
+
+        //multilevel 
+
+
+        class Aaa {
+
+            x = 100
+
+            get() {
+                console.log("this is get from class Aaa")
+
+            }
+        }
+        class Bbb extends Aaa {
+
+
+            put() {
+                console.log("this is put from class Bbb")
+                console.log(this.x)
+
+            }
+        }
+
+        class C extends Bbb {
+
+            display() {
+                console.log("this is display from class C")
+            }
+        }
+
+        obj = new C()
+        obj.get()
+        obj.put()
+        obj.display()
+
+
+
+        //hie 
+
+
+        class Aaaa {
+
+            x = 100
+
+            get() {
+                console.log("this is get from class Aaaa")
+
+            }
+        }
+        class Bbbb extends Aaaa {
+
+
+            put() {
+                console.log("this is put from class Bbbb")
+                console.log(this.x)
+
+            }
+        }
+
+        class Cc extends Aaaa {
+
+            display() {
+                console.log("this is display from class Cc")
+            }
+        }
+
+        obj = new Bbbb()
+        obj.get()
+        obj.put()
+
+
+        obj2 = new Cc()
+        obj2.get()
+        obj2.display()
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

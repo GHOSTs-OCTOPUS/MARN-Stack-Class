@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /////////////////////////////////////////////////////////////////////
+
+        /*
+        1)find all odd no beth 1-50 , also their count 
+        2)find sum of given interval 1+2+3+...+10=55 
+        3)find given no is prime or not prime n=7
+        
+        */
+        //3)find given no is prime or not prime n=7
+        let n = 7;
+        let i = 2;
+        let isPrime = true;
+
+        while (i < n) {
+            if (n % i === 0) {
+                isPrime = false;
+                break;
+            }
+            i++;
+        }
+
+        if (isPrime) {
+            console.log(n + " is Prime Number");
+            document.write(n + "is prime Number")
+        } else {
+            console.log(n + " is Not Prime Number");
+            document.write(n + " is Not Prime Number");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

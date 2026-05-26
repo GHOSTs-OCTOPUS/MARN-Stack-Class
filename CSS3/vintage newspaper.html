@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Newspaper Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #eaeaea;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .newspaper {
+            width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Header */
+        .top-header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            margin-bottom: 10px;
+        }
+
+        .top-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        /* Main Headline */
+        .main-headline {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .main-headline h2 {
+            font-size: 48px;
+            margin: 10px 0;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* Featured Image */
+        .featured img {
+            width: 100%;
+            height: 450px;
+            margin: 15px 0;
+        }
+
+        /* Content Layout */
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+        }
+
+        .left img,
+        .right img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 5px;
+        }
+
+        /* Bottom Section */
+        .bottom {
+            border-top: 2px solid #000;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        .bottom-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .bottom-content img {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newspaper">
+
+        <!-- Header -->
+        <header class="top-header">
+            <h1>The Newspaper Template</h1>
+        </header>
+
+        <!-- Main Headline -->
+        <section class="main-headline">
+            <h2>HEADER GOES HERE</h2>
+            <p class="subtitle">DESCRIPTIVE SUBTITLE GOES HERE. MAKE IT GO ACROSS.</p>
+        </section>
+
+        <!-- Featured Image -->
+        <section class="featured">
+            <img src="https://img.freepik.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80" alt="main image">
+        </section>
+
+        <!-- Content Section -->
+        <section class="content">
+
+            <!-- Left Column -->
+            <div class="left">
+                <h3>Title related to pic</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="small image">
+
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right">
+                <h3>Another longer title with pic</h3>
+
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="right image">
+
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                </p>
+
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates quis non suscipit sint itaque ipsa modi! Aliquid excepturi quo cum, earum alias dicta nesciunt nobis, perspiciatis enim dolore minus.</p>
+            </div>
+
+        </section>
+
+        <!-- Bottom Highlight -->
+        <section class="bottom">
+            <div class="bottom-content">
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="object">
+                <div>
+                    <h3>AMAZING TEXT</h3>
+                    <p>goes here...</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nobis eius quod consequatur voluptatem voluptas illo ipsum totam vero fuga?</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Minimal JS (optional enhancements)
+
+        // Example: dynamic date
+        const header = document.querySelector(".top-header h1");
+        const date = new Date().toDateString();
+
+        const dateElement = document.createElement("p");
+        dateElement.style.fontSize = "12px";
+        dateElement.innerText = date;
+
+        header.appendChild(dateElement);
+    </script>
+</body>
+
+</html>

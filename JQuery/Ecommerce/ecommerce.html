@@ -1,0 +1,487 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="ecommerce.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,300;1,500&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <main>
+
+    <div id="page1">
+      <h1>Fashion Brands</h1>
+    </div>
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  style="width: 110px; text-align: center; margin-left:60px; border-bottom:3px solid green">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ecommerce_men.html" style="width: 110px; text-align: center;">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="width: 110px; text-align: center;">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="width: 110px; text-align: center;">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="width: 110px; text-align: center;">Beauty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="width: 150px; text-align: center;">Home and Kitchen</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="margin:20px;">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carasoul -->
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade"
+        style="width:90%;height:550px; margin-left:5%;">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" style="position:relative; background-color:green;">
+            <h1
+              style="position:absolute;top:30%;left:20%;color:red;font-size:44px; font-family: Arial, Helvetica, sans-serif;">
+              70%-50% Off<br>On Womens Wear</h1>
+            <a href="#"><img width="100%" height="100%" src="eco_images/home_women_wear.jpg" class="d-block w-100"
+                alt="..."></a>
+            <div class="carousel-caption">
+              <a href="#" style="color:white;text-decoration:none">
+                <h1>Womens Wear</h1>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#"><img width="100%" height="100%"
+                src="https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1x, https://images.pexels.com/photos/716411/pexels-photo-716411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 2x"
+                class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption">
+              <a href="#" style="color:white;text-decoration:none;">
+                <h1>Mens Wear</h1>
+              </a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#"> <img width="100%" height="100%"
+                src="https://img.freepik.com/free-photo/little-fashionista-colored-background-mom-s-shoes_169016-3424.jpg?w=996&t=st=1691494405~exp=1691495005~hmac=40cb283829a9c399cbeb1111c1ffdbc6e0d2760e9349ef2bc2f9075734dcda7e"
+                class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption">
+              <a href="#" style="color:white;text-decoration:none;">
+                <h1>Kids Wear</h1>
+              </a>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </header>
+
+    <!-- lower header -->
+    <div class="lower_header">
+      <div class="left_lower_header">
+        <h2>Sunglasses</h2>
+      </div>
+      <div class="middle_lower_header">
+        <h2>Headset</h2>
+      </div>
+      <div class="right_lower_header">
+        <h2>Footwears</h2>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+      <div class="box1">
+        <div class="icon" style="font-size:50px; text-align:center;margin-top:20px; "><i class="fa-solid fa-gift"
+            style="color: #FB2576;margin-bottom:20px;"></i>
+          <h5>Items in stock</h5>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra consequat urna ut commodo.</h6>
+        </div>
+      </div>
+
+      <div class="box2">
+        <div class="icon" style="font-size:50px;text-align:center;margin-top:20px;"><i
+            class="fa-regular fa-hourglass-half" style="color: #FB2576;margin-bottom:20px;"></i>
+          <h5>Same day handling</h5>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra consequat urna ut commodo.</h6>
+        </div>
+      </div>
+
+      <div class="box3">
+        <div class="icon" style="font-size:50px;text-align:center;margin-top:20px;"><i class="fa-solid fa-truck"
+            style="color: #FB2576;margin-bottom:20px;"></i>
+          <h5>Fast shipping</h5>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra consequat urna ut commodo.</h6>
+        </div>
+      </div>
+
+      <div class="box4">
+        <div class="icon" style="font-size:50px;text-align:center;margin-top:20px;"><i class="fa-brands fa-cc-visa"
+            style="color: #FB2576;margin-bottom:20px;"></i>
+          <h5>Payment methods</h5>
+          <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra consequat urna ut commodo.</h6>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- popular-products -->
+    <section class="popular-products">
+      <div id="top">
+        <h1 id="top-h">POPULAR</h1>
+      </div>
+
+      <div id="center">
+        <div class="sec_title">
+          <h1 style="color: #F1C376;"><i class="fa-solid fa-fire" style="color: #f20707;"></i> Popular Products</h1>
+        </div>
+
+        <div class="sec_box">
+          <div class="sec_box_product" id="box1">
+            <a href="ecommerce_men.html">
+              <div class="product_img" style="width:100%;height:80%;position:relative; ">
+                <img width="85%" height="100%" src="eco_images/watch.png">
+                <div class="review"
+                  style="position:absolute;bottom:0 ;display:flex; width:100%;background: rgba(0,0,0,0.4);height:30px">
+                  <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                      style="color: #fdfd00;"></i>
+                    <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                    <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                    <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                    <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                  </div>
+                  <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                      style="color: white;"></i></div>
+                  <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                      style="color:  #FB2576;"></i></div>
+                </div>
+              </div>
+
+              <div class="card_text">
+                <h6 style="color:#F1C376">U.S. Polo Assn.</h6>
+                <h5>Slip-On Loafer with Logo</h5>
+                <div class="offers">
+                  <h5><b>$35</b>
+                    <h5
+                      style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                      45$</h5>(10%off)
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="sec_box_product" id="box2">
+            <div class="product_img" style="width:100%;height:80%;position:relative;">
+              <img width="100%" height="100%"
+                src="https://assets.ajio.com/medias/sys_master/root/20230621/LzLq/6492de3dd55b7d0c639a6795/-473Wx593H-464342145-blue-MODEL.jpg">
+              <div class="review"
+                style="display:flex; width:100%;background: rgba(0,0,0,0.4);position:absolute;bottom:0px;height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: white;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">Stylum</h6>
+              <h5>Floral Print A-line Kurta</h5>
+              <div class="offers">
+                <h5><b>$45</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    55$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec_box_product" id="box3">
+            <div class="product_img" style="width:100%;height:80%;position:relative;">
+              <img width="100%" height="100%"
+                src="https://assets.ajio.com/medias/sys_master/root/20230516/m2bu/6462a7b142f9e729d789f50e/-473Wx593H-466155833-orange-MODEL.jpg">
+              <div class="review"
+                style="display:flex; width:100%;background: rgba(0,0,0,0.4);position:absolute;bottom:0px;height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: white;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">Tior</h6>
+              <h5>Striped Fit with Bow Accent</h5>
+              <div class="offers">
+                <h5><b>$15</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    25$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec_box_product" id="box4">
+            <div class="product_img" style="width:100%;height:80%;position:relative;">
+              <img width="100%" height="100%"
+                src="https://assets.ajio.com/medias/sys_master/root/20211222/nIdX/61c23fb3aeb2690110169ecd/-473Wx593H-463532971-green-MODEL.jpg">
+              <div class="review"
+                style="display:flex; width:100%;background: rgba(0,0,0,0.4);position:absolute;bottom:0px;height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: white;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">999store</h6>
+              <h5>Set of 3 Elephant Print Wall Art Paintings</h5>
+              <div class="offers">
+                <h5><b>$35</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    45$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom">
+        <h1 id="bottom-h">POPULAR</h1>
+      </div>
+    </section>
+
+    <!-- beauty -->
+    <section class="beauty-products">
+      <div class="beauty">
+        <div class="beauty-img">
+          <div class="beauty-text">
+            <h1>Beauty Products</h1>
+            <br>
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatum. Ad totam aliquid aliquam iste,
+              tempore aut vel, exercitationem temporibus labore consectetur, repellendus nobis? Et dolorem a quae ab
+              illum?</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--new arrival -->
+    <h1 style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 50px;">New Arrival</h1>
+    <section class="new-arrival">
+      
+      <div class="left-new-arrival">
+        <div class="varities">
+          <div class="types">
+            <div class="types-list">
+              <ul>
+                <li id="men-varity"><button id="btn-men">Mens</button></li>
+                <li id="women-varity"><button id="btn-women">Womens</button></li>
+                <li id="kid-varity"><button id="btn-kid">Kids</button></li>
+                <li id="mobile-varity"><button id="btn-mobile">Mobile</button></li>
+                <li id="watch-varity"><button id="btn-watch">Watch</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-new-arrival">
+        <!--media 600px -->
+        <div class="icons">
+          <div class="icon1"><i class="fa-solid fa-person" style="color: #0B666A; font-size: 30px;"></i></div>
+          <div class="icon1"><i class="fa-solid fa-person-dress" style="color: #0B666A;font-size: 30px;"></i></div>
+          <div class="icon1"><i class="fa-solid fa-child" style="color: #0B666A;font-size: 30px"></i></div>
+          <div class="icon1"><i class="fa-solid fa-mobile-screen-button" style="color: #0B666A;font-size: 30px"></i>
+          </div>
+          <div class="icon1"><i class="fa-solid fa-clock" style="color: #0B666A;font-size: 30px"></i></div>
+        </div>
+
+        <div id="new-arrival-products-men">
+          
+          <div class="product_men-card">
+            <div class="product_img" style="width:100%;height:80%;position:relative; ">
+              <img width="100%" height="100%"
+                src="https://assets.ajio.com/medias/sys_master/root/20230726/SsUV/64c13427a9b42d15c97074dc/-473Wx593H-469190539-grey-MODEL.jpg">
+              <div class="review"
+                style="position:absolute;bottom:0 ;display:flex; width:100%;background: rgba(0,0,0,0.4);height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: #1a000b;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">U.S. Polo Assn.</h6>
+              <h5>Slip-On Loafer with Logo</h5>
+              <div class="offers">
+                <h5><b>$35</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    45$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="product_men-card">
+            <div class="product_img" style="width:100%;height:80%;position:relative; ">
+              <img width="100%" height="100%" src="https://m.media-amazon.com/images/I/51QCXW-lhxL._UY575_.jpg">
+              <div class="review"
+                style="position:absolute;bottom:0 ;display:flex; width:100%;background: rgba(0,0,0,0.4);height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: #1a000b;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">Accessories</h6>
+              <h5>okos Men's Jewellery 3D Cuboid </h5>
+              <div class="offers">
+                <h5><b>$35</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    45$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="product_men-card">
+            <div class="product_img" style="width:100%;height:80%;position:relative; ">
+              <img width="100%" height="100%"
+                src="https://images.pexels.com/photos/4925828/pexels-photo-4925828.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+              <div class="review"
+                style="position:absolute;bottom:0 ;display:flex; width:100%;background: rgba(0,0,0,0.4);height:30px">
+                <div class="star" style="font-size:18px;margin-right:50px;width:180px;"><i class="fa-solid fa-star"
+                    style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-solid fa-star" style="color: #fdfd00;"></i>
+                  <i class="fa-regular fa-star-half-stroke" style="color: #fdfd00;"></i>
+                </div>
+                <div class="add-to-wishlist" style="font-size:28px;margin-right:10px"><i class="fa-regular fa-heart"
+                    style="color: #1a000b;"></i></div>
+                <div class="add-to-cart" style="font-size:28px;margin-right:10px"><i class="fa-solid fa-cart-shopping"
+                    style="color:  #FB2576;"></i></div>
+              </div>
+            </div>
+            <div class="card_text">
+              <h6 style="color:#F1C376">Jacket</h6>
+              <h5>Light weigth jacket</h5>
+              <div class="offers">
+                <h5><b>$35</b>
+                  <h5
+                    style="  text-decoration-line: line-through;font-size:16px;color:grey;margin-top:4px;margin-left:5px;margin-right:5px;">
+                    45$</h5>(10%off)
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="new-arrival-products-women"></div>
+        <div id="new-arrival-products-kid"></div>
+        <div id="new-arrival-products-mobile"></div>
+        <div id="new-arrival-products-watch"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="ecommerce.js"></script>
+</body>
+
+</html>

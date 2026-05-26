@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>JavaScript getDay Method</title>
+</head>
+<body>
+<script type="text/javascript">
+   var dt = new Date();
+   document.write("getFullYear() : " + dt.getFullYear() ); 
+</script>
+</body>
+</html>

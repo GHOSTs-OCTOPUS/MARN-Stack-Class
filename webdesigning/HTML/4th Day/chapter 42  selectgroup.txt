@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<form action="">
+<select name="cars" size="5" multiple>
+<optgroup label="Car"> 
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+<optgroup>
+<optgroup label="Bike"> 
+<option >Activa</option>
+<option >Skooty</option>
+
+<optgroup>
+</select>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body
+{
+background:url(a.png);
+background-size:60px 60px;
+background-repeat:no-repeat;
+padding-top:40px;
+}
+</style>
+</head>
+<body>
+<p>
+CSS is an acronym for Cascading Style Sheets, 
+a web-based markup language used to describe the
+ look and formatting of a website to the browser.
+
+</p>
+
+<p>Original image: <img src="a.png" alt="Flowers" width="500" height="162"></p>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- The change event occurs when the value of an element is changed (only works on form fields) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#uname").change(function () {
+                $(this).css("background-color", "#D6D6FF");
+            });
+            $("#pass").change(function(){
+                $(this).css("background-color","#D6D6FF");
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <div>
+        Username:<input type="text" name="uname" id="uname">
+    </div><br>
+    <div>
+      Password:<input type="text" name="pass" id="pass">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Radio Button</title>
+		<script language="javascript">
+		function validateForm()
+		{
+			
+			alert(document.radioButton.container[0].checked);
+			if(document.radioButton.container[0].checked==false)
+				{
+					alert("Please select any one");
+				}
+		}
+		
+		
+		</script>
+	</head>
+<body>
+<h1>Ice Cream Form</h1>
+<form method="post" name="radioButton" onSubmit="return validateForm()">
+ <b>Cup or Cone?</b>
+ <input type="radio" name="container" value="cup" > Cup
+ <input type="radio" name="container" value="plaincone"> Plain cone
+ <input type="radio" name="container" value="sugarcone"> Sugar cone
+ <input type="radio" name="container" value="wafflecone"> Waffle cone
+ <br/><br/>
+ <input type="submit" value="Place Order">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event in JavaScript Question 4</title>
+    <script>
+        function cal() {
+            let exp = document.getElementById("expression").value;
+            try {
+                let result = eval(exp); 
+                alert("Result: " + result);
+            } catch (error) {
+                alert("Invalid Expression!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>Enter Expression:</label>
+    <input type="text" id="expression" placeholder="Enter expression e.g. 2+3">
+    <br>
+    <button onclick="cal()">Show Result</button>
+
+    
+
+</body>
+</html>

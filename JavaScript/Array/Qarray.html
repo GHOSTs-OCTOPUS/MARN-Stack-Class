@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+        i) find all odd no between given array 
+        ii)find sum of given array 
+        iii) find maximum no given array , max() 
+        iv) n=8 find given number is exists or not exists in given array 
+        v) find all prime no between given array 
+        */
+
+        //1. Find all odd number between given array
+
+        arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 78, 55]
+        document.write("Question 1: Odd number form Array" + "<br>");
+        console.log("Question 1: Odd number form Array");
+        for (i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 1) {
+                document.write(arr[i] + "<br>");
+                console.log(arr[i]);
+            }
+        }
+        document.write("============================================<br>");
+
+
+        //2. Find sum of given array
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        console.log("Question 2 Sum of Array:", sum);
+        document.write("Question 2 Sum of Array:", sum + "<br>");
+        document.write("============================================<br>");
+
+        //3. find maximum number of given array
+        let max = 0;
+        for (i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log("Question 3 Maximum number:", max);
+        document.write("Question 3 Maximum number:", max + "<br>");
+        document.write("============================================<br>");
+
+
+        //4. n=8 find given number is exists or not exists in given array
+        let n = 8;
+        let exists = arr.includes(n);
+        if (exists) {
+            console.log("Question 4:",`${n} exists in the array.`);
+            document.write("Question 4:", `${n} exists in the array.`+"<br>");
+        } else {
+            console.log("Question 4:",`${n} does not exist in the array.`);
+            document.write("Question 4:", `${n} does not exist in the array.`+"<br>");
+        }
+        document.write("============================================<br>");
+
+
+        //5. find all prime no between given array 
+        
+        for (let i = 0; i < arr.length; i++) {
+            let flag = 0;
+            for (j = 2; j < arr[i]; j++) {
+                if (arr[i] % j == 0) {
+                    flag = 1;
+                }
+            }
+            if (flag == 0) {
+                console.log(arr[i]);
+                document.write(arr[i]);
+            }
+            
+
+        }
+        
+        
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

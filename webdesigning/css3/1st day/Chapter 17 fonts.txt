@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face
+{
+font-family: myFont;
+src: url(sansation_light.woff);
+}
+
+@font-face
+{
+font-family: myFont;
+src: url(sansation_bold.woff);
+font-weight:bold;
+}
+
+div
+{
+font-family:myFont;
+}
+</style>
+</head>
+<body>
+
+<div>
+It is our policy to provide quality services on a best effort basis to 
+satisfy the stated and implied needs of our students.
+
+</div>
+
+
+
+</body>
+</html>

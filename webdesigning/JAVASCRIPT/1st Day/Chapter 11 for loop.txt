@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+
+document.write("For loop code is beginning");
+document.write("<br>");
+
+for(i = 0; i < 5; i++){
+	document.write("Count i = " + i);
+	document.write("<br>");
+}
+
+document.write("For loop code is finished!");
+</script>
+
+</body>
+</html>
+

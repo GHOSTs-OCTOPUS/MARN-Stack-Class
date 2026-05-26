@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+var a=document.f1.text1.value;
+if(a=="")
+{
+alert("Enter the Details");
+}
+if((a.length < 20)||(a.length > 100))
+{
+alert("Your textarea must be 20 to 100");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" action=""  method="post" onsubmit="return validate()">
+<table>
+<tr>
+<td>Address:</td>
+<td><textarea name="text1"></textarea></td>
+</tr>
+<tr>
+<td><input type="submit" name="submit" value="Submit"></td>
+<td><input type="reset" name="submit" value="Cancle"></td>
+</tr>
+</form>
+</body>
+</html>
+
+

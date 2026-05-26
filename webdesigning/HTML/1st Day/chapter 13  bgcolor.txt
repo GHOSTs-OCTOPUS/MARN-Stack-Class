@@ -1,0 +1,10 @@
+
+<html>
+<head>
+<meta content="">
+<title>Home page</title>
+</head>
+<body bgcolor="powderblue">
+<p>This is a paragraph</p>
+</body>
+</html>

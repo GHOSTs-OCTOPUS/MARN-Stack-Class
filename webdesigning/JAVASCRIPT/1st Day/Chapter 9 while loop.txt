@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<script type="text/javascript">
+
+var count = 0;
+document.write("While loop is beginning");
+document.write("</br>");
+
+while( count < 10){
+	document.write("count = " + count);
+	document.write("</br>");
+	count++;
+}
+
+document.write("While loop is finished!");
+</script>
+</body>
+</html>

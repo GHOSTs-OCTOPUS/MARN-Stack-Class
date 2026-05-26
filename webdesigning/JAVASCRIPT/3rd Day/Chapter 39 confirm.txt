@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function confirmation() {
+	var ans = confirm("You want to see website click ok button")
+	if (ans){
+		alert("Welcome to cncwebworld")
+		window.location = "http://www.cncwebworld.com/";
+	}
+	else{
+        alert("Sorry! you click on cancle button")
+
+	}
+
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="confirmation()" value="click">
+</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       
+        .outer{
+            width:200px;
+            height:200px;
+            background-color: red;
+            transition: all 2s linear;
+            margin: 5px;
+            padding: 20px;
+            background: linear-gradient(to right,red,pink);
+
+          
+        }
+
+        .outer:hover {
+              /* transform:rotate(180deg); */
+              transform:rotateX(360deg);
+              transform:rotateY(360deg);
+              transform:translate(100px, 100px);
+              transform:scale(2,7);
+              transform:skew(0deg , 40deg);
+              transform:skew(40deg , 0deg);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="outer" >
+       
+    </div>
+    
+</body>
+</html>

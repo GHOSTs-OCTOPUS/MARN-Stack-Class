@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.max(10, 20,50);
+document.write("MAx Value : " + value ); 
+  
+
+</script>
+</body>
+</html>
+

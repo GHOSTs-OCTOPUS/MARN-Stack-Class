@@ -1,0 +1,54 @@
+<html>
+<head>
+<style type="text/css">
+dl,dt,li,ol,ul,dd
+{
+margin:0px;
+padding:0px;
+border:0px;
+}
+#outer{
+margin-left:50px;
+border:1px solid black;
+}
+ul,li
+{
+list-style-position:inside;<!--The list-style-position property specifies if the list-item markers should appear inside or outside the content flow.
+inside-Indents the marker and the text. The bullets appear inside the content flow 	Play it »	
+outside-Keeps the marker to the left of the text. The bullets appears outside the content flow. This is default-->
+}
+.ol{list-style-type:lower-roman}<!--The list-style-type specifies the type of list-item marker in a list.-->
+.ul{list-style-image:url(index.jpeg)}
+</style>
+</head>
+<body>
+
+<h4>An Unordered List:</h4>
+<div id="outer">
+<ul class="ul">  
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<h4>An Ordered List:</h4>
+
+<ol type="a" class="ol">   
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+<h4>A Definition List:</h4>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+</div>
+</body>
+</html>

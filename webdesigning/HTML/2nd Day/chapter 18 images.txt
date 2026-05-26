@@ -1,0 +1,7 @@
+
+<html>
+<body>
+<img src="pic.jpg" height="50" width="100" title="labour Day"/>
+
+</body>
+</html>

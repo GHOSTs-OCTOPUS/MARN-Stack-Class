@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<p id="demo"></p>
+
+<button onclick="myFun()">Try it</button>
+
+<script>
+
+function myFun()
+{
+document.getElementById("demo").innerHTML="Welcome";
+};
+
+</script>
+
+</body>
+</html>

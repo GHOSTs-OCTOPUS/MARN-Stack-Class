@@ -1,0 +1,9 @@
+<html>
+<body>
+<a href="http://www.google.com">
+ <img src="pic.gif" border="4"/>
+</a>
+<img src="thmb_pic.gif" />
+
+</body>
+</html>

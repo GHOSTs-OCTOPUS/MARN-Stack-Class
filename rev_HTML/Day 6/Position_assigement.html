@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position Assignment</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main {
+                width: 100%;
+                height: 100vh;
+                background-color: white;
+                margin: auto;
+                display: flex;
+                position: relative;
+                z-index: 2;
+
+            }
+            .left {
+                width: 1050px;
+                height: 100%;
+                background-color: rgba(209, 215, 14, 0.493);
+                position: fixed;
+                left:-470px;
+                border-radius: 50% 50%;
+                z-index: 1;
+            }
+            .right {
+                width: 1050px;
+                height: 100%;
+                background-color: rgba(150, 151, 139, 0.598);
+                position: fixed;
+                right:-470px;
+                border-radius: 50% 50%;
+                z-index: 1;
+            }
+            .nav {
+                width: 100%;
+                height: 60px;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                z-index: 3;
+                float: right;
+            }
+            .nav h2 {
+                font-size: 38px;
+                color: white;
+                margin-right: 100px;
+                margin-left: 0px;
+                float: left;
+            }
+            .nav ul {
+                display: flex;
+                list-style-type: none;
+                color: white;
+            }
+            .nav ul li {
+                margin: 10px 40px 10px 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="left">
+            </div> 
+            <div class="right">
+            </div>
+            <div class="nav">
+                <h2></h2>
+                <ul>
+                    <h2>Home</h2>
+                    <li><a href="#">Subpage1</a></li>
+                    <li><a href="#">Subpage2</a></li>
+                    <li><a href="#">Subpage3</a></li>
+                    <li><a href="#">Subpage4</a></li>
+                    <li><a href="#">Subpage5</a></li>
+            </div>
+            <div class="img">
+                <div class="center">
+                    <img src="./apple-watch-series-3-apple-watch-series-1-smartwatch-apple-watch-series-2-stainless-steel-word.jpg" width="200" height="200"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

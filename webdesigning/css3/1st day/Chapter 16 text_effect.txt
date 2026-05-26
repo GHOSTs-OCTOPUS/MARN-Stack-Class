@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+
+    	<title>Title Name will go here</title>
+
+		<style>
+			
+			#text_shadow
+			{
+				text-shadow: 20px 20px 10px #6AAFCF;
+			}
+			
+			#word_wrap
+			{
+				word-wrap:break-word;
+				width:150px;
+				border:1px solid #ff0000;
+			}
+			
+			#no_wrap
+			{
+				width:150px;
+				border:1px solid #ff0000;
+			}
+			
+			
+		</style>
+	
+    </head>
+    <body>
+
+		<div id="text_shadow"><h1>Text Shadow</h1></div>
+		
+		<div>Below is example of Word-Wrap. </div>
+		
+		<div id="word_wrap">you can't break the line hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</div>
+		
+		<p>Without using word-wrap text will go like this.</p>
+		
+		<div id="no_wrap">you can't break the line hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</div>		
+
+    </body>
+    
+</html>
+

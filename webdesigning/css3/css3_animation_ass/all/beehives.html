@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .outer{
+            height: 725px;
+            width: 100%;
+            background-color: greenyellow;
+            position: relative;
+            position:relative;
+            background-image: url(img/hoony_bg.avif);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            
+        }
+      .hive1{
+        height:250px;
+        width:200px;
+        background-image: url(img/Beehive-Cartoon-PNG-File.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position:absolute;
+        top:10px;
+        right:0px;
+        z-index: 2;
+      }
+      .hive2{
+        height:400px;
+        width:400px;
+        background-image: url(img/bee2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position:absolute;
+        top:-180px;
+        left:550px;
+      }
+      .bee2{
+        height:160px;
+        width:160px;
+        background-image: url(img/bee3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position:absolute;
+        animation: myani 5s 10 ease-in;
+        z-index: 1;
+      }
+
+      @keyframes myani {
+        0%{
+            top:80px;
+            left:1340px;
+        }
+        16%{
+            top:120px;
+            left:1200px;
+        }
+        32%{
+            top:250px;
+            left:1120px;
+        }
+        48%{
+            top:200px;
+            left:1000px;
+        }
+        64%{
+            top:280px;
+            left:930px;
+        }
+        80%{
+            top:180px;
+            left:780px;
+        }
+        96%{
+            top:30px;
+            left:650px;
+        }
+      }
+      .bee3{
+        height:140px;
+        width:140px;
+        background-image: url(img/hunbee10.PNG);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position:absolute;
+        animation: bee 8s 6 ease-in-out;
+        z-index: 3;
+      }
+      @keyframes bee {
+        0%{
+            top:300px;
+            left:0px;
+        }
+        16%{
+            top:500px;
+            left:150px;
+        }
+        32%{
+            top:350px;
+            left:250px;
+        }
+        46%{
+            top:380px;
+            left:320px;
+        }
+        64%{
+            top:210px;
+            left:400px;
+        }
+        80%{
+            top:280px;
+            left:450px;
+        }
+        100%{
+            top:20px;
+            left:620px;
+        }
+        
+      }
+      .honeybee{
+        height: 180px;
+        width:180px;
+        background-image: url(img/hunbee3.0.PNG);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        animation: beecute 4s 10 linear;
+    }
+    @keyframes beecute {
+        0%{
+            top:470px;
+            left:630px;
+        }
+        25%{
+            top:430px;
+            left:640px;
+        }
+        50%{
+            top:460px;
+            left:630px;
+        }
+        75%{
+            top:490px;
+            left:640px;
+        }
+        100%{
+            top:470px;
+            left:630px;
+        }
+        
+    }
+    .flower{
+        height:200px;
+        width:290px;
+        position:absolute;
+        top:525px;
+        left:450px; 
+        background-image: url(img/flower.PNG);
+        background-repeat:no-repeat;
+        background-size: contain;
+    }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="hive1"></div>
+       
+        <div class="hive2"></div>
+       
+        <div class="bee2"></div>
+       
+        <div class="bee3"></div>
+
+        <div class="honeybee"></div>
+
+        <div class="flower"></div>
+    </div>
+</body>
+</html>

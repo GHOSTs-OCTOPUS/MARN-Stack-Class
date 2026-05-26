@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<script src="jquery-1.11.1.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").off("click",function(){
+    alert("welcome");
+  });
+});
+</script>
+</head>
+<body>
+<p>This is a paragraph</p>
+
+</body>
+</html>

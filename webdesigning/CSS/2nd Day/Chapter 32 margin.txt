@@ -1,0 +1,11 @@
+<html>
+<head>
+<style type="text/css">
+p{border:5px solid ; margin-top:50px;margin-left:40px; }
+</style>
+</head>
+<body>
+<p>VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels 
+of India´s fastest growing industry.</p>
+</body>
+</html>

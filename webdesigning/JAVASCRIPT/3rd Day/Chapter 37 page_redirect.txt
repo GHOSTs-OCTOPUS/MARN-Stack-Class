@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function myfunction(){
+    window.location = "demo1.php"
+}
+
+</script>
+</head>
+<body >
+<h2>Prepare to be redirected!</h2>
+
+<input type="button" onclick="myfunction()" value="click">
+</body>
+</html>
+
+

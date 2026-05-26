@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+ var a = document.f1.mn.value;
+ if(a=="")
+ {
+ alert("Please enter contact number");
+ return false;
+ }
+ if(isNaN(a))
+ {
+ alert("Enter only numeric value");
+ return false;
+ } 
+if(a.length < 10)  
+{
+alert("Contact number must be 10 digits");
+return false;
+}
+if(a.length > 10)
+{
+alert("Contact number must be 10 digits");
+return false;
+}
+if((a.charAt(0)!=9)&&(a.charAt(0)!=8)&&(a.charAt(0)!=7))
+{
+alert("Mobile number start with 9, 8 and 7");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" action="" method="post" onsubmit="return validate()">
+Contact number:
+<input type="text" name="mn">
+<input type="submit" name="submit" value="Submit">
+<input type="reset" name="reset" value="Cancle">
+</form>
+</body>
+
+</html>
+

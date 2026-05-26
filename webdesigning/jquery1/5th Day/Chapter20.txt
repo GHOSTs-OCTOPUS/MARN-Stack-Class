@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("input:text").val("Peter");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" name="user"></p>
+<button>Submit</button>
+
+</body>
+</html>

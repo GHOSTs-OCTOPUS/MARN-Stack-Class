@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<script tyep="text/javascript">
+function myfun()
+{
+alert("Welcome");
+}
+</script>
+</head>
+<body>
+<input type="submit" name="submit" value="Tray" onMouseOut="myfun()">
+</body>
+</html>
+<html>
+<head>
+<title></title>
+<script tyep="text/javascript">
+function myfun()
+{
+alert("Welcome");
+}
+</script>
+</head>
+<body>
+<input type="submit" name="submit" value="Tray" onMouseOver="myfun()">
+</body>
+</html>
+

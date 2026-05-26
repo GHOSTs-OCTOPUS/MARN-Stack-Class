@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a date on <time datetime="2011-02-28">Sunday</time>.</p>
+
+
+
+</body>
+</html>
+

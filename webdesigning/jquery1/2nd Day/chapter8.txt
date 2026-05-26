@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+ $("input").focus();
+  $(":focus").css("background-color","#eee081");
+});
+</script>
+<body>
+<form>
+Name:<input type="text" name="name"><br/>
+
+</form>
+</body>
+</html>

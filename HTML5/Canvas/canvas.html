@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas_Template</title>
+</head>
+
+<body>
+
+    <!-- canvas is a container only for graphics -->
+
+    <canvas width="500" height="500" style="border:2px solid red" id="mycanvas"></canvas>
+
+    <script>
+
+        canvas = document.getElementById("mycanvas")
+        context = mycanvas.getContext("2d")
+
+        context.beginPath()
+        context.moveTo(100, 100)
+        context.lineTo(400, 400)
+        context.lineWidth = 5
+        context.strokeStyle = "red"
+        context.stroke()
+
+
+        context.beginPath()
+        context.moveTo(100, 100)
+        context.lineTo(400, 100)
+        context.lineWidth = 5
+        context.strokeStyle = "blue"
+        context.stroke()
+
+
+        context.beginPath()
+        context.moveTo(100, 100)
+        context.lineTo(100, 400)
+        context.lineWidth = 5
+        context.strokeStyle = "red"
+        context.stroke()
+
+
+        context.beginPath()
+        x = 250
+        y = 250
+        r = 150
+        sa = 1 * Math.PI
+        ea = 1.5 * Math.PI
+        ck = false
+
+
+        context.arc(x, y, r, sa, ea, ck)
+        context.lineWidth = 5
+        context.strokeStyle = "green"
+        context.stroke()
+    </script>
+
+
+</body>
+
+</html>

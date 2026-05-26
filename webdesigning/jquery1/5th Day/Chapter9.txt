@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").next().css({"color":"red"});
+});
+</script>
+</head>
+<body>
+
+<div>
+<h1>welcome</h1>
+<p> This is a <span>paragraph</span></p>
+<a href="index.html">HOME</a>
+</div>
+
+</body>
+</html>
+

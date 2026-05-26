@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+border:5px solid red;
+padding:10px 40px; 
+background:gray;
+width:300px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<div>CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the 
+look and formatting of a website to the browser.</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function sum(a,b)
+{
+c=a+b;
+return c;
+}
+
+</script>
+</head>
+<body>
+
+<script>
+var x=30;
+var y=30;
+z=sum(x,y);
+
+document.write("The Addition of two  number = "+z);
+</script>
+</body>
+</html>
+

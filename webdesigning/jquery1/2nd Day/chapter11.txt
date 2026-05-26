@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function(){
+  $(":text").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+
+<form action="">
+
+Name: <input type="text" name="name"><br>
+
+
+<input type="submit" value="Submit">
+<br>
+</form>
+
+</body>
+</html>

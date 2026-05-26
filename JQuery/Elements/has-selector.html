@@ -1,0 +1,31 @@
+<!-- The :has() selector selects all elements that have one or more elements inside of them, that matches the specified selector. -->
+
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("p:has(span)").css("color", "#eee081");
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <p>This is a <span>paragraph</span></p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form-section {
+            flex: 1;
+            background: #eef0f4;
+            padding: 20px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .input-group {
+            flex: 1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: #fff;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            margin-right: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #3b5bcc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: #2f49a0;
+        }
+
+        .map-section {
+            flex: 1;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            width: 22%;
+            min-width: 150px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: #3b5bcc;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+        }
+
+        @media(max-width: 768px) {
+            .contact-box {
+                flex-direction: column;
+            }
+
+            .info-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .info-box {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            let fname = document.getElementsByName("fname")[0].value.trim();
+            let lname = document.getElementsByName("lname")[0].value.trim();
+
+            // only letters allowed
+            let namePattern = /^[A-Za-z]+$/;
+
+            // First Name Validation
+            if (fname === "") {
+                alert("First Name cannot be empty");
+                return false;
+            }
+
+            if (fname.length < 5 || fname.length > 10) {
+                alert("First Name must be between 5 to 10 characters");
+                return false;
+            }
+
+            if (!namePattern.test(fname)) {
+                alert("First Name should not contain numbers");
+                return false;
+            }
+
+            // Last Name Validation
+            if (lname === "") {
+                alert("Last Name cannot be empty");
+                return false;
+            }
+
+            if (lname.length < 5 || lname.length > 10) {
+                alert("Last Name must be between 5 to 10 characters");
+                return false;
+            }
+
+            if (!namePattern.test(lname)) {
+                alert("Last Name should not contain numbers");
+                return false;
+            }
+
+            // Get values
+            var mobile = document.getElementsByName("mobile")[0].value.trim();
+            var email = document.getElementsByName("email")[0].value.trim();
+
+            // ================= MOBILE VALIDATION =================
+            if (mobile === "") {
+                alert("Mobile number cannot be empty");
+                return false;
+            }
+
+            if (!/^[0-9]{10}$/.test(mobile)) {
+                alert("Mobile number must be exactly 10 digits");
+                return false;
+            }
+
+            if (!/^[6-9]/.test(mobile)) {
+                alert("Mobile number must start with 6, 7, 8, or 9");
+                return false;
+            }
+
+            // ================= EMAIL VALIDATION =================
+            if (email === "") {
+                alert("Email cannot be empty");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Email must contain '@'");
+                return false;
+            }
+
+            if (!email.endsWith(".com") && !email.endsWith(".in")) {
+                alert("Email must end with .com or .in");
+                return false;
+            }
+
+            let password = document.getElementsByName("password")[0].value;
+            let confirmPassword = document.getElementsByName("confirm_password")[0].value;
+
+            // PASSWORD VALIDATION
+
+            // 1. Not empty
+            if (password === "") {
+                alert("Password cannot be empty");
+                return false;
+            }
+
+            // 2. Length at least 8 characters
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return false;
+            }
+
+            // 3. At least one uppercase letter
+            let upperCase = /[A-Z]/;
+            if (!upperCase.test(password)) {
+                alert("Password must contain at least one uppercase letter");
+                return false;
+            }
+
+            // 4. At least one number
+            let number = /[0-9]/;
+            if (!number.test(password)) {
+                alert("Password must contain at least one number");
+                return false;
+            }
+
+            // 5. At least one special character
+            let specialChar = /[!@#$%^&*(),.?":{}|<>]/;
+            if (!specialChar.test(password)) {
+                alert("Password must contain at least one special character");
+                return false;
+            }
+
+            // CONFIRM PASSWORD VALIDATION
+
+            // 1. Not empty
+            if (confirmPassword === "") {
+                alert("Confirm Password cannot be empty");
+                return false;
+            }
+
+            // 2. Match check
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password do not match");
+                return false;
+            }
+
+            // -------- GENDER VALIDATION --------
+            let gender = document.getElementsByName("gender");
+            let genderSelected = false;
+
+            for (let i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    genderSelected = true;
+                    break;
+                }
+            }
+
+            if (!genderSelected) {
+                alert("Please select your gender");
+                return false;
+            }
+
+
+            // -------- HOBBY VALIDATION --------
+            let hobbies = document.getElementsByName("hobby");
+            let hobbySelected = false;
+
+            for (let i = 0; i < hobbies.length; i++) {
+                if (hobbies[i].checked) {
+                    hobbySelected = true;
+                    break;
+                }
+            }
+
+            if (!hobbySelected) {
+                alert("Please select at least one hobby");
+                return false;
+            }
+
+            alert("Form Submitted Successfully ✅");
+            return true;
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Contact Form #06</h2>
+
+        <div class="contact-box">
+
+            <!-- FORM -->
+            <div class="form-section">
+                <form onsubmit="return validateForm()">
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" name="fname" placeholder="First Name">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="tel" name="mobile" placeholder="Mobile Number">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" name="confirm_password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="radio-group">
+                        <strong>Gender:</strong><br>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+
+                    <!-- Hobbies -->
+                    <div class="checkbox-group">
+                        <strong>Hobbies:</strong><br>
+                        <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+                    </div>
+
+                    <br>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+            <!-- MAP -->
+            <div class="map-section">
+                <iframe
+                    src="https://maps.google.com/maps?q=Nerul%20New%20mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="info-section">
+            <div class="info-box">
+                <div class="icon">📍</div>
+                <p>Nerul, Navi Mumbai, Maharashtra</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">📞</div>
+                <p>+91 7219447058</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">✉️</div>
+                <p>kolevikasxyz@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icon">🌐</div>
+                <p>vikaskoledev.vercel.app</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

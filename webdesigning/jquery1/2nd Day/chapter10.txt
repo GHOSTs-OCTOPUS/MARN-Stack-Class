@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $(":empty").css("background-color","#eee081");
+});
+</script>
+<body>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>City</th>
+</tr>
+<tr>
+<td>Peter</td>
+<td></td>
+</tr>
+
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":file").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+<form>
+File:<input type="file" name="file">
+</select>
+</form> 
+</body>
+</html>
+

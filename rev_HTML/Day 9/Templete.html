@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium HTML Themes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background: #fff;
+        }
+        .navbar .logo{
+            font-weight: bold;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        .navbar .ul .li{
+            list-style: none;
+                float: left;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .hero {
+            height: 650px;
+            background: url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+        .hero-content {
+            position: relative;
+            max-width: 600px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            background: #ff5a5a;
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 60px 80px;
+            text-align: left;
+            gap: 40px;
+            background: #f7f7f7;
+        }
+        .feature i {
+            font-size: 28px;
+            color: #d18ce0;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #ff5a5a77;
+        }
+        .collection {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        .collection img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .collection .content {
+            text-align: center;
+            padding: 60px;
+        }
+        .collection h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .collection p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .purple {
+            background: #a88be2;
+        }
+        .reverse {
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Premium HTML Themes</div>
+        <nav>
+            <ul>
+                <li><a href="#">PAGES ▼</a>
+                    <!--<ul>
+                        <li>Page 1</li>
+                        <li>Page 2</li>
+                        <li>Page 3</li>
+                        <li>Page 4</li>
+                        <li>Page 5</li>
+                    </ul>-->
+                </li>
+                <li><a href="#">WATCH VIDEO</a></li>
+                <li><a href="#">BLOCKS ▼</a>
+                    <!--<ul>
+                        <li>Page 1</li>
+                        <li>Page 2</li>
+                        <li>Page 3</li>
+                        <li>Page 4</li>
+                        <li>Page 5</li>
+                    </ul>-->
+                </li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-circle-user"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium HTML Themes</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sunt incidunt atque delectus adipisci nisi ratione sint.
+            </p>
+            <button class="btn">START SHOPPING</button>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Just Arrived</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-regular fa-heart"></i>
+            <h3>We Love</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h3>Best Sellers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-tag fa-flip-horizontal"></i>            <h3>Discounts</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <section class="collection">
+        <div class="image">
+            <img src="https://www.have-clothes-will-travel.com/wp-content/uploads/2019/05/qtq80-7bsDUb.jpeg">
+        </div>
+        <div class="content">
+            <h2>Autumn Collection</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn purple">VIEW COLLECTION</button>
+        </div>
+    </section>
+    <section class="collection reverse">
+        <div class="content">
+            <h2>Casual Collection</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn purple">VIEW COLLECTION</button>
+        </div>
+        <div class="image">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/034/134/187/small/panning-shot-of-elegant-selection-of-shirts-on-hangers-in-high-end-fashion-boutique-showcasing-trendy-stylish-garments-from-their-new-collection-close-up-on-men-shirts-in-mall-clothing-store-video.jpg">
+        </div>
+    </section>
+</body>
+</html>

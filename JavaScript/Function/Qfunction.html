@@ -1,0 +1,253 @@
+<html>
+
+<head>
+    <script>
+        /*
+        Code for find:
+          1. factorial number
+          2. prime number
+          3. even odd
+          4. sum of num.
+        */
+
+        //1. find factorial of given no n=5
+        function facts() {
+
+            let n = 5;
+            let fact = 1;
+
+            for (let i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+
+            console.log("Question 1: Factorial =", fact);
+            document.write("Question1: Factorial =", fact + "<br>");
+        }
+        facts();
+        document.write("=============================================" + "<br>");
+
+
+        //2. find given no is prime or not prime n=7 
+        function prime() {
+            i = 2;
+            n = 7;
+            flag = 0;
+            while (i < n) {
+                if (n % i == 0) {
+                    flag = 1;
+                }
+                i++;
+            }
+            if (flag == 0) {
+                console.log("Question 2: prime number");
+                document.write("Question 2: prime number" + "<br>");
+            } else {
+                console.log("no is not prime");
+                document.write("No. is not prime");
+            }
+        }
+        prime();
+        document.write("=============================================" + "<br>");
+
+
+
+
+        //3.find given no is even or odd using fun n=9 
+
+        function evenodd(n) {
+            // n=9 
+            if (n % 2 == 0) {
+                console.log("Question3: no is even");
+                document.write("Question3: no is even" + "<br>");
+            } else {
+                console.log("Question3: no is odd");
+                document.write("Question3: no is odd" + "<br>");
+            }
+        }
+        evenodd();
+        document.write("=============================================" + "<br>");
+
+
+        //4) find sum of given interval 1+2+3+...+10=55 
+        function sum_of() {
+            let sum = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                sum = sum + i;
+            }
+
+            console.log("Question4: Sum =", sum);
+            document.write("Question4: Sum =", sum + "<br>");
+        }
+        sum_of();
+        document.write("=============================================" + "<br>");
+
+
+
+        /*
+        Using function type(with, without, default, return, arrow fun)
+        Find Area of:
+          1. Circle
+          2. Square
+          3. Rectangle
+        */
+        // 1)with parameter function 
+        document.write("Finding Area Of Circle, Square, Rectangle Using Function with Parameter" + "<br>");
+        console.log("Finding Area Of Circle, Square, Rectangle Using Function with Parameter");
+
+        function area_circle(r) {
+            pi = 3.14
+            area = pi * r * r;
+            console.log("Area of circle:" + area);
+            document.write("Area of Circle:" + area + "<br>");
+        }
+        area_circle(2);
+
+        function area_square(l) {
+            area1 = l * l;
+            console.log("Area of Square:" + area1);
+            document.write("Area of Square:" + area1 + "<br>");
+        }
+        area_square(5);
+
+        function area_rectangle(r, l) {
+            area2 = r * l;
+            console.log("Area of Rectangle:" + area2);
+            document.write("Area of Rectangle:" + area2 + "<br>");
+        }
+        area_rectangle(2, 5)
+        document.write("=============================================" + "<br>");
+
+
+        // 2)without parameter function
+        document.write("Finding Area Of Circle, Square, Rectangle Using Function without Parameter" + "<br>");
+        console.log("Finding Area Of Circle, Square, Rectangle Using Function without Parameter");
+
+        function area_circle() {
+            pi = 3.14
+            r = 2
+            area = pi * r * r;
+            console.log("Area of circle:" + area);
+            document.write("Area of Circle:" + area + "<br>");
+        }
+        area_circle();
+
+        function area_square() {
+            l = 5
+            area1 = l * l;
+            console.log("Area of Square:" + area1);
+            document.write("Area of Square:" + area1 + "<br>");
+        }
+        area_square();
+
+        function area_rectangle() {
+            r = 2
+            l = 5
+            area2 = r * l;
+            console.log("Area of Rectangle:" + area2);
+            document.write("Area of Rectangle:" + area2 + "<br>");
+        }
+        area_rectangle()
+        document.write("=============================================" + "<br>");
+
+        // 3)Default parameter function 
+        document.write("Finding Area Of Circle, Square, Rectangle Using Function default Parameter" + "<br>");
+        console.log("Finding Area Of Circle, Square, Rectangle Using Function default Parameter");
+
+        function area_circle(r = 2) {
+            pi = 3.14
+            area = pi * r * r;
+            console.log("Area of circle:" + area);
+            document.write("Area of Circle:" + area + "<br>");
+        }
+        area_circle();
+
+        function area_square(l = 5) {
+            area1 = l * l;
+            console.log("Area of Square:" + area1);
+            document.write("Area of Square:" + area1 + "<br>");
+        }
+        area_square();
+
+        function area_rectangle(r = 2, l = 5) {
+            area2 = r * l;
+            console.log("Area of Rectangle:" + area2);
+            document.write("Area of Rectangle:" + area2 + "<br>");
+        }
+        area_rectangle()
+        document.write("=============================================" + "<br>");
+
+        /*
+                // 4)Return parameter function 
+                document.write("Finding Area Of Circle, Square, Rectangle Using Function return Parameter" + "<br>");
+                console.log("Finding Area Of Circle, Square, Rectangle Using Function return Parameter");
+        
+                function area_circle(r=2){
+                    pi=3.14
+                    area=pi*r*r;
+                    return area;
+                    
+                }
+                console.log("Area of circle:"+ area_circle(r=2));
+                document.write("Area of Circle:"+ area_circle(r=2)+"<br>");
+        
+                function area_square(l=5){
+                    area1=l*l;
+                    return area1;
+                    
+                }
+                console.log("Area of Square:"+ area_square(l=5));
+                document.write("Area of Square:"+ area_square(l=5)+"<br>");
+        
+                function area_rectangle(r=2,l=5){
+                    area2=r*l;
+                    return area2;
+                    
+                }
+                console.log("Area of Rectangle:"+ area_rectangle(r=2,l=5));
+                document.write("Area of Rectangle:"+ area_rectangle(r=2,l=5)+"<br>");
+                document.write("============================================="+"<br>");
+        
+                */
+
+        // ) arrow function without 
+        document.write("Finding Area Of Circle, Square, Rectangle Using Function arrow without Parameter" + "<br>");
+        console.log("Finding Area Of Circle, Square, Rectangle Using Function arrow without Parameter");
+
+        area_circle = () => {
+            r = 2
+            pi = 3.14
+            area = pi * r * r;
+            console.log("Area of circle:" + area);
+            document.write("Area of Circle:" + area + "<br>");
+        }
+        area_circle();
+
+        area_square = () => {
+            l = 5
+            area1 = l * l;
+            console.log("Area of Square:" + area1);
+            document.write("Area of Square:" + area1 + "<br>");
+        }
+        area_square();
+
+        area_rectangle = (r, l) => {
+            r = 2
+            l = 5
+            area2 = r * l;
+            console.log("Area of Rectangle:" + area2);
+            document.write("Area of Rectangle:" + area2 + "<br>");
+        }
+        area_rectangle()
+        document.write("=============================================" + "<br>");
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

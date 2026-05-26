@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function s_storage()
+{
+    if( sessionStorage.hits ){
+       sessionStorage.hits = Number(sessionStorage.hits) +1;
+    }else{
+       sessionStorage.hits = 1;
+    }
+    document.write("Total Hits :" + sessionStorage.hits );
+	}
+  </script>
+  
+</head>
+<body>
+<input type="button" name="button" value="Submit" onclick="s_storage()">
+  
+
+</body>
+</html>

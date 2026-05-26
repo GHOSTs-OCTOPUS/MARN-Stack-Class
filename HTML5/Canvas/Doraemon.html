@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doraemon Canvas</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        canvas {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid black;
+        }
+
+        /* copyright */
+        .footer {
+            background: #262526;
+            border-top: 1px solid #6d6d6d;
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .copyright_text {
+            color: #000000;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        .copyright_text a {
+            font-size: larger;
+            font-weight: bold;
+            color: #fc95c4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="doraemonCanvas" width="500" height="600"></canvas>
+    <!-- Copyright -->
+    <footer>
+        <div class="container">
+            <p class="copyright_text">&copy;All Rights Reserved. Design by <a
+                    href="https://github.com/GHOSTs-OCTOPUS">GHOSTs-OCTOPUS</a> Distribution by <a
+                    href="https://cncwebworld.com/">CNC Web World</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        const canvas = document.getElementById("doraemonCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Helper function
+        function circle(x, y, r, fill, stroke) {
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2);
+            if (fill) ctx.fill();
+            if (stroke) ctx.stroke();
+        }
+
+        // HEAD (Blue)
+        ctx.fillStyle = "#00AEEF";
+        circle(250, 200, 150, true);
+
+        // FACE (White)
+        ctx.fillStyle = "#fff";
+        circle(250, 230, 120, true);
+
+        // EYES
+        ctx.fillStyle = "#9a9fa13d";
+        circle(220, 140, 35, true);
+        circle(280, 140, 35, true);
+
+
+        // PUPILS
+        ctx.fillStyle = "#000";
+        circle(235, 150, 10, true);
+        circle(265, 150, 10, true);
+
+        // NOSE
+        ctx.fillStyle = "#e60026";
+        circle(250, 200, 15, true);
+
+        // NOSE LINE
+        ctx.beginPath();
+        ctx.moveTo(250, 220);
+        ctx.lineTo(250, 270);
+        ctx.stroke();
+
+        // MOUTH
+        ctx.beginPath();
+        ctx.arc(250, 260, 80, 0, Math.PI);
+        ctx.stroke();
+
+        // WHISKERS
+        ctx.beginPath();
+        ctx.moveTo(180, 220);
+        ctx.lineTo(230, 230);
+        ctx.moveTo(180, 240);
+        ctx.lineTo(230, 240);
+        ctx.moveTo(180, 260);
+        ctx.lineTo(230, 250);
+
+        ctx.moveTo(320, 220);
+        ctx.lineTo(270, 230);
+        ctx.moveTo(320, 240);
+        ctx.lineTo(270, 240);
+        ctx.moveTo(320, 260);
+        ctx.lineTo(270, 250);
+        ctx.stroke();
+
+        // BODY
+        ctx.fillStyle = "#00AEEF";
+        ctx.beginPath();
+        ctx.arc(250, 420, 130, 0, Math.PI * 2);
+        ctx.fill();
+
+        // BELLY
+        ctx.fillStyle = "#fff";
+        circle(250, 420, 90, true);
+
+        // POCKET
+        ctx.beginPath();
+        ctx.arc(250, 440, 50, 0, Math.PI);
+        ctx.stroke();
+
+        // COLLAR
+        ctx.fillStyle = "#e60026";
+        ctx.fillRect(150, 310, 200, 20);
+
+        // BELL
+        ctx.fillStyle = "#FFD700";
+        circle(250, 330, 15, true);
+
+        // BELL LINE
+        ctx.beginPath();
+        ctx.moveTo(240, 330);
+        ctx.lineTo(260, 330);
+        ctx.stroke();
+
+        // ARMS
+        ctx.fillStyle = "#00AEEF";
+        circle(120, 380, 40, true);
+        circle(380, 380, 40, true);
+
+        // HANDS
+        ctx.fillStyle = "#2f4f4f";
+        circle(100, 420, 35, true);
+        circle(400, 420, 35, true);
+
+        // FEET
+        ctx.fillStyle = "#9a9fa1";
+        ctx.beginPath();
+        ctx.ellipse(200, 540, 60, 30, 0, 0, Math.PI * 2);
+        ctx.ellipse(300, 540, 60, 30, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+    </script>
+    
+
+</body>
+
+</html>

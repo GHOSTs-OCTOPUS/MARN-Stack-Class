@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function:reusable block of code
+
+        /*types of function:
+        1)with out parameter fun 
+        2)with parameter fun 
+        3)default parameter fun 
+        4)return function 
+        5)arrow fun (New add in JS)
+        */
+
+        //  1)with out parameter fun 
+        function add() {
+            a = 10
+            b = 20
+            c = a + b
+            console.log(c)
+        }
+        add();
+
+        //2)with parameter fun
+        function add2(a, b) {
+            c = a + b
+            console.log(c)
+        }
+        add2(100, 20);
+
+        ////////////////////////////////////////////////////////////////////////////////////
+
+        //find given no is even or odd using fun n=9 
+
+        function evenodd(n) {
+            // n=9 
+            if (n % 2 == 0) {
+                console.log("no is even")
+            } else {
+                console.log("no is odd")
+            }
+
+        }
+        evenodd(8);
+        ////////////////////////////////////////////////////////////////////////////////
+        //   3)default parameter fun 
+        function add3(a = 60, b = 4) {
+            c = a + b
+            console.log(c)
+        }
+        add3(2, 1)
+        /////////////////////////////////////////////////////////////////////////////////
+
+        //return fun 
+        function sub() {
+            a = 10
+            b = 3
+            c = a - b
+            return c
+        }
+
+        v = sub()
+        console.log("sub" + v)
+
+
+        console.log(sub())
+
+        function sub2(a, b) {
+            c = a - b
+            return c
+        }
+        v = sub2(10, 2)
+        console.log("sub" + v)
+        ////////////////////////////////////////////////////////////////////
+        
+        
+        //5) arrow func 
+        mul = () => {
+            a = 10
+            b = 3
+            c = a * b
+            console.log(c)
+        }
+        mul();
+
+        mul2 = (a = 8, b = 4) => {
+            c = a * b
+            console.log(c)
+        }
+        mul2(20, 4);
+
+        mul3 = (a = 8, b = 4) => {
+            c = a * b
+            return c
+        }
+        c = mul3(20, 4)
+        console.log(c)
+
+
+
+        
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

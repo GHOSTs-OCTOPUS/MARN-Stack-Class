@@ -1,0 +1,8 @@
+<html><!--Hupertext markup language use for making web pages-->
+  <head><!-- head element is a container for all the head elements,head element must include a title for the document, and can include scripts, styles, meta information -->
+    <title>My Web Page!</title><!---Title display  on  a browser toolbar and displays a title for the page in search-engine results
+  </head>
+  <body>
+   Hello world!
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>JavaScript String toLowerCase() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var str = "WELCOME TO CNCWEBWORLD.";
+
+document.write(str.toLowerCase( ));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>JavaScript Math round() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.round( 20.7 );
+document.write("First Test Value : " + value ); 
+ </script>
+</body>
+</html>

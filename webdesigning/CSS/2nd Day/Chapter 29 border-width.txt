@@ -1,0 +1,20 @@
+<html>
+<head>
+<style type="text/css">
+p{
+   border-bottom-width:4px;
+             border-top-width:10px;
+             border-left-width: 2px;
+             border-right-width:15px;
+   
+   border-style:double;
+}
+
+</style>
+</head>
+<body>
+<p>
+This example is showing all borders in green color only.
+</p>
+</body>
+</html>

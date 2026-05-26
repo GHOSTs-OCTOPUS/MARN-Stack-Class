@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vintage Newspaper</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cinzel:wght@400;700&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: #d8c3a5;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .paper {
+            width: 1100px;
+            margin: auto;
+            background: #f3e1c7;
+            padding: 20px;
+            border: 4px solid #5a3e2b;
+        }
+
+        /* Header */
+        .top-strip {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .title h1 {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .subheader {
+            text-align: center;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 8px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* MAIN GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas:
+                "left center right"
+                "bottom bottom right";
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* AREAS */
+        .left {
+            grid-area: left;
+        }
+
+        .center {
+            grid-area: center;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+
+        /* COMMON */
+        .left,
+        .center,
+        .right,
+        .bottom {
+            border: 2px solid #5a3e2b;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+        .bottom img{
+            height: 200px;
+        }
+
+        /* LEFT */
+        .left h2 {
+            text-align: center;
+            font-family: 'Playfair Display';
+        }
+
+        /* CENTER */
+        .main-title {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        /* Fashion */
+        .fashion {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            border-top: 2px solid #000;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        .fashion img{
+            height:100%;
+        }
+
+        /* RIGHT */
+        .dark-box {
+            background: #3e1f0d;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* BOTTOM */
+        .bottom {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="paper">
+
+        <!-- Top Strip -->
+        <div class="top-strip">
+            <span>This vintage edition captures the essence of a bygone</span>
+            <span class="year-text">era, celebrating the spirit and simplicity of 1884</span>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <h1>THE DAILY CHRONICLE</h1>
+        </div>
+
+        <!-- Subheader -->
+        <div class="subheader">
+            WORLD NEWS GLOBAL HEADLINES
+        </div>
+
+        <!-- GRID -->
+        <div class="grid">
+
+            <!-- LEFT -->
+            <aside class="left">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+
+                <h2>CAPTAIN<br>JONATHAN<br>HARRINGTON</h2>
+                <h4>Master of the Sea</h4>
+
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum doloribus tempora illum
+                    voluptates incidunt, quis repudiandae harum recusandae officia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta omnis eligendi obcaecati odio
+                    voluptas et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, temporibus, suscipit fuga ut
+                    labore facilis totam ullam, fugit ab qui quae. Reiciendis facilis itaque molestiae ipsa. Asperiores
+                    excepturi cum repellendus?</p>
+            </aside>
+
+            <!-- CENTER -->
+            <main class="center">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29">
+
+                <h2 class="main-title">
+                    THE MARVEL OF MODERN TRANSPORT: THE TRAIN
+                </h2>
+
+                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nesciunt sapiente? Distinctio
+                    asperiores esse ipsam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut voluptates quo exercitationem
+                    sequi incidunt. Cumque recusandae odio expedita quibusdam.</p>
+
+                <!-- Fashion -->
+                <div class="fashion">
+                    <img
+                        src="https://t3.ftcdn.net/jpg/07/15/44/06/360_F_715440610_bSP33vuxANTX600IJECZGCzDz6A13xIZ.jpg">
+
+                    <div style="border-left:1px solid #3e1f0d; padding-left:8px; ">
+                        <h3>FASHION FEATURE: THE VINTAGE DRESS</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem pariatur nesciunt
+                            corrupti a blanditiis accusantium voluptates laudantium officia quos, odio necessitatibus
+                            maiores eveniet explicabo.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem autem at
+                            aliquid officiis commodi.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, quibusdam.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- RIGHT -->
+            <aside class="right">
+                <div class="dark-box">
+                    <h3>LIGHTS STUN LONDON</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+
+                <div class="typewriter">
+                    <h3>THE TYPEWRITER</h3>
+                    <p>lorem ipsum dolor sit amet....</p>
+                    <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corporis odio et fugit eaque hic laudantium placeat dolore eius itaque?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, amet?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui tempore rerum asperiores fuga. Cum quam repellendus modi ipsa magnam ratione! Voluptates ratione incidunt aliquid molestias sint? Temporibus repellendus quae sunt officiis eum dolores quos!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, pariatur?</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis atque quaerat qui dignissimos voluptatibus?</p>
+                </div>
+            </aside>
+
+            <!-- BOTTOM -->
+            <section class="bottom">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29">
+
+                <div style="border-left:1px solid #3e1f0d; padding-left:8px;">
+                    <h3>EXTRA FEATURE STORY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rerum, ullam non corrupti eligendi quas deserunt voluptatum. Dicta ad, sit molestias quisquam optio, laborum tenetur hic omnis sapiente saepe magni beatae sunt explicabo dolore enim fugit reprehenderit itaque alias libero!</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const yearText = document.querySelector(".year-text");
+        yearText.textContent = `era, celebrating the spirit and simplicity of ${new Date().getFullYear()}`;
+    </script>
+</body>
+
+</html>

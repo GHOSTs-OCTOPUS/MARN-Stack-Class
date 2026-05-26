@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="index.php">
+  color: <input type="color" name="color"><br>
+  
+  <input type="submit">
+</form>
+
+</body>
+</html>

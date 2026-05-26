@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<section>
+  <h2>VISION :</h2> 
+  <p>image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.</p>
+</section>
+
+<section>
+  <h2>MISSION :</h2>
+ <p>To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.</p>
+</section>
+
+</body>
+</html>
+

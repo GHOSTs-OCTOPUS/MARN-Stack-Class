@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle to Hexagon Effect</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#f4f4f4;
+      font-family:Arial, sans-serif;
+    }
+
+    .main{
+      width:1200px;
+      height:600px;
+      background:#fff;
+      border:2px solid #000;
+      display:flex;
+      gap:20px;
+      padding:20px;
+    }
+
+    .div1,
+    .div2{
+      flex:1;
+      border:2px solid #333;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      place-items:center;
+      gap:20px;
+      padding:20px;
+    }
+
+    /* CIRCLE */
+    .circle{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      background:#3b82f6;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#fff;
+      font-size:24px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    /* HEXAGON */
+    .hexagon{
+      width:150px;
+      height:86px;
+      background:#f59e0b;
+      position:relative;
+      display:none;
+      justify-content:center;
+      align-items:center;
+      color:#fff;
+      font-size:24px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    .hexagon::before,
+    .hexagon::after{
+      content:"";
+      position:absolute;
+      width:0;
+      border-left:75px solid transparent;
+      border-right:75px solid transparent;
+    }
+
+    .hexagon::before{
+      bottom:100%;
+      border-bottom:43px solid #f59e0b;
+    }
+
+    .hexagon::after{
+      top:100%;
+      border-top:43px solid #f59e0b;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+
+    <!-- LEFT SIDE -->
+    <div class="div1">
+      <div class="circle" data-id="1">Circle 1</div>
+      <div class="circle" data-id="2">Circle 2</div>
+      <div class="circle" data-id="3">Circle 3</div>
+      <div class="circle" data-id="4">Circle 4</div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="div2">
+      <div class="hexagon" data-id="1">Hexagon 1</div>
+      <div class="hexagon" data-id="2">Hexagon 2</div>
+      <div class="hexagon" data-id="3">Hexagon 3</div>
+      <div class="hexagon" data-id="4">Hexagon 4</div>
+    </div>
+
+  </div>
+
+  <script>
+
+    // Circle Click
+    $(".circle").click(function(){
+
+      let id = $(this).data("id");
+
+      $(this).fadeOut(500,function(){
+
+        $('.hexagon[data-id="'+id+'"]')
+          .fadeIn(500)
+          .css("display","flex");
+
+      });
+
+    });
+
+
+    // Hexagon Click
+    $(".hexagon").click(function(){
+
+      let id = $(this).data("id");
+
+      $(this).fadeOut(500,function(){
+
+        $('.circle[data-id="'+id+'"]')
+          .fadeIn(500);
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>

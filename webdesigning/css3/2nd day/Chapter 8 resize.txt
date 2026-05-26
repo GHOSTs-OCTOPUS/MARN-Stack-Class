@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+
+    	<title>Title Name will go here</title>
+
+		<style>
+
+			#div_both
+			{
+			border:1px solid green;
+			margin-top:20px;
+			padding:15px 30px;
+			width:250px;
+			resize:both;
+			overflow:auto;
+			}
+			
+			#div_horizontal
+			{
+			border:1px solid green;
+			margin-top:20px;
+			padding:15px 30px;
+			width:250px;
+			resize:horizontal;
+			overflow:auto;
+			}
+			
+			#div_vertical
+			{
+			border:1px solid green;
+			margin-top:20px;
+			padding:15px 30px;
+			width:250px;
+			resize:vertical;
+			overflow:auto;
+			}
+			
+		</style>
+	
+    </head>
+    <body>
+
+		<div id="div_both">This div is stretchable from both corner (Horizontal & Vertical).</div>
+		<div id="div_horizontal">This div is stretchable from horizontal corner.</div>
+		<div id="div_vertical">This div is stretchable from vertical corner.</div>				
+		
+    </body>
+    
+</html>
+

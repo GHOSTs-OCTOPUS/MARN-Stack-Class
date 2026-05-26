@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:mymove 5s infinite;
+-webkit-animation:mymove 5s infinite; /* Safari and Chrome */
+}
+
+@keyframes mymove
+{
+0%   {top:0px; background:red; width:100px;}
+100% {top:200px; background:yellow; width:300px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0%   {top:0px; background:red; width:100px;}
+100% {top:200px; background:yellow; width:300px;}
+}
+</style>
+</head>
+<body>
+
+
+<div></div>
+
+</body>
+</html>

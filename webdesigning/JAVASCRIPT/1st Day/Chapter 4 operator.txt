@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var a=20;
+var b=30;
+var c;
+c=a+b;
+document.write("The Addition of two number = "+c);
+document.write("<br/>");
+c=a-b;
+document.write("The substraction of two number = "+c);
+document.write("<br/>");
+c=a*b;
+document.write("The Multiplication of two number = "+c);
+document.write("<br/>");
+c=a/b;
+document.write("The Division of two number = "+c);
+
+
+</script>
+</body>
+</html>

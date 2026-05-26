@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="" id="p1">
+Username: <input type="text" name="uname"><br>
+<input type="submit" value="Submit">
+</form>
+Password: <input type="password" name="pass" form="p1">
+</body>
+</html>

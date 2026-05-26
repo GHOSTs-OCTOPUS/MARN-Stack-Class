@@ -1,0 +1,19 @@
+<html>
+
+<body>
+
+<p>
+
+QUALITY POLICIES:
+ It is our policy to provide <q>quality <q>services</q> on a best effort basis to</q> satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+</p>
+
+</body>
+</html>
+

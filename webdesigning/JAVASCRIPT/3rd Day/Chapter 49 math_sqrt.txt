@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>JavaScript Math sqrt() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+ var value = Math.sqrt( 81 );
+document.write("Squareroot is : " + value ); 
+</script>
+</body>
+</html>
+

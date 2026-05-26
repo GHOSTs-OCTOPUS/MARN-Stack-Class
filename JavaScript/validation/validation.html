@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            //username
+            uname=f1.uname.value
+            //empty 
+            if(uname==""){
+                alert("please enter username")
+                return false;
+
+            }
+            //length  5-10
+            if(uname.length<5 || uname.length>10){
+                alert("please enter valid length for username")
+                return false;
+            }
+            //password 
+            pass=f1.pass.value
+            cpass=f1.cpass.value
+            if(pass==""){
+                alert("please enter password")
+                return false;
+            }
+            if(pass.length!=8){
+
+                alert("please enter valid length for pass")
+                return false;
+            }
+            //uppercase  
+            flag=0
+            for(i=0;i<pass.length;i++){
+
+                if(pass.charCodeAt(i)>=65 && pass.charCodeAt(i)<=90){
+                    flag=1
+
+
+                }
+            }
+            if(flag==0){
+                alert("one uppercase is mandetory")
+                return false;
+            }
+            //cpass 
+            if(pass!=cpass){
+                alert("cpass and pass not match")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <form name="f1" onsubmit=" return fun()">
+        username:<input type="text" name="uname"/><br>
+        password:<input type="text" name="pass"/><br>
+        conf-password:<input type="text" name="cpass"/><br>
+        <input type="submit" />
+    </form>
+    
+</body>
+</html>

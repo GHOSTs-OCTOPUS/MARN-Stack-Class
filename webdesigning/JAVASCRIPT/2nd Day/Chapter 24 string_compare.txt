@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>JavaScript String charAt() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+   var str = new String( "cncweb" );
+  var index = str.localeCompare( "cncweb" );
+document.write("localeCompare first :" + index );
+</script>
+</body>
+</html>

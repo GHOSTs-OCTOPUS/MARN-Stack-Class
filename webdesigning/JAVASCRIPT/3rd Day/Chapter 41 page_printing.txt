@@ -1,0 +1,14 @@
+<html>
+<head>
+
+</head>
+<body>
+<form>
+Hello ! cncwebworld 
+<br/>
+<br/>
+<input type="button" value="Print" onClick="window.print()" />
+</form>
+</body>
+</html>
+

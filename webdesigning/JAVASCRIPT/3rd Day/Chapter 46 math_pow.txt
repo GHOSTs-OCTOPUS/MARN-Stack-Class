@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>JavaScript Math pow() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.pow(7, 2);
+document.write("The power is: " + value ); 
+  
+</script>
+</body>
+</html>
+

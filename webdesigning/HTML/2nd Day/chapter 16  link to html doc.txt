@@ -1,0 +1,8 @@
+<html>
+<Head>
+<title>Linking to another html page</title>
+</head>
+<body>
+<a href="demo.html">click</a>
+</body>
+</html>

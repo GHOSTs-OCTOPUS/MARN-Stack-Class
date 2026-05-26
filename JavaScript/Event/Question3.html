@@ -1,0 +1,72 @@
+<!--complete-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript Question 3 </title>
+    <script>
+
+        function add() {
+            if(confirm("Are You Want To Display Result?")){
+                a = eval(f1.t1.value) + eval(f1.t2.value)
+                f1.t3.value=eval(f1.t1.value) + eval(f1.t2.value)
+                
+            }else{
+                alert("Processes terminated. Select operation..!")
+            }
+            
+        }
+
+        function sub() {
+           if(confirm("Are You Want To Display Result?")){
+                a = eval(f1.t1.value) - eval(f1.t2.value)
+                f1.t3.value=eval(f1.t1.value) - eval(f1.t2.value)
+                
+            }else{
+                alert("Processes terminated. Select operation..!")
+            }
+        }
+
+        function mul() {
+            if(confirm("Are You Want To Display Result?")){
+                a = eval(f1.t1.value) * eval(f1.t2.value)
+                f1.t3.value=eval(f1.t1.value) * eval(f1.t2.value)
+                
+            }else{
+                alert("Processes terminated. Select operation..!")
+            }
+        }
+
+        function div() {
+            if(confirm("Are You Want To Display Result?")){
+                a = eval(f1.t1.value) / eval(f1.t2.value)
+                f1.t3.value=eval(f1.t1.value) / eval(f1.t2.value)
+            
+            }else{
+                alert("Processes terminated. Select operation..!")
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+
+    <form name="f1">
+
+        <input type="text" name="t1" placeholder="Enter First Number:" />
+        <input type="text" name="t2" placeholder="Enter Second Number:" />
+        <br><br>
+        <input type="button" value="ADD" onclick="add()" />
+        <input type="button" value="SUB" onclick="sub()" />
+        <input type="button" value="MUL" onclick="mul()" />
+        <input type="button" value="DIV" onclick="div()" />
+        <br><br>
+        <input type="text" name="t3" placeholder="Result is:" />
+
+    </form>
+</body>
+
+</html>

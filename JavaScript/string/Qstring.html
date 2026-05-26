@@ -1,0 +1,52 @@
+<html>
+<head>
+    <script>
+        /*
+        1) find how many capital letters in given string  
+        2) find how many space in given string
+        3) reverse
+        4) print character capital
+        */
+        let str = " WELcome To CnC wEB WOrld ";
+
+        let capCount = 0;
+        let spaceCount = 0;
+        let reversed = "";
+
+        for (let i = 0; i < str.length; i++) {
+
+            // Question 1: find how many capital letters in given string 
+            if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
+                capCount++;
+            }
+
+            // Question 2: find how many space in given string
+            if (str[i] === " ") {
+                spaceCount++;
+            }
+        }
+
+        // Question 3: Reverse
+        for (let i = str.length - 1; i >= 0; i--) {
+            reversed += str[i];
+        }
+
+        console.log("Question 1 Capital Letters: " + capCount);
+        document.write("Question 1 Capital Letters: " + capCount + "<br>");
+        document.write("=================================================<br>");
+
+        console.log("Question 2 Spaces: " + spaceCount);
+        document.write("Question 2 Spaces: " + spaceCount + "<br>");
+        document.write("=================================================<br>");
+
+        console.log("Question 3 Reversed: " + reversed);
+        document.write("Question 3 Reversed: " + reversed + "<br>");
+        document.write("=================================================<br>");
+        
+        // Question 4: print character in capital
+        console.log("Question 4 Uppercase: " + str.toUpperCase());
+        document.write("Question 4 Uppercase: " + str.toUpperCase());
+    </script>
+</head>
+<body></body>
+</html>

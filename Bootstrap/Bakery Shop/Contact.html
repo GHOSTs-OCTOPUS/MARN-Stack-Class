@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>	
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/Contact.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+	integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+
+		span{
+			font-style: italic;
+			color: rgb(93, 28, 28);
+			font-size: 16px;
+		}
+		
+	      a:hover{
+           text-decoration: underline;
+		   color: rgb(3, 77, 127);
+		}
+		
+		a,i:hover{
+                color: rgb(220, 143, 61);
+		}
+		.sa1{
+			color: white;
+		}
+		.sa1:hover{
+			color: rgb(228, 78, 3);
+		}
+		.r1:hover{
+            color: rgb(228, 78, 3);
+		}
+		.form-control input-lg1 :hover{
+        background: rgb(216, 142, 3);
+		}
+	</style>
+</head>
+<body >
+	<div class="container-fluid-full" style="background: url(./assets/images/contact3.jpg) no-repeat;background-size: 100% 100%;">
+	
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background: linear-gradient(to left,rgb(70, 41, 18),rgb(197, 137, 81), rgb(198, 61, 11)); ">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a class="nav-link"   href="./index.html" style="width: 140px; text-align: center;color: white;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="./About.html" style="width: 140px; text-align: center;color: white;">ABOUT US</a></li>
+					<li class="nav-item"><a class="nav-link"  href="./Cake.html" style="width: 140px; text-align: center;color: white;">CAKES</a></li>
+					<li class="nav-item"><a class="nav-link"  href="./OrderNow.html" style="width: 140px; text-align: center;color: white;">ORDER NOW</a></li>
+					<li class="nav-item"><a class="nav-link"  href="./reviews.html" style="width: 140px; text-align: center;color: white;">REVIEWS</a></li>		
+					<li class="nav-item active" style="border-bottom: 3px solid #d3a46c; font-size: 17px;"><a class="nav-link"  href="./Contact.html" style="width: 140px; text-align: center;color: rgb(250, 249, 247);">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav><br>
+
+	
+
+
+	<section>
+	
+		<div class="container-fluid">
+			<div  >
+				<div class="row" >
+					
+                       
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 " >
+						<div class="container" style="margin-top: 50px;">
+						<form name="f1" onsubmit="return fun()" >
+							
+							
+							<p style="color: rgb(228, 225, 225);font-size: 18px;">Username:</p><input type="text" name="Uname"  class="form-control input-lg" style="width: 300px;background: rgba(128, 128, 128, 0.153);" required/><br><br>
+							<p style="color: rgb(228, 225, 225);font-size: 18px;">Email:</p><input type="text" name="email" class="form-control input-lg" style="width: 300px;background: rgba(128, 128, 128, 0.153);" required/><br><br>
+							
+							<p style="color: rgb(228, 225, 225);font-size: 18px;">Address:</p><input type="text" name="add"  class="form-control input-lg" style="background: rgba(128, 128, 128, 0.153);" required/><br><br>
+							<p style="color: rgb(228, 225, 225);font-size: 18px;">Message: </p><textarea class="form-control" name="msg" id="" type="text" rows="3" style="background: rgba(128, 128, 128, 0.153);" required></textarea><br><br>
+							<p class="l1"><input type="Submit"  class="form-control input-lg1" 
+							 style="background:linear-gradient(to left,rgb(123, 45, 17),rgb(197, 137, 81), rgb(198, 61, 11));border: none;color: white;"/></p>
+							
+						</form>
+					</div>
+					</div>
+
+                         
+					<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 " style="margin-top: 20px;width: 500px;" >
+						
+						<div class="container">
+							
+							<div  style="background: rgba(30, 29, 29, 0.507);width: 300px;height: 300px;float: left;border-radius: 10px;margin-left: 20px;margin-top: 20px;" >
+									<a href="./reviews.html#shree" target="_blank" class="sa1" style="color: rgb(198, 61, 11);margin-left: 120px;">
+									<i class="fa-solid fa-location-dot" style="margin-top: 30px;font-size: 50px;"></i></a>
+									<h5 style="text-align: center;margin-top: 30px;font-size: 22px;font-weight: bold;color: white;">OUR MAIN OFFICE</h5>
+									<p style="color: rgb(220, 215, 215);text-align: center;margin-top: 20px;">Plot no. D-316,Turbhe <br> MIDC Area, Near Turbhe Naka,<br>Turbhe,Thane-400703</p>
+							</div>
+							<div style="background: rgba(23, 22, 22, 0.473);width: 300px;height: 300px;float: left;margin-left: 20px;border-radius: 10px;margin-top: 20px" >
+								<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHTNJRHCsftQgclBBvhnKMfsPRPCxKnFpNsZTxVDmHnmSvkMFqQPSxTFMRZDKfXHJwkRjV" target="_blank" class="sa1" style="color: rgb(198, 61, 11);margin-left: 120px;">
+									<i class="fa-solid fa-phone" style="margin-top: 30px;font-size: 50px;"></i></a>
+									<h5 style="text-align: center;margin-top: 30px;font-size: 22px;font-weight: bold;color: white;">PHONE NUMBER</h5>
+									<p style="color: rgb(220, 215, 215);text-align: center;margin-top: 20px;"><a href="#" class="sa1">+91 9152052085</a> <br><a href="#" class="sa1">@bakerynationindia</a></p>
+							</div>
+							<div  style="background: rgba(26, 25, 25, 0.504);width: 300px;height: 300px;float: left;border-radius: 10px;margin-top: 20px;margin-left: 20px;" >
+								<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHTNJRHCsftQgclBBvhnKMfsPRPCxKnFpNsZTxVDmHnmSvkMFqQPSxTFMRZDKfXHJwkRjV" target="_blank" class="sa1" style="color: rgb(198, 61, 11);margin-left: 120px;">
+									<i class="fa-solid fa-fax" style="margin-top: 30px;font-size: 50px;"></i></a>
+									<h5 style="text-align: center;margin-top: 30px;font-size: 22px;font-weight: bold;color: white;">FAX</h5>
+									<p style="color: rgb(220, 215, 215);text-align: center;margin-top: 20px;"><a href="#" class="r1">(876)511-BAKE</a> </p>
+							</div>
+							<div style="background: rgba(22, 21, 21, 0.549);width: 300px;height: 300px;float: left;margin-left: 20px;border-radius: 10px;margin-top: 20px" >
+								<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHTNJRHCsftQgclBBvhnKMfsPRPCxKnFpNsZTxVDmHnmSvkMFqQPSxTFMRZDKfXHJwkRjV" target="_blank" class="sa1" style="color: rgb(198, 61, 11);margin-left: 120px;">
+									<i class="fa-solid fa-envelope" style="margin-top: 30px;font-size: 50px;"></i></a>
+									<h5 style="text-align: center;margin-top: 30px;font-size: 22px;font-weight: bold;color: white;">EMAIL</h5>
+									<p style="color: rgb(220, 215, 215);text-align: center;margin-top: 20px;"><u>
+								<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHTNJRHCsftQgclBBvhnKMfsPRPCxKnFpNsZTxVDmHnmSvkMFqQPSxTFMRZDKfXHJwkRjV" target="_blank" class="sa1">support@bakerynation.com</a></u></p>
+							</div>
+						</div>
+				</div>
+					</div>
+				</div>		
+			</div>
+	</section>
+
+	<footer style="height: 170px;padding-top: 40px;margin-top: 110px;">
+		<div class="row">
+			
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p style="font-size: 24px;font-family: centaur;color: white;"><u>
+					<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHTNJRHCsftQgclBBvhnKMfsPRPCxKnFpNsZTxVDmHnmSvkMFqQPSxTFMRZDKfXHJwkRjV" target="_blank" class="sa1">support@bakerynation.com</a></u></p>
+				
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

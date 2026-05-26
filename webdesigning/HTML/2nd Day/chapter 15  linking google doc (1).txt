@@ -1,0 +1,13 @@
+<!--<a> tag defines a hyperlink. A hyperlink (or link) is a word, group of words, or image that you can click on to jump to another document.
+
+When you move the cursor over a link in a Web page, the arrow will turn into a little hand.
+
+The most important attribute of the <a> element is the href attribute, which indicates the link’s destination.
+An unvisited link is underlined and blue,A visited link is underlined and purple,An active link is underlined and red-->
+<html>
+<body>
+
+<a href="http://www.google.com">awesome search engine</a>
+
+</body>
+</html>

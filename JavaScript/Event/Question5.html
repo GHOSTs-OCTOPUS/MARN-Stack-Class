@@ -1,0 +1,73 @@
+<!--complete-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript Question 5</title>
+
+    <script>
+        function cal() {
+            if (confirm("Do you want to display result?")) {
+
+                let num1 = parseFloat(document.f1.t1.value);
+                let num2 = parseFloat(document.f1.t2.value);
+                let op = document.f1.op.value;
+
+                let result;
+
+                switch (op) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        if (num2 === 0) {
+                            alert("Cannot divide by zero");
+                            return;
+                        }
+                        result = num1 / num2;
+                        break;
+                    default:
+                        alert("Invalid operation! Use +, -, *, /");
+                        return;
+                }
+
+                document.f1.t3.value = result;
+
+            } else {
+                alert("Process terminated.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="f1">
+
+        <label>First Number:</label>
+        <input type="text" name="t1" placeholder="Enter First Number" />
+        <label>Second Number:</label>
+        <input type="text" name="t2" placeholder="Enter Second Number" />
+        <br><br>
+
+        <label>Enter Operation:</label>
+        <input type="text" name="op" placeholder="Enter Operation (+,-,*,/)" />
+        <br><br>
+
+        <input type="button" value="Calculate" onclick="cal()" />
+        <br><br>
+
+        <input type="text" name="t3" placeholder="Result is:" />
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.container
+{
+width:30em;
+border:1em solid;
+}
+div.box
+{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+width:50%;
+border:1em solid green;
+float:left;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="box">welcome </div>
+<div class="box">helloworld</div>
+</div>
+
+</body>
+</html>
+
+

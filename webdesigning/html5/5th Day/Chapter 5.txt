@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function l_storage()
+{
+    if( localStorage.hits ){
+       localStorage.hits = Number(localStorage.hits) +1;
+    }else{
+       localStorage.hits = 1;
+    }
+    document.write("Total Hits :" + localStorage.hits );
+	}
+  </script>
+  
+</head>
+<body>
+<input type="button" name="button" value="Submit" onclick="l_storage()">
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>JavaScript String toUpperCase() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var str = "welcome to cncwebworld.";
+
+document.write(str.toUpperCase( ));
+</script>
+</body>
+</html>
+

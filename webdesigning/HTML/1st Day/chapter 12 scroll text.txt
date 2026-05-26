@@ -1,0 +1,8 @@
+
+<html>
+<body>
+
+<marquee direction="right" scrollamount="2">Welcome to cncweb world</marquee>
+
+</body>
+</html>

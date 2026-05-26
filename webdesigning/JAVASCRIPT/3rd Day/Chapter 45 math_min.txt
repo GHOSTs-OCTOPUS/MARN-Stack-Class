@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.min(10, 20,50);
+document.write("Min Value : " + value ); 
+  
+
+</script>
+</body>
+</html>

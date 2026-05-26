@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" 
+   src="jquery-1.3.2.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+    $(document).ready(function() {
+
+      $("#go").click(function(){
+         $(".target").animate({left: '+=100px'}, 2000);
+      });
+
+      $("#stop").click(function(){
+         $(".target").stop();
+      });
+
+      $("#back").click(function(){
+         $(".target").animate({left: '-=100px'}, 2000);
+      });
+
+   });
+   </script>
+   <style>
+      
+     div{ 
+          position: absolute; 
+          left: 50px;
+          top:300px;
+        }
+  </style>
+</head>
+<body>
+
+   
+   <button id="go"> GO</button>
+   <button id="stop"> STOP </button>
+   <button id="back"> BACK </button>
+
+   <div class="target">
+      <img src="index.jpg" />
+   </div>
+  
+</body>
+</html>

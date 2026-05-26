@@ -1,0 +1,9 @@
+<html>
+<body>
+<form name="go">
+<input type="radio" name="C1" onclick="document.bgColor='lightblue'">Blue
+<input type="radio" name="C1" onclick="document.bgColor='yellow'">Yellow
+<input type="radio" name="C1" onclick="document.bgColor='lightgreen'">Green
+</form>
+</body>
+</html>

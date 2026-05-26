@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 1px;
+            margin:0px;
+        }
+
+        .main{
+            width:1248px;
+            height:544.5px;
+            border: 5px solid black;
+            margin: auto;
+            position: relative;
+        }
+
+        .object{
+            width: 50px;
+            height: 50px;
+            background-image: url('basketball.png');
+            background-size: 100%;
+            border-radius: 50px;
+            position: absolute;
+            animation: object 8s infinite linear;
+            z-index: 1;
+        }
+
+        @keyframes object
+        {
+            0%{top:500px; left:100px;}
+            5%{top:500px; left:100px;}
+            10%{top:0px; left:300px;}
+            20%{top:500px; left:500px;}
+            30%{top:0px; left:700px;}
+            40%{top:500px; left:800px;}
+            45%{top:0px; left:1050px;}
+            48%{top:100px; left:1112px;}
+            50%{top:500px; left:1050px;}
+            60%{top:0px; left:800px;}
+            65%{top:500px; left:700px;}
+            70%{top:0px;left:500px;}
+            75%{top:500px; left:300px;}
+            80%{top:0px; left:100px;}
+            90%{top:100px; left:75px;}
+            100%{top:490px; left:100px;}
+
+            from{
+            transform: rotate(0deg);
+        }
+
+            to{
+            transform: rotate(360deg);
+        }
+
+        }
+
+        
+
+        .rim{
+            width: 150px;
+            height: 100px;
+            background-image: url('basballrim.png');
+            background-size: 100%;
+            position: absolute;
+            right: 0px;
+            top: 100px;
+            z-index: 2;
+        }
+
+        .rim1{
+            width: 150px;
+            height: 100px;
+            background-image: url('basballrim1.png');
+            background-size: 100%;
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            z-index: 2;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<div class="main">
+
+<div class="rim"></div>
+
+<div class="rim1"></div>
+
+<div class="object"></div>
+
+</div>
+
+</body>
+</html>

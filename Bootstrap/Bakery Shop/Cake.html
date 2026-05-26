@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Our Cakes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+
+	<style type="text/css">
+		#plan:hover {
+			text-decoration: underline;
+			color: #ff471a;
+		}
+
+		#zoom:hover {
+			-webkit-transform: scaleX(-1);
+			transform: scaleX(-1);
+		}
+
+		footer {
+			background-color: rgb(121, 97, 68);
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="./assets/images/logo2.png" class="img-fluid mx-auto" height="70" width="170">
+				</div>
+
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 65px; margin-left: 60px; ">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-success" type="submit"
+								style="background: linear-gradient(to left,rgb(70, 41, 18),rgb(197, 137, 81),rgb(163, 61, 13)); border: none;">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top"
+		style="background: linear-gradient(to left,rgb(70, 41, 18),rgb(197, 137, 81),rgb(163, 61, 13)); ">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item "><a class="nav-link" href="index.html"
+							style="width: 140px; text-align: center;color: white;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="./About.html"
+							style="width: 140px; text-align: center;color: white;">ABOUT US</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #d3a46c; font-size: 17px;"><a
+							class="nav-link" href="./Cake.html"
+							style="width: 140px; text-align: center;color: white;">CAKES</a></li>
+					<li class="nav-item"><a class="nav-link" href="./OrderNow.html"
+							style="width: 140px; text-align: center;color: white;">ORDER NOW</a></li>
+					<li class="nav-item"><a class="nav-link" href="./reviews.html"
+							style="width: 140px; text-align: center;color: white;">REVIEWS</a></li>
+					<li class="nav-item"><a class="nav-link" href="./Contact.html"
+							style="width: 140px; text-align: center;color: rgb(250, 249, 247);">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav><br>
+
+
+
+
+	<section>
+
+		<div class="container">
+			<div class="cont">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<img src="./assets/images/cupcakes2....jpg" width="900" height="400px"
+							class=" img-fluid mx-auto d-block "><br>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p style="font-size: 23px; line-height: 28px; text-align: center;"><b></b> <b><i>“Quality baked
+									goods that will leave you wanting more.”</i></b> – Anonymous <br>
+						</p>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<p style="font-size: 20px; line-height: 28px; text-align: justify;">
+							<b>-</b>I hope you have some great memories of homemade baked goods, where the scent of
+							fresh-baked
+							bread or chocolate chip cookies came from a kitchen with people who loved and cared about
+							you.
+							This is where homemade becomes a beautiful description of a place in time that we felt
+							loved, or even safe.
+							<br><br>
+
+							<b>-</b> If you were lucky enough to experience this with someone special, then you know
+							what I’m talking about.
+							I hope that you feel that way with every order you receive from Angela’s Bakery..
+						</p><br>
+					</div>
+				</div>
+			</div>
+		</div><br>
+
+		<div class="container">
+			<div class="Category" id="CakesCategory2">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h1 style="text-align: center;">-Our Category -</h1>
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="DietPlan"
+							style="border:3px solid  #9f720a; border-radius: 20px; padding: 15px 5px 5px 5px;">
+							<a href="WeightLossDietPlan.html">
+								<h3 id="plan" style="text-align: center; color:  black;margin-bottom: 30px;">Candies,
+									Bandra West, Mumbai</h3>
+							</a>
+							<a href="WeightLossDietPlan.html"><img id="zoom" src="./assets/images/cake a1.webp"
+									class="img-thumbnail img-fluid mx-auto d-block" width="480"
+									style="border-radius: 20px;height: 300px;"></a>
+
+							<br>
+							<a style="font-size: 19px;margin-left: 200px; " href="WeightLossDietPlan.html"><b><u>Read
+										More >><br><br></u></b></a>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="DietPlan1"
+							style="border:3px solid  #9f720a; border-radius: 20px; padding: 15px 5px 3px 5px;">
+							<a href="1WeekDietPlan.html">
+								<h3 id="plan" style="text-align: center; color: black; margin-bottom: 30px;"> 210
+									Degrees, Churchgate, Mumbai</h3>
+							</a>
+							<a href="1WeekDietPlan.html"><img id="zoom" src="./assets/images/cake a15.webp"
+									class="img-thumbnail img-fluid mx-auto d-block " width="480"
+									style="border-radius: 20px;height: 300px;"></a>
+							<br>
+							<a style="font-size: 19px;margin-left: 200px;" href="WeightLossDietPlan.html"><b><u>Read
+										More >><br><br></u></b></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><br><br><br>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<img id="zoom" src="./assets/images/cake a1.webp" class="img-thumbnail img-fluid mx-auto d-block " width="350"
+						style="border-radius: 20px;height: 300px;">
+					<br>
+					<h2 style="text-align: center;font-size: 23px;">Chocolate Cake</h2>
+				</div>
+
+
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<img id="zoom" src="./assets/images/cake a2.webp" class="img-thumbnail img-fluid mx-auto d-block " width="350"
+						style="border-radius: 20px;height: 300px;">
+					<br>
+					<h2 style="text-align: center;font-size: 23px;">Cheese Cake</h2>
+
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<img id="zoom" src="./assets/images/cake a3.webp" class="img-thumbnail img-fluid mx-auto d-block " width="350"
+						style="border-radius: 20px;height: 300px;">
+					<br>
+					<h2 style="text-align: center;font-size: 23px;">Mousse Cake</h2>
+
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<img id="zoom" src="./assets/images/cake a4.webp" class="img-thumbnail img-fluid mx-auto d-block " width="350"
+						style="border-radius: 20px;height: 300px;">
+					<br>
+					<h2 style="text-align: center;font-size: 23px;">fruit Cake</h2>
+
+				</div>
+			</div>
+		</div><br><br>
+
+
+
+
+
+		<div class="container">
+			<div class="Category" id="CakesCategory">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<img id="zoom" src="./assets/images/cake a6.webp" class="img-thumbnail img-fluid mx-auto d-block "
+							width="350" style="border-radius: 20px;height: 300px;">
+						<br>
+						<h2 style="text-align: center;font-size: 23px;">Pastry</h2>
+					</div>
+
+
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<img id="zoom" src="./assets/images/cake a7.webp" class="img-thumbnail img-fluid mx-auto d-block "
+							width="350" style="border-radius: 20px;height: 300px;">
+						<br>
+						<h2 style="text-align: center;font-size: 23px;">Brownies</h2>
+
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<img id="zoom" src="./assets/images/cake a8.webp" class="img-thumbnail img-fluid mx-auto d-block "
+							width="350" style="border-radius: 20px;height: 300px;">
+						<br>
+						<h2 style="text-align: center;font-size: 23px;">Cupcake</h2>
+
+					</div>
+
+					<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						<img id="zoom" src="./assets/images/cake a9.webp" class="img-thumbnail img-fluid mx-auto d-block "
+							width="350" style="border-radius: 20px;height: 300px;">
+						<br>
+						<h2 style="text-align: center; font-size: 23px;">Cookies</h2>
+
+					</div>
+				</div>
+			</div>
+		</div><br><br><br><br>
+
+
+
+		<div class="container">
+			<div>
+				<div id="WeightLossSection2">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<h1 style="text-align: center;">- Top bakery brands & products in India -</h1>
+						</div>
+					</div><br>
+
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div style="border:3px solid  #9f720a; border-radius: 20px; " class="bg-light">
+								<h3
+									style="text-align: center; border-bottom: 3px solid  #9f720a; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">
+									Top 10 Bakeries</h3>
+								<ol style="padding-left: 100px; font-size: 19px;">
+									<li> Bombay Baking Company</li>
+									<li> Karachi Bakery </li>
+									<li>Birdys Bakery</li>
+									<li>7th Heaven</li>
+									<li>Celejo</li>
+									<li>Toujours</li>
+									<li>Theobroma</li>
+									<li>Monginis </li>
+									<li>Ribbons and Balloons</li>
+									<li>Deliciae by Bunty Mahajan</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div style="border:3px solid  #9f720a; border-radius: 20px;" class="bg-light">
+								<h3
+									style="text-align: center; border-bottom: 3px solid  #9f720a; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">
+									Products </h3>
+								<ol style="padding-left: 100px; font-size: 19px;">
+									<li>Bread, Bread rolls</li>
+									<li> Flatbreads</li>
+									<li>Bagels</li>
+									<li>Doughnuts</li>
+									<li> Muffins, Pizzas</li>
+									<li>Buns, Pastries</li>
+									<li>Pies, Crumpets</li>
+									<li>Tarts, Brownies</li>
+									<li>Croissants</li>
+									<li> Cupcakes, Cookies, Scones</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+							<div style="border:3px solid  #9f720a; border-radius: 20px;" class="bg-light">
+								<h3
+									style="text-align: center; border-bottom: 3px solid  #9f720a; border-radius: 20px; padding-top: 10px; padding-bottom: 10px; ">
+									Newly Added </h3>
+								<ol style="padding-left: 100px; font-size: 19px;">
+									<li>Ahdoo's Bakery</li>
+									<li>Wenger's Bakery </li>
+									<li> Kayani Bakery – Pune</li>
+									<li>FlowerAura </li>
+									<li> Bakingo</li>
+									<li>Jila Bakery – Goa</li>
+									<li>Mambally’s Roy Factory</li>
+									<li>Nahoum & Sons</li>
+									<li>Albert Bakery</li>
+									<li>Smith Field Bakery</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><br>
+
+	<footer style="height: 170px;margin-top: 40px;margin-top: 100px;">
+		<div class="row">
+
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<p style="font-size: 17px;font-family: centaur;margin-top: 50px;">@ 2024, Bakery Nation. All Copy Rights
+					Reserved. </p>
+				<h6 style="text-align: center;font-size: 18px;font-family: century;">Designed & Managed by <br>
+					Rise Food & Hospitality LLP</h6>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

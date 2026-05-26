@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="demo.php">
+  Username: <input type="text" name="uname"><br>
+  Password: <input type="Password" name="pass"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="demo.php" value="Submit as Admin">
+</form>
+</body>
+</html>
+

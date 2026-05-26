@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+width:170px;height:150px;background:#f7f7f7;margin-left:50px;margin-top:50px;position:relative;
+}
+#d1{
+width:30px;height:8px;background:#3498db;position:absolute;top:60px;left:0px;
+border-radius:20%;
+animation:myanim 2.5s infinite;
+-webkit-animation:myanim 2.5s infinite; /* Safari and Chrome */
+
+}
+
+@keyframes myanim
+{
+0%   {width:15px;left:0px;}
+50%	{width:50px;left:120px;background:orange;}
+100% {width:15px;left:0px;}
+ 
+}
+
+@-webkit-keyframes myanim /* Safari and Chrome */
+{
+0%   {width:15px;left:0px;}
+50%	{width:50px;left:120px;background:orange;}
+100% {width:15px;left:0px;}
+ 
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="d1"></div>
+</div>
+</body>
+</html>

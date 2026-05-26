@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var str="Welcome";
+var nline="<br/>";
+document.write(str);
+document.write(nline);
+document.write("Helloworld");
+</script>
+</body>
+</html>
+

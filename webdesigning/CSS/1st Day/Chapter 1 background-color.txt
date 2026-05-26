@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body style="background-color:gray">
+<p style="background:green; color: white;">A background and
+ font color with inline CSS</p>
+</body>
+</html>
+

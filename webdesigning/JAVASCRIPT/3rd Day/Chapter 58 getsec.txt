@@ -1,0 +1,11 @@
+html>
+<head>
+<title>JavaScript getDay Method</title>
+</head>
+<body>
+<script type="text/javascript">
+   var dt = new Date();
+   document.write("Seconds() :" +dt.getSeconds()); 
+</script>
+</body>
+</html>

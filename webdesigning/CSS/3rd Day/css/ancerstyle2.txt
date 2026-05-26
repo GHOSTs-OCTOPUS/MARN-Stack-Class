@@ -1,0 +1,38 @@
+<html>
+<head>
+<style type="text/css">
+ul#style
+{
+list-style:none;
+}
+#style a
+{
+display:block;<!--The display property defines how a certain HTML element should be displayed. The element is displayed as a block-level element-->
+float:left;<!--The float property specifies whether or not a box (an element) should float.
+left:The element floats to the left
+right:The element floats the right.
+none:The element is not floated, and will be displayed just where it occurs in the text.-->
+text-decoration:none;
+padding:10px;
+width:100px;
+height:25px;
+padding-left:40px;
+background:url(pic.png) no-repeat left bottom;
+}
+#style a:hover
+{
+background-position:left top;
+color:red;
+}
+</style>
+</head>
+<body>
+<ul id="style">
+<li><a href="http://www.yahoo.com">Yahoo</a></li>
+<li><a href="http://www.google.com">Google</a></li>
+<li><a href="http://www.cncnwebworld.com">Cnc</a></li>
+</ul>
+
+
+</body>
+</html>

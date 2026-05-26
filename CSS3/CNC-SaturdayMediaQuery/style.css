@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding:10px 5%;
+    z-index: 999;
+    width:100%;
+    align-items: center;
+    color:white
+}
+nav .dropdown{
+    display: flex;
+    list-style: none;
+}
+.dropdown li{
+    padding: 0 10px;
+}
+.toggleBTN{
+    display: none;
+}
+.hederDiv{
+    display: flex;
+
+}
+.hederDiv .left{
+width:80%;
+background-color: black;
+color:white;
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding:10%;
+flex-wrap: wrap;
+}
+.left .content,.left img{
+width:50%
+}
+.left h1{
+    font-size: 50px;
+}
+.left button{
+    padding:10px 30px;
+    background-color: orange;
+    color:white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.hederDiv .right{
+    width: 20%;
+    background-color: orange;
+}
+.form{
+    background-color: white;
+    padding:50px 5%;
+    position: absolute;
+    top:90%;
+    left:20%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px black;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.form button{
+    padding:5px 30px;
+    background-color: orange;
+    color:white;
+    font-size: 20px;
+}
+.form input{
+    height: 25px;
+    width: 150px;
+}
+section{
+    padding-top: 20vh;
+    text-align:center;
+}
+.heading h1:nth-child(2){
+color: orange;
+font-size: 50px;
+margin:10px 0
+}
+.heading button:nth-child(1){
+    background-color: black;
+}
+.heading button{
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 30px;
+    color:white;
+    border:none;
+    text-transform: uppercase;
+}
+.jobCardContainer{
+    padding:50px 15%
+}
+.jobCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:200px;
+    background:linear-gradient(rgba(0,0,0,0.9) 50%,orange 50%) ;
+    color:white;
+    padding:90px 50px 10px 50px;
+    height:250px;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin:10px 0;
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all .4s ease-in-out;
+}
+.card:hover{
+    background-position: bottom;
+
+}
+.card:hover a{
+color:black
+}
+.card a{
+    position: absolute;
+    bottom:10px;
+color:orange;
+width: 100%;
+left:0;
+text-decoration: none;
+text-align: center;
+}
+
+.jobCardContainer button{
+    background-color: orange;
+    color:white;
+    padding:10px 20px;
+    margin-top:50px;
+    border:none
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+article div{
+    width:50%;
+    background-color: orange;
+    color:white;
+    padding: 80px 5% 50px 12%;
+}
+article h1{
+    font-size: 50px;
+}
+article p{
+    margin: 50px 0;
+}
+article img{
+    width:50%;
+    height: 500px;
+}
+article button{
+    padding: 10px 30px;
+background-color: black;
+color:white
+}
+footer{
+    display: flex;
+    background-color: black;
+    color:white;
+    flex-wrap: wrap;
+}
+footer div{
+    width:25%;
+    padding:10px 5%
+}
+@media (max-width:768px){
+    nav .dropdown{
+        display: none;
+        position: fixed;
+        top:50px;
+        left:0;
+        width:100%;
+        text-align: center;
+        background-color: rgba(0,0,0,0.9);
+    }
+    .toggleBTN{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .left .content,.left img{
+        width:100%;
+        padding: 50px 0;
+        }
+        .form{
+            left:10%;
+            width: 80%;
+        }
+        .form input{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        section{
+            padding-top: 30vh;
+        }
+        article img,article div{
+            width:100%
+        }
+        footer div{
+            width:50%;
+            padding:10px 5%
+        }
+}

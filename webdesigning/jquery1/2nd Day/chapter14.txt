@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":checked").wrap("<span style='background-color:red' />");
+});
+</script>
+</head>
+<body>
+
+<form>
+Courses:<input type="checkbox" name="check1" checked="checked">PHP
+<input type="checkbox" name="check2">JAVA
+<input type="checkbox" name="check3">Android
+</form> 
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+background:url(index.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+</style>
+</head>
+<body>
+
+<div>
+CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting of a website to the browser.
+CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting of a website to the browser.
+CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting of a website to the browser.
+</div>
+
+</body>
+</html>

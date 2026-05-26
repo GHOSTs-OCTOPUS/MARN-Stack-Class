@@ -1,0 +1,10 @@
+<html>
+<head>
+<style type="text/css">
+Body {background-image: url(pic.jpg); background-repeat: repeat-y}
+</style>
+</head>
+<body>
+<p>Hello! This is my frist CSS</p>
+</body>
+</html>

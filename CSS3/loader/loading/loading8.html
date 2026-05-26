@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+width:170px;height:150px;background:#f7f7f7;margin-left:50px;margin-top:50px;position:relative;
+}
+
+#d1{
+width:25px;height:15px;background:#3498db;position:absolute;top:60px;left:80px;
+border-radius:40%;
+animation:myanima 1.5s infinite;
+-webkit-animation:myanima 1.5s infinite; /* Safari and Chrome */
+
+}
+
+@keyframes myanima
+{
+0%   {width:15px;}
+50%	{width:50px;left:40px;padding:10px;}
+100% {width:15px;}
+ 
+}
+
+@-webkit-keyframes myanima /* Safari and Chrome */
+{
+0%   {width:15px;}
+50%	{width:30px;}
+100% {width:15px;}
+}
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="d1"></d1>
+</div>
+</body>
+</html>

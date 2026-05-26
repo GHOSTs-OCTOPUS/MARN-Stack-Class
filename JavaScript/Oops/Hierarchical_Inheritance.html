@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarchical Inheritance</title>
+    <script>
+        /*
+            C]Hierarchical Inheritance 
+        
+            Q1.Create a program to demonstrate Hierarchical Inheritance using the following hierarchy: 
+                1. Base Class: Shape 
+                    • Method: area() → prints "This is the area method for shapes". 
+                2. Derived Class: Circle (inherits Shape) 
+                    • Constructor: accepts radius. 
+                    • Method: area() → calculates and prints "Area of Circle: <calculated value>". 
+                3. Derived Class: Rectangle (inherits Shape) 
+                    • Constructor: accepts length and width. 
+                    • Method: area() → calculates and prints "Area of Rectangle: <calculated value>". 
+                4. Derived Class: Triangle (inherits Shape) 
+                    • Constructor: accepts base and height. 
+                    • Method: area() → calculates and prints "Area of Triangle: <calculated value>". 
+                5. Task 
+                    • Create objects of Circle, Rectangle, and Triangle. 
+                    • Call the area() method for each object. 
+        
+            Expected Console Output: 
+                Area of Circle: 78.5 
+                Area of Rectangle: 60 
+                Area of Triangle: 16
+        */
+        class Shape {
+            area() {
+                console.log("This is the area method for shapes")
+            }
+        }
+        class Circle extends Shape {
+            constructor(radius) {
+                super()
+                this.radius = radius
+            }
+            area() {
+                let area = 3.14 * this.radius * this.radius
+                console.log("Area of Circle: ", area)
+            }
+        }
+        class Rectangle extends Shape {
+            constructor(length, width) {
+                super()
+                this.length = length
+                this.width = width
+            }
+            area() {
+                let area = this.length * this.width
+                console.log("Area of Rectangle: ", area)
+            }
+        }
+        class Triangle extends Shape {
+            constructor(base, height) {
+                super()
+                this.base = base
+                this.height = height
+            }
+            area() {
+                let area = 0.5 * this.base * this.height
+                console.log("Area of Triangle: ", area)
+            }
+        }
+        Object.freeze(Shape)
+        Object.freeze(Circle)
+        Object.freeze(Rectangle)
+        Object.freeze(Triangle)
+
+        let circle = new Circle(5)
+        let rectangle = new Rectangle(10, 6)
+        let triangle = new Triangle(8, 4)
+        circle.area()
+        rectangle.area()
+        triangle.area()
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

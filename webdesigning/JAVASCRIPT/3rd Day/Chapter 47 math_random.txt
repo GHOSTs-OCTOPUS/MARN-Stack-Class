@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>JavaScript Math random() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.random(10);
+document.write("First Test Value : " + value ); 
+  
+</script>
+</body>
+</html>

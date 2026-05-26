@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>JavaScript String substr() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+var str = "Apples are round, and apples are juicy.";
+document.write("The substring is  "    + str.substr(0,6));
+</script>
+</body>
+</html>
+

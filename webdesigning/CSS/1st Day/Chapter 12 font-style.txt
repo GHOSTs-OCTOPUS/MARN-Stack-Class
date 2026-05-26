@@ -1,0 +1,10 @@
+<html>
+<style type=”text/css”>
+P { font-style:italic; }
+</style>
+<head>
+</head>
+<body>
+<p>This is a paragraph</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<script type="text/javascript" >
+function validate()
+{
+
+  username=document.getElementById('username').value;
+ upass=document.getElementById('pass').value;
+
+  	if(empty(username))
+	{
+	document.getElementById('uname').innerHTML="* Please Enter Username";
+	document.getElementById('username').value="";
+	document.getElementById('username').focus();
+	return false;
+	}
+
+	else
+	{
+	document.getElementById('uname').innerHTML="";
+	}
+
+	
+    if(empty(upass))
+	{
+		document.getElementById('cpass').innerHTML="* Please Enter Password";
+		document.getElementById('pass').value="";
+		document.getElementById('pass').focus();
+		return false;
+	}
+	else
+	{
+		document.getElementById('cpass').innerHTML="";
+				
+	}
+        
+       
+}
+
+function empty(str)
+{
+	if(str=="")
+	{
+	return true;
+	}
+	return false;
+}
+</script>
+</head>
+<body>
+
+
+
+<form action="" method="post" name="login" id="form-login" />
+     
+        
+Username: <input type="text" name="username" value="" id="username" size="21"/>	
+<div id="uname" style="color:red;"></div></td> 
+Password:<input type="password" name="pass" value="" id="pass" size="18"/>	
+<div id="cpass" style="color:red;"></div>
+<input type="submit" name="Submit"  value="Login" onClick="return validate()" />
+                                                            	
+ 
+</form>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="index.php">
+  URL: <input type="url" name="url"><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

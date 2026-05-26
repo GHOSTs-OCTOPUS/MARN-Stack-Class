@@ -1,0 +1,13 @@
+<html>
+<body>
+
+
+
+<form>
+<input type="button" onclick=
+"alert('Hello world !')" 
+value="Confirmation Alert">
+</form>
+
+
+

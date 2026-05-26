@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 1500px;
+            height: 300px;
+            background-color: rgb(24, 163, 24);
+            position: relative;
+            align-items: center;
+
+        }
+
+        .header {
+            width: 70%;
+            height: 20%;
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 15%;
+        }
+
+        .header em {
+            font-size: 20px;
+        }
+
+        .inner {
+            width: 80%;
+            height: 20%;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            bottom: 0;
+            left: 120px;
+        }
+
+        .inner ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50%;
+            list-style-type: none;
+            color: white;
+        }
+        .inner ul li {
+            font-size: 18px;
+        }
+        .inner ul li:hover {
+            color: black;
+            cursor: pointer;
+            border:1px solid black;
+        }
+
+        .outer1 {
+            width: 1500px;
+            height: 700px;
+            background-color: rgba(103, 100, 102, 0.578);
+            position: relative;
+
+        }
+
+        .inner1 {
+            width: 80%;
+            height: 700px;
+            background-color: white;
+            position: absolute;
+            left: 120px;
+        }
+        .left {
+            width: 30%;
+            height:700px;
+            background-color: rgb(200, 195, 195);
+            float: left
+        }
+        .left ul {
+            list-style-type: none;
+            font-size: 18px;
+            
+        }
+        .left ul h2 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+        .left ul li {
+            line-height: 40px;
+            text-align: left;
+            border-bottom: solid 1px rgb(0, 0, 0);
+            padding-top: 10px;
+            padding-left: 20px;
+            
+        }
+        .left ul li:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+        }
+        .left ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .left ul li a:hover {
+            color: white;
+        }
+        .right {
+            width: 839px;
+            height: 700px;
+            background-color: rgb(200, 195, 195);
+            float: left;
+            border-left: 1px solid rgb(0, 0, 0);
+        }
+        .right h1 {
+            font-size: 38px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+        }
+        .right p {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+        }
+        .right h2 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="header">
+            <h1>Website Title | <em>Welcome to our site</em></h1>
+        </div>
+        <div class="inner">
+            <ul>
+                <li>Subpage1</li>
+                <li>Subpage2</li>
+                <li>Subpage3</li>
+                <li>Subpage4</li>
+                <li>Subpage5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="outer1">
+        <div class="inner1">
+            <div class="left">
+                <ul>
+                    <h2>Navigation</h2>
+                    <li>Subpage1</li>
+                    <li>Subpage2</li>
+                    <li>Subpage3</li>
+                    <li>Subpage4</li>
+                    <li>Subpage5</li>
+                </ul>
+                <ul>
+                    <h2>Link</h2>
+                    <li><a href="#">Subpage1</a></li>
+                    <li><a href="#">Subpage2</a></li>
+                    <li><a href="#">Subpage3</a></li>
+                    <li><a href="#">Subpage4</a></li>
+                    <li><a href="#">Subpage5</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>Content</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <h2>Sub Content</h2><hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. 
+                   lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. 
+                   lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

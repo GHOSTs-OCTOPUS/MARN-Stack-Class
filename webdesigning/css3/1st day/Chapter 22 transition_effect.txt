@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:gray;
+transition-property:width;
+transition-duration:1s;
+transition-timing-function:linear;
+transition-delay:3s;
+/* Safari */
+-webkit-transition-property:width;
+-webkit-transition-duration:1s;
+-webkit-transition-timing-function:linear;
+-webkit-transition-delay:3s;
+}
+
+div:hover
+{
+width:300px;
+}
+</style>
+</head>
+<body>
+
+
+<div></div>
+
+
+
+</body>
+</html>

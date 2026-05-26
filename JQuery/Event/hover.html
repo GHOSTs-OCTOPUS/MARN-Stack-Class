@@ -1,0 +1,27 @@
+<!-- The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.The first
+function is executed when the mouse enters the HTML element, and the second function is executed when the mouse leaves
+the HTML element. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").hover(function () {
+                $(this).hide();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <p>welcome to cncwebworld</p>
+    <p>welcome to cnc</p>
+</body>
+
+</html>

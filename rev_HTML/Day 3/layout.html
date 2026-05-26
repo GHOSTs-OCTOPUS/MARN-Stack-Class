@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .main {
+                width: 800px;
+                height: 800px;
+                background: red;
+                margin: auto;
+            }
+
+            .header {
+                width: 800px;
+                height: 150px;
+                background: aqua;
+            }
+
+            .nav {
+                width: 800px;
+                height: 50px;
+                background: orange;
+            }
+
+            .cont {
+                width: 800px;
+                height: 500px;
+                background: blue;
+            }
+
+            .footer {
+                width: 800px;
+                height: 100px;
+                background: pink;
+            }
+
+            .cont .left {
+                width: 300px;
+                height: 500px;
+                background: yellow;
+                float: left;
+            }
+
+            .cont .right {
+                width: 500px;
+                height: 500px;
+                background: lime;
+                float: left;
+            }
+
+            .header img {
+                width: 100px;
+                height: 100px;
+                padding-left: 50px;
+                padding-top: 20px;
+                float: left;
+            }
+
+            .header h1 {
+
+                float: left;
+                margin-left: 30px;
+                margin-top: 30px;
+            }
+
+            .footer p {
+                text-align: center;
+                padding-top: 30px;
+            }
+
+            .nav ul li {
+                list-style: none;
+                float: left;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+            }
+
+
+            .nav ul li:hover {
+                background: pink;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <img src="panda.jpg" />
+                <h1> this is layout<br>Header</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Navbar_list</li>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="cont">
+                <div class="left">
+                    <p>This is Left Side contener</p>
+                    <hr>
+                </div>
+                <div class="right">
+                    <p>This is Right Side contener</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Footer Content</p>
+            </div>
+        </div>
+    </body>
+
+</html>

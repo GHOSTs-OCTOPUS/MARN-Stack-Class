@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+border:15px solid transparent;
+width:250px;
+padding:10px 20px;
+}
+
+#round
+{
+-webkit-border-image:url(b.png) 30 30 round; /* Safari 5 and older */
+-o-border-image:url(b.png) 30 30 round; /* Opera */
+border-image:url(b.png) 30 30 round;
+}
+
+#stretch
+{
+-webkit-border-image:url(b.png) 30 30 stretch; /* Safari 5 and older */
+-o-border-image:url(b.png) 30 30 stretch; /* Opera */
+border-image:url(b.png) 30 30 stretch;
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="round">CSS is an acronym for Cascading Style Sheets, a web-based markup language 
+used to describe the look and formatting of a website to the browser.</div>
+<br>
+<div id="stretch">CSS is an acronym for Cascading Style Sheets, a web-based markup language used to describe the look and formatting 
+of a website to the browser..</div>
+
+
+</body>
+</html>

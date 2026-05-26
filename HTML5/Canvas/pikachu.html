@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu Canvas</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        canvas {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid black;
+        }
+
+        /* copyright */
+        .footer {
+            background: #262526;
+            border-top: 1px solid #6d6d6d;
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .copyright_text {
+            color: #000000;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+
+        .copyright_text a {
+            font-size: larger;
+            font-weight: bold;
+            color: #fc95c4;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="pikachuCanvas" width="900" height="600"></canvas>
+    <!-- Copyright -->
+    <footer>
+        <div class="container">
+            <p class="copyright_text">&copy;All Rights Reserved. Design by <a
+                    href="https://github.com/GHOSTs-OCTOPUS">GHOSTs-OCTOPUS</a> Distribution by <a
+                    href="https://cncwebworld.com/">CNC Web World</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        /*
+            Pikachu Canvas
+        */
+        const canvas = document.getElementById("pikachuCanvas");
+        const ctx = canvas.getContext("2d");
+        // Helper function
+        function circle(x, y, r, fill, stroke) {
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2);
+            if (fill) ctx.fill();
+            if (stroke) ctx.stroke();
+        }
+        // HEAD (Yellow)
+        ctx.fillStyle = "#ffeb3b";
+        circle(450, 300, 150, true);
+        
+
+        ctx.beginPath();
+        ctx.ellipse(270, 140, 40, 120, -70, 0, Math.PI * 2);
+        ctx.ellipse(620, 140, 40, 120, 70, 0, Math.PI * 2);
+        ctx.fillStyle = "#ffeb3b";
+        //ctx.quadraticCurveTo(300, 25, 350, 200);
+        //ctx.quadraticCurveTo(300, 20, 450, 180);
+        ctx.fillStyle = "#ffeb3b";
+        ctx.fill();
+        // right ear
+        ctx.beginPath();
+        //ctx.quadraticCurveTo(600, 25, 550, 200);
+        //ctx.quadraticCurveTo(595, 25, 450, 180);
+        //ctx.fillStyle = "#ffeb3b";
+        //ctx.fill();
+        
+        // EYES
+        ctx.fillStyle = "#000";
+        circle(400, 250, 30, true);
+        circle(500, 250, 30, true);
+        // PUPILS
+        ctx.fillStyle = "#fff";
+        circle(410, 240, 10, true);
+        circle(510, 240, 10, true);
+        
+        // NOSE
+        ctx.fillStyle = "#001122";
+        ctx.triangle = new Path2D();
+        ctx.triangle.moveTo(450, 280);
+        ctx.triangle.lineTo(430, 320);
+        ctx.triangle.lineTo(470, 320);
+        ctx.triangle.closePath();
+        ctx.fill(ctx.triangle);
+
+        //circle(450, 310, 15, true);
+
+        // MOUTH
+        ctx.beginPath();
+        ctx.moveTo(400, 370);
+        ctx.quadraticCurveTo(450, 410, 500, 370);
+        ctx.stroke();
+        
+
+        /* CHEEKS
+        ctx.fillStyle = "#ffeb3b";
+        ctx.beginPath();
+        ctx.ellipse(330, 370, 40, 70, -10, 0, Math.PI * 2);
+        ctx.ellipse(570, 370, 40, 70, 10, 0, Math.PI * 2);
+        ctx.fill();
+        */
+        ctx.fillStyle = "#ff5722";
+        circle(350, 350, 40, true);
+        circle(550, 350, 40, true);
+        
+    </script> 
+      
+</body>
+</html>

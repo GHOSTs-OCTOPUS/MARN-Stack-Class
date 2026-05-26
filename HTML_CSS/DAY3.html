@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <table>
+    <tr>
+    <td>
+    <form method="post" action="demo.php">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <table>
+            <tr>
+                <td>  <label>username:-</label></td>
+                <td><input type="text" name="uname" value="cnc"/></td>
+            </tr>
+            <tr>
+                <td><label>password:-</label></td>
+                <td><input type="password" name="pwd" placeholder="enter password" /></td>
+            </tr>
+            <tr>
+                <td><label>gender</label></td>
+                <td>
+                    <input type="radio" name="c1" value="male"/>male
+                    <input type="radio" name="c1" value="female" checked/>female
+                </td>
+            </tr>
+             <tr>
+                    <td><label>skill:-</label></td>
+                    <td>
+                        <input type="checkbox" name="b1" value="html"/>html
+                        <input type="checkbox" name="b2" value="css" checked/>css
+                        <input type="checkbox" name="b3" value="js"/>js
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>city:-</label></td>
+                    <td>
+                        <select name="city">
+                            <option >mumbai</option>
+                            <option >pune</option>
+                            <option selected>nashik</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>address</td>
+                        <td>
+                            <textarea name="add" rows="8" cols="30" disabled>mumbai</textarea>
+                        </td>
+                </tr>
+                <tr>
+                    <td><label>date</label></td>
+                    <td><input type="date" name="date"/></td>
+                </tr>
+                <tr>
+                    <td><label>email</label></td>
+                    <td><input type="email" name="email"/></td>
+                </tr>
+                <tr>
+                    <td><label>number</label></td>
+                    <td><input type="number" name="number" min="0" max="10"/></td>
+                </tr>
+                <tr>
+                    <td><label>file</label></td>
+                    <td><input type="file" name="file"/></td>
+                </tr>
+                 <tr>
+                <td>
+                    <input type="submit" value="sub"/>
+                    <input type="button" value="click"/>
+                    <input type="reset" value="clear"/>
+                </td>
+            </tr>
+        </table>
+      
+        
+</fieldset>
+    </form>
+    </td>
+    </tr>
+  </table>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+<style type="text/css">
+p{width:400px; height:100px; border:1px solid red}
+</style>
+</head>
+<body>
+<p>
+This is paragraph. 
+</p>
+</body>
+</html>

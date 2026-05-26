@@ -1,0 +1,58 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+						   
+	$(".pane .delete").click(function(){
+		$(this).parents(".pane").animate({ opacity: 'hide' }, "slow");
+	});
+
+});
+</script>
+
+<style type="text/css">
+body {
+	margin: 10px auto;
+	width: 470px;
+}
+
+
+.pane {
+	
+	padding: 10px 20px 10px;
+	position: relative;
+	
+}
+.pane .delete {
+	position: absolute;
+	top: 20px;
+	right: 200px;
+	cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="pane">
+	
+	
+	<img src="images.jpg">
+	<img src="btn-delete.gif" alt="delete" class="delete" />
+</div>
+<div class="pane">
+	
+	
+	<img src="images.jpg">
+	<img src="btn-delete.gif" alt="delete" class="delete" />
+</div>
+
+
+</body>
+</html>

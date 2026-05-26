@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("p:not(.para1)").css("color","blue");
+});
+</script>
+<body>
+<div>
+<p class="para1">This is a paragraph</p>
+<p class="para1">This is a paragraph</p>
+</div>
+<div>
+<p class="para2">This is a paragraph</p>
+<p class="para2">This is a paragraph</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":submit").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+
+<form>
+<input type="submit" name="b1" value="Submit">
+</select>
+</form> 
+</body>
+</html>

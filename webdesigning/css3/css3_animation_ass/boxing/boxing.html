@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            width: 1270px;
+            height: 500px;
+            background-color: aquamarine;
+            border: 5px double black;
+            margin: auto;
+            position: relative;
+        }
+
+        .ball1 {
+            width: 200px;
+            height: 100px;
+            background-image: url('redglove.png');
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 1px;
+            animation: ball1 4s infinite linear;
+        }
+
+        .ball2 {
+            width: 180px;
+            height: 100px;
+            background-image: url('whiteglove.png');
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            right: 1px;
+            animation: ball2 4s infinite linear;
+        }
+
+        .bag {
+            width: 200px;
+            height: 400px;
+            background-image: url('punchingbag.png');
+            background-size: 100%;
+            position: absolute;
+            left: 500px;
+            animation: bag 3s infinite linear;
+        }
+
+        @keyframes ball1 {
+            0% {
+                left: 1px;
+            }
+            50% {
+                left: 350px;
+            }
+            100% {
+                left: 1px;
+            }
+
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(30deg);
+            }
+        }
+
+        @keyframes ball2 {
+            0% {
+                right: 1px;
+            }
+            50% {
+                right: 460px;
+            }
+            100% {
+                right: 1px;
+            }
+
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(-40deg);
+            }
+        }
+
+        @keyframes bag
+        {
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(20deg);
+            }
+
+            
+
+
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="bag"></div>
+    </div>
+
+</body>
+</html>

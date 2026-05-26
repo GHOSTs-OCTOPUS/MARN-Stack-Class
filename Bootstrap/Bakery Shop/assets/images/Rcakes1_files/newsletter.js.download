@@ -1,0 +1,54 @@
+(function (global) {
+    if (!Array.prototype.indexOf) {
+        Array.prototype.indexOf = function(obj, start) {
+            var i, j;
+            i = start || 0;
+            j = this.length;
+            while (i < j) {
+                if (this[i] === obj) {
+                    return i;
+                }
+                i++;
+            }
+            return -1;
+        };
+    }
+    if(!global.Spothopper) { global.Spothopper = {}; };
+    var spothopper = global.Spothopper;
+
+    if(!spothopper.processedScripts) { spothopper.processedScripts = []; };
+    var processedScripts = spothopper.processedScripts;
+
+    var scriptTags = document.getElementsByTagName('script');
+    var thisRequestUrl = 'https://www.spothopperapp.com/spots/222057/widgets/newsletter.js?template=newsletter_widget1';
+    for(var i = 0; i < scriptTags.length; i++) {
+        var scriptTag = scriptTags[i];
+        if (scriptTag.src == thisRequestUrl && processedScripts.indexOf(scriptTag) < 0) {
+            processedScripts.push(scriptTag);
+            var div = document.createElement('div');
+            div.id = 'email_subscription_222057_newsletter_widget1_ca8739f3a1a1a1bb8e968ba240910a16';
+            div.className = 'spothopper-embeddable';
+            scriptTag.parentNode.insertBefore(div, scriptTag);
+            div.innerHTML = '<div class="sph-email-subscription">    <div class="sph-email-form">        	<h2>Sign up for our newsletter &amp; get exclusive offers and invites!</h2>        <label for="sph-newsletter-input-ca8739f3a1a1a1bb8e968ba240910a16" style="display:block; margin-top:40px; margin-bottom:-10px; text-align: inherit; font-size:medium; font-weight:inherit;">Email (required)</label>        <input class="sph-email-input" id="sph-newsletter-input-ca8739f3a1a1a1bb8e968ba240910a16" type="email" placeholder="e.g. email@example.com"  required="required"/>                 <button type="button" class="sph-submit-button  sph-newsletter-widget-1-btn" style="" id="ca8739f3a1a1a1bb8e968ba240910a16" onclick="submitEmail(this.id)"><span class="sph-submit-label">Submit</span><span class="sph-loading-img"><img src="https://static.spotapps.co/assets/widgets/loading.gif" alt="Newsletter loader icon"></span></button>    </div>      <div class="sph-response-message">    </div></div>';
+        }
+    }
+    applyH2ColorToLabelsInWidgets();
+})(this);
+
+function applyH2ColorToLabelsInWidgets() {
+    var font_color = $('.sph-email-subscription h2:first').css('color');
+    var all_labels = document.querySelectorAll('.sph-email-subscription label');
+    all_labels.forEach((label) => {
+        label.style.color = font_color;
+    });
+};
+
+function sphRecaptchaWidget1Callback(param) {
+  $('.sph-newsletter-widget-1-btn').css('display', 'block');
+  $('.sph-newsletter-widget-1-recaptcha').css('display', 'none');
+};
+
+function sphRecaptchaWidget2Callback(param) {
+  $('.sph-newsletter-widget-2-btn').css('display', 'block');
+  $('.sph-newsletter-widget-2-recaptcha').css('display', 'none');
+};

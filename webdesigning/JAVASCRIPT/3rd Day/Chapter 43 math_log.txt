@@ -1,0 +1,14 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+var value = Math.log(10);
+document.write("First Test Value : " + value ); 
+  
+  </script>
+  </body>
+  </html>
+

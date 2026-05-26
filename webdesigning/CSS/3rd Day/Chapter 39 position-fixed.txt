@@ -1,0 +1,16 @@
+<html>
+<head>
+<style>
+p
+{
+position:fixed;
+top:30px;
+right:5px;
+}
+</style>
+</head>
+<body>
+
+<p>Some more text</p>
+<body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=" jquery-1.3.2.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").toggle(
+    function(){$("h1").css({"color":"blue"});},
+    function(){$("h1").css({"color":"red"});},
+    function(){$("h1").css({"color":"pink"});
+  });
+ 
+});
+</script>
+</head>
+<body>
+
+<h1>welcome</h1>
+
+
+</body>
+</html>
+

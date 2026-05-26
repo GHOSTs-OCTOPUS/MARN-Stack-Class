@@ -1,0 +1,30 @@
+<!-- The submit event occurs when a form is submitted.This event can only be be used on <form> elements. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").submit(function () {
+                var a = $("#mail").val();
+                $("#form1").html(' Thanks for mailing ' + a);
+            });
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <form id="myform">
+        Email:<input type="email" id="mail"><input type="submit" name="submit" value="Submit">
+    </form>
+    <span id="form1"></span>
+
+</body>
+
+</html>

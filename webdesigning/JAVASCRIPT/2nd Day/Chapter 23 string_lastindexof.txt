@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>JavaScript String lastIndexOf() Method</title>
+</head>
+<body>
+<script type="text/javascript">
+var str1 = new String( " welcome to cncwebworld welcome to auxir" );
+var index = str1.lastIndexOf( "welcome" );
+document.write("lastIndexOf found String :" + index ); 
+</script>
+</body>
+</html>

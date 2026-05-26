@@ -1,0 +1,81 @@
+<html>
+<head>
+<style type="text/css">
+body{background-image:url(index.jpg);
+background-attachment:fixed;}<!--The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.(scroll:The background scrolls along with the element. This is default/fixed:The background is fixed with regard to the viewport)-->
+div#content
+{
+width:500px;
+background-color:powderblue;
+background-color:rgba(250, 250, 250, -65);
+border:1px solid red;
+margin:100px;
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+  About Us
+
+VISION :image  To set unparalleled standards of career-oriented IT education and molding high quality man power pool for all levels of India´s fastest growing industry.
+
+MISSION :
+ To be a premier educational institute generating readily employable skilled manpower in compliance with the international standards to help our students build world class careers.
+
+QUALITY POLICIES:
+ It is our policy to provide quality services on a best effort basis to satisfy the stated and implied needs of our students.
+
+Quality Objectives
+  • To comply with quality standards.
+  • To incorporate technological advancements for efficient performance in service delivery.
+  • To ensure continuous improvement focused on students needs.
+  • To develop highly motivated and skilled personnel.
+</div>
+</body>
+</html>

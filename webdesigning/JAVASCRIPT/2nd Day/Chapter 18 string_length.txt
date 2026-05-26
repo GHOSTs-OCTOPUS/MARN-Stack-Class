@@ -1,0 +1,11 @@
+<html|>
+<head>
+<script type="text/javascript">
+var myString = "javascript";
+
+
+document.write("<br />The string is this long: " + myString.length);
+
+</script>
+</head>
+</html>

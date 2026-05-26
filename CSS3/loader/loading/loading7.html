@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+width:170px;height:150px;background:#f7f7f7;margin-left:50px;margin-top:50px;position:relative;
+}
+#d1{
+width:15px;height:15px;background:#3498db;position:absolute;top:60px;left:10px;
+-webkit-animation: myani 2s linear infinite;
+  animation: myani 2s linear infinite;
+}
+@keyframes myani {
+  0% { -webkit-transform: rotate(0deg);left:15px; }
+  50% { -webkit-transform: rotate(360deg);left:120px; }
+  100% { -webkit-transform: rotate(0deg);left:15px; }
+}
+
+@-webkit-keyframes myani {
+  0% { -webkit-transform: rotate(0deg);left:15px; }
+  50% { -webkit-transform: rotate(360deg);left:120px; }
+  100% { -webkit-transform: rotate(0deg);left:15px; }
+}
+
+
+</style>
+</head>
+<body>
+<div id="main">
+<div id="d1"></div>
+</div>
+</body>
+</html>

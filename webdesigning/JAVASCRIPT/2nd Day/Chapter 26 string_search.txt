@@ -1,0 +1,11 @@
+<html|>
+<head>
+<script type="text/javascript">
+var myresult = "to";
+var string1 = "welcome to cnc web world .";
+var match1 = string1.search(myresult);
+document.write("There was a match at position " + match1); 
+</script>
+</head>
+</html>
+

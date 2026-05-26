@@ -1,0 +1,79 @@
+<!-- The :text selector selects input elements with type=text. -->
+<!-- The :password selector selects input elements with type=password. -->
+<!-- The :input selector selects form elements. -->
+<!-- The :checkbox selector selects input elements with type=checkbox. -->
+<!-- The :selected selector selects option elements that are pre-selected. -->
+<!-- The :disabled selector selects all disabled form elements. -->
+<!-- The :enabled selector selects all enabled form elements. -->
+<!-- The :file selector selects input elements with type=file. -->
+<!-- The :button selector selects button elements, and input elements with type=button. -->
+<!-- The :reset selector selects button and input elements with type=reset. -->
+<!-- The :submit selector selects button and input elements with type=submit. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(":text").css("background-color", "#f7edab");
+            $(":password").css("background-color", "#f7edab");
+            $(":input").css("background-color", "#f7edab");
+            $(":checked").wrap("<span style='background-color:red' />");
+            $(":selected").css("background-color", "#f7edab");
+            $(":disabled").css("background-color", "#f7edab");
+            $(":enabled").css("background-color", "#f7edab");
+            $(":file").css("background-color", "#f7edab");
+            $(":button").css("background-color", "#f7edab");
+            $(":reset").css("background-color", "#f7edab");
+            $(":submit").css("background-color", "#f7edab");
+
+
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <form action="">
+
+        Name: <input type="text" name="name"><br>
+        Password: <input type="password" name="password"><br>
+        <br>
+        Courses:<input type="checkbox" name="check1" checked="checked">PHP
+        <input type="checkbox" name="check2">JAVA
+        <input type="checkbox" name="check3">Android<br>
+        City:<select>
+            <option>Mumbai</option>
+            <option selected="selected">Pune</option>
+            <option>Nagpur</option>
+        </select><br>
+        Address:<textarea disabled="disabled"></textarea><br>
+        Address:<textarea></textarea><br>
+        File:<input type="file" name="file"><br>
+        <input type="button" name="b1" value="Submit"><br>
+        <input type="reset" name="b1" value="Cancle"><br>
+        <input type="submit" value="Submit"><br>
+        <br>
+    </form>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("div").find("span").css({"color":"red"});
+});
+</script>
+</head>
+<body>
+
+<div>
+<p> This is a <span>paragraph</span></p>
+</div>
+
+</body>
+</html>

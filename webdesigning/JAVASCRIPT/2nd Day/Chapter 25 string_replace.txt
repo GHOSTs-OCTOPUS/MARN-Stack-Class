@@ -1,0 +1,13 @@
+<html|>
+<head>
+<script type="text/javascript">
+var newname = "cncwebworld";
+var OldString = "welcome to cnc .";
+var NewString = OldString.replace("cnc",newname);
+
+document.write("Old string =  " + OldString); 
+document.write("<br />New string = " + NewString);
+
+</script>
+</head>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background: #fff;
+        }
+
+        .navbar nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero .overlay {
+            color: #fff;
+            padding: 60px;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .buttons button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .primary {
+            padding: 10px 20px;
+            background: #fff;
+            color: #000;
+        }
+
+        .secondary {
+            padding: 10px 20px;
+            background: #fff;
+            border: 2px solid #fff;
+            color: #000000;
+        }
+
+        /* IDEA */
+        .idea {
+            padding: 40px 40px;
+        }
+
+        .idea .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .idea .image {
+            flex: 1;
+            height: 200px;
+            margin-top: 20px;
+            background: url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0') center/cover no-repeat;
+        }
+
+        .idea .content {
+            flex: 2;
+        }
+        .idea .content h2 {
+            margin-bottom: 20px;
+        }
+
+        /* CTA */
+        .cta {
+            background: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cta button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            border: none;
+        }
+
+        /* ADVANTAGES */
+        .advantages {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .advantages .grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 200px;
+        }
+
+        /* DARK */
+        .dark {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 60px;
+        }
+
+        /* TESTIMONIAL */
+        .testimonial {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 0;
+        }
+
+        .quote span {
+            font-size: 60px;
+            vertical-align: top;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 40px;
+        }
+
+        .contact .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .map {
+            flex: 1;
+            height: 200px;
+            background: #ddd;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: left;
+            padding: 15px;
+            padding-left: 100px;
+            clear: both;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer span {
+            margin-left: 45%;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Your Business</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Advantages</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Your Business</h1>
+            <p>
+                This is your business showcase. It's a fully customizable,
+                powerful and lightweight one page website.
+            </p>
+
+            <div class="buttons">
+                <button class="primary">THINK</button>
+                <button class="secondary">DIFFERENT</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- IDEA SECTION -->
+    <section class="idea">
+        <div class="container">
+            <div class="image"></div>
+            <div class="content">
+                <h2>Your Idea - Your Business</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis aute irure dolor in reprehenderit in voluptate velit. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ab ratione corporis, dicta officiis deleniti, non id sunt quo ut quaerat veniam
+                    natus rerum impedit explicabo nihil ipsum recusandae temporibus esse.
+                </p><br><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis aute irure dolor in reprehenderit in voluptate velit. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ab ratione corporis, dicta officiis deleniti, non id sunt quo ut quaerat veniam
+                    natus rerum impedit explicabo nihil ipsum recusandae temporibus esse.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h3>Call to action section</h3>
+            <button>CONTACT US</button>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="advantages">
+        <h2>Advantages</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>Trust</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+                <h4>Quality</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card">
+                <h4>Flexibility</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DARK SECTION -->
+    <section class="dark">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="buttons">
+            <button class="primary">BUTTON</button>
+            <button class="secondary">DETAILS</button>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+        <h2>What our clients say</h2>
+        <p class="quote">
+            “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ipsum accusamus saepe rerum
+            quas ex, odit vero accusantium sapiente cumque maxime? Magni voluptates dolor ipsa qui praesentium. Facilis,
+            nemo perspiciatis.”
+        </p>
+        <h4>Steve Jobs</h4>
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Steve Jobs" width="100"
+            height="100" style="border-radius: 50%; margin-top: 10px; gap: 50px;">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Steve Jobs" width="100"
+            height="100" style="border-radius: 50%; margin-top: 10px; margin-left: 20px; gap: 50px;">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Steve Jobs" width="100"
+            height="100" style="border-radius: 50%; margin-top: 10px; margin-left: 20px; gap: 50px;">
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="container">
+            <div class="info">
+                <h2>Contact</h2><br>
+                <p>📍 942 Orange Ave</p><br>
+                <p>🕒 10am-5pm</p><br>
+                <p>📞 +91 9999999999</p><br>
+                <p>✉ yourbusiness@example.com</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.768610325264!2d73.01728507433782!3d19.04013998215707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3c2d8870767%3A0x7036b2aa70a6531c!2sNerul%20Bus%20Station!5e1!3m2!1sen!2sin!4v1775062752463!5m2!1sen!2sin"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© Your Business 2026. All rights reserved.
+            <span>Designed by <a href="https://github.com/GHOSTs-OCTOPUS">GHOSTs-OCTOPUS</a></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>

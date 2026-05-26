@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<script src="jquery-1.3.2.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("input").blur(function(){
+    
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text" id="txt">
+<span id="text1"></span>
+</body>
+</html>

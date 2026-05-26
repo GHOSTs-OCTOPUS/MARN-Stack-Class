@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Class & Object Constructor Assignment </title>
+    <script>
+        /* class: blue print of object virtual 
+         object:- instance of a class  real world entity
+        attributes 
+        this:- current object
+         constructor: special method called when an object of a class is created
+         methods: functions defined within a class
+        */
+
+        /////////////////////////////////////////////////////////////////////////////////////////
+       /* Q1. Create a class called "Car" with attributes brand and color, and a method to display the car's details. 
+        Create two car objects and display their details. 
+        */
+        class car{
+            constructor(brand,color){
+                this.brand=brand
+                this.color=color
+            }
+            display(){
+                console.log("car brand is "+this.brand)
+                console.log("car color is "+this.color)
+            }
+        }
+        let car1=new car("Toyota","Red")
+        car1.display()
+        let car2=new car("Honda","Blue")
+        car2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q2. Create a class called "Laptop" with attributes brand model and price, and a method to display the laptop's details.
+        Create two laptop objects and display their details. 
+        */
+        class laptop{
+            constructor(brand,model,price){
+                this.brand=brand
+                this.model=model
+                this.price=price
+            }
+            display(){
+                console.log("laptop brand is "+this.brand)
+                console.log("laptop model is "+this.model)
+                console.log("laptop price is "+this.price)
+            }
+        }
+        let laptop1=new laptop("Dell","XPS 13",1000)
+        laptop1.display()
+        let laptop2=new laptop("Apple","MacBook Pro",1500)
+        laptop2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q3. Create a class called "Teacher" with attributes name subject and experience, and a method to display the teacher's details.
+        Create two teacher objects and display their details. 
+        */
+        class teacher{
+            constructor(name,subject,experience){
+                this.name=name
+                this.subject=subject
+                this.experience=experience
+            }
+            display(){
+                console.log("teacher name is "+this.name)
+                console.log("teacher subject is "+this.subject)
+                console.log("teacher experience is "+this.experience)
+            }
+        }
+        let teacher1=new teacher("Mr. Smith","Math",10)
+        teacher1.display()
+        let teacher2=new teacher("Ms. Johnson","Science",15)
+        teacher2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q4. Create a class called "BankAccount" with attributes accountNumber accountHolder and balance, and a method to display the account details.
+        Create two bank account objects and display their details. 
+        */
+        class bankAccount{
+            constructor(accountNumber,accountHolder,balance){
+                this.accountNumber=accountNumber
+                this.accountHolder=accountHolder
+                this.balance=balance
+            }
+            display(){
+                console.log("account number is "+this.accountNumber)
+                console.log("account holder is "+this.accountHolder)
+                console.log("account balance is "+this.balance)
+            }
+        }
+        let account1=new bankAccount("123456","Alice",1000)
+        account1.display()
+        let account2=new bankAccount("789012","Bob",2000)
+        account2.display()
+        
+        
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q5. Create a class called "Rectangle" with attributes length and breadth, and a method to calculate the area of the rectangle. 
+        Create an object of the Rectangle class and display the area. 
+        */
+        class Rectangle{
+            constructor(length,breadth){
+                this.length=length
+                this.breadth=breadth
+            }
+            area(){
+                return this.length*this.breadth
+            }
+        }
+        let rect=new Rectangle(5,3)
+        console.log("Area of rectangle is "+rect.area())
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q6. Create a class called "Student" with attributes name and mark, and a method to display the student's details. 
+        Create two student objects and display their details. 
+        */
+        class student{
+            constructor(name,mark){
+                this.name=name
+                this.mark=mark
+            }
+            display(){
+                console.log("student name is "+this.name)
+                console.log("student mark is "+this.mark)
+            }
+        }
+        let student1=new student("Alice",85)
+        student1.display()
+        let student2=new student("Bob",90)
+        student2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q7. product class with constructor and display method
+        Create two product objects and display their details
+        */
+        class product{
+            constructor(name,price){
+                this.name=name
+                this.price=price
+            }
+            display(){
+                console.log("product name is "+this.name)
+                console.log("product price is "+this.price)
+            }
+        }
+        let product1=new product("Laptop",1000)
+        product1.display()
+
+        let product2=new product("Phone",500)
+        product2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q8. Mobile class with constructor and display method
+        Create two mobile objects and display their details
+        */
+        class mobile{
+            constructor(brand,model){
+                this.brand=brand
+                this.model=model
+                this.price
+            }
+            display(){
+                console.log("mobile brand is "+this.brand)
+                console.log("mobile model is "+this.model)
+                console.log("mobile price is "+this.price)
+            }
+        }
+        let mobile1=new mobile("Apple","iPhone 13")
+        mobile1.price=1200
+        mobile1.display()
+        let mobile2=new mobile("Samsung","Galaxy S21")
+        mobile2.price=800
+        mobile2.display()
+
+        ////////////////////////////////////////////////////////////////////////////
+        /* Q9. Book class with constructor and display method
+        Create two book objects and display their details
+        */
+        class book{
+            constructor(title,author){
+                this.title=title
+                this.author=author
+            }
+            display(){
+                console.log("book title is: "+this.title)
+                console.log("book author is: "+this.author)
+            }
+        }
+        let book1=new book("The Great Gatsby","F. Scott Fitzgerald")
+        book1.display()
+        let book2=new book("To Kill a Mockingbird","Harper Lee")
+        book2.display()
+        ////////////////////////////////////////////////////////////////////////////
+
+        //1.class and object
+        class animal{
+            color=""
+            x=0
+            y=0
+            constructor(color,x,y){
+                this.color=color
+                this.x=x
+                this.y=y
+            }
+            display(){
+                console.log("animal color is "+this.color)
+                console.log("animal x is "+this.x)
+                console.log("animal y is "+this.y)
+            }
+        }   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

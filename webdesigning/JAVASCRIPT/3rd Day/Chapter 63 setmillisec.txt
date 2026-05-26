@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>JavaScript setDate Method</title>
+</head>
+<body>
+<script type="text/javascript">
+   var dt = new Date( "Sep 28, 2012 23:30:00" );
+ document.write(dt);
+document.write("<br/>");
+    dt.setMilliseconds( 1010 );
+   document.write( dt ); 
+</script>
+</body>
+</html>

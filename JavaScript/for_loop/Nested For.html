@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <script>
+            /*
+            Print pattern using nested for loop
+            */
+
+            /*
+            pattern 1:
+
+                          *
+                        * * *
+                      * * * * *
+                     * * * * * * *
+                   * * * * * * * * *
+
+            */
+            document.write("-------- Pattern 1 ----------");
+            document.write("<br>");
+            for(i=1;i<=5;i++){
+                for(j=i;j<=5;j++){
+                    document.write(" &nbsp");
+                }
+                for(k=1;k<=i*2-1;k++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 2 ----------");
+            document.write("<br>");
+
+            /*
+            pattern 2:
+
+                1
+                22
+                333
+                4444
+
+            */
+            for(let i=1;i<=4;i++){
+                for(let j=1;j<=i;j++){
+                    document.write(i+"&nbsp");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 3 ----------");
+            document.write("<br>");
+
+             /*
+            pattern 3:
+
+                11111
+                2222
+                333
+                44
+                5
+
+            */
+            for(let i=1;i<=5;i++){
+                for(let j=5;j>=i;j--){
+                    document.write(i+"&nbsp");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 4 ----------");
+            document.write("<br>");
+
+
+            /*
+            pattern 4:
+
+                1
+                21
+                321
+                4321
+                54321
+
+            */
+            for(let i=1;i<=5;i++){
+                for(let j=i;j>=1;j--){
+                    document.write(j+"&nbsp");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 5 ----------");
+            document.write("<br>");
+
+
+            /*
+            pattern 5:
+
+                ****
+                ***
+                **
+                *
+
+            */
+            for(let i=4;i>=1;i--){
+                for(let j=1;j<=i;j++){
+                    document.write('*'+"&nbsp");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 6 ----------");
+            document.write("<br>");
+
+
+            /*
+            pattern 6:
+
+                *****
+                 ****
+                  ***
+                   **
+                    *
+
+            */
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<i;j++){
+                    document.write("&nbsp&nbsp");
+                }
+                for(let k=5; k>=i;k--){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 7 ----------");
+            document.write("<br>");
+
+
+            /*
+            pattern 7:
+
+                1
+                10
+                101
+                1010
+                10101
+
+            */
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                    if(j%2==1){
+                        document.write(1);
+                    }
+                    else{
+                        document.write(0);
+                    }
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 8 ----------");
+            document.write("<br>");
+
+
+             /*
+            pattern 8:
+
+                1
+                13
+                135
+                1357
+                13579
+
+            */
+            for(let i=1;i<=9;i+=2){
+                for(let j=1;j<=i;j++){
+                    if(j%2==1){
+                        document.write(j);
+                    }
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern 9 ----------");
+            document.write("<br>");
+
+
+            /*
+            pattern 9:
+
+                   1
+                  21
+                 321
+                4321
+               54321              
+
+            */
+            for(let i=1;i<=5;i++){
+                for(let j=5;j>i;j--){
+                        document.write("&nbsp&nbsp");
+                }
+                for(let k=i; k>=1; k--){
+                    document.write(k);
+                }
+                document.write("<br>");
+            }
+            document.write("-------- Pattern END----------");
+            document.write("<br>");
+        </script>
+    </head>
+    <body></body>
+</html>

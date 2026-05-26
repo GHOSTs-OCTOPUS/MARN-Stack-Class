@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+ <fieldset>
+  <legend>Personal Information:</legend>
+  Firstname: <input type="text"><br/>
+  Lastname<input type="text"><br/>
+  Contact Number:<input type="text"><br/>
+  City:<input type="text"><br/>
+  State:<input type="text"><br/>
+ </fieldset>
+</form>
+
+</body>
+</html>

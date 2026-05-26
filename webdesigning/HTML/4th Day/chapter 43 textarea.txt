@@ -1,0 +1,11 @@
+<html>
+<body>
+
+<form name="myForm" action="" method="post">
+<textarea name="myTextArea"cols="20" rows="10"></textarea><br />
+<textarea name="myTextArea" cols="40" rows="2"></textarea><br />
+<textarea  name="myTextArea" cols="45" rows="5" disabled="disabled"></textarea><br />
+</form>
+
+</body>
+</html>

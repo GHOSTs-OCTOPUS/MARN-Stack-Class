@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass Navbar</title>
+
+    <style>
+
+        /* BODY BACKGROUND */
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: url(bg_image_navbar.jpg) no-repeat center/cover;
+        }
+
+        /* DARK OVERLAY */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            z-index: -1;
+        }
+
+        /* NAVBAR (GLASS EFFECT) */
+        .navbar {
+            position: relative;
+            width: 700px;
+            margin: 80px auto;
+            padding: 15px 0;
+            text-align: center;
+
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        /* LIST */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* LIST ITEMS */
+        li {
+            display: inline-block;
+            margin: 0 25px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        /* LINKS */
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            padding: 8px 10px;
+            transition: 0.3s;
+        }
+
+        /* BEFORE (UNDERLINE EFFECT) */
+        li::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 3px;
+            background: orange;
+            transition: 0.4s ease-in-out;
+            transform: translateX(-50%);
+        }
+
+        /* HOVER EFFECT */
+        li:hover::before {
+            width: 100%;
+        }
+
+        li:hover a {
+            color: orange;
+        }
+
+        li:hover {
+            transform: scale(1.15);
+        }
+
+        /* OPTIONAL TITLE */
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            letter-spacing: 2px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Stylish Navbar</h1>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

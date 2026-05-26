@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<nav>
+<a href="/Home">Home</a> |
+<a href="/about/">About Us</a> |
+<a href="/service/">Service</a> |
+<a href="/contact/">Contact Us</a>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+
+    <script>
+        function fun() {
+
+            // USERNAME
+            let uname = f1.uname.value;
+            // Not empty
+            if (uname == "") {
+                alert("Please enter username");
+                return false;
+            }
+            // length 5 to 10
+            if (uname.length < 5 || uname.length > 10) {
+                alert("Username must be 5 to 10 characters");
+                return false;
+            }
+
+            // no numbers allowed
+            for (let i = 0; i < uname.length; i++) {
+                if (uname.charCodeAt(i) >= 48 && uname.charCodeAt(i) <= 57) {
+                    alert("Numbers not allowed in username");
+                    return false;
+                }
+            }
+
+            // PASSWORD
+            let pass = f1.pass.value;
+            let cpass = f1.cpass.value;
+            //Not empty
+            if (pass == "") {
+                alert("Please enter password");
+                return false;
+            }
+            // length upto 8
+            if (pass.length != 8) {
+                alert("Password must be exactly 8 characters");
+                return false;
+            }
+
+            // uppercase check
+            let upper = 0;
+            for (let i = 0; i < pass.length; i++) {
+                if (pass.charCodeAt(i) >= 65 && pass.charCodeAt(i) <= 90) {
+                    upper = 1;
+                }
+            }
+
+            if (upper == 0) {
+                alert("At least one uppercase required");
+                return false;
+            }
+
+            // number check
+            let numFlag = 0;
+            for (let i = 0; i < pass.length; i++) {
+                if (pass.charCodeAt(i) >= 48 && pass.charCodeAt(i) <= 57) {
+                    numFlag = 1;
+                }
+            }
+
+            if (numFlag == 0) {
+                alert("At least one number required");
+                return false;
+            }
+
+            // special character check
+            let special = 0;
+            let specialChars = "!@#$%^&*";
+
+            for (let i = 0; i < pass.length; i++) {
+                if (specialChars.includes(pass[i])) {
+                    special = 1;
+                }
+            }
+
+            if (special == 0) {
+                alert("At least one special character required");
+                return false;
+            }
+
+            // confirm password
+            if (pass != cpass) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            // MOBILE NUMBER
+            let num = f1.num.value;
+            // Not empty
+            if (num == "") {
+                alert("Enter mobile number");
+                return false;
+            }
+            // length upto 10
+            if (num.length != 10) {
+                alert("Mobile number must be 10 digits");
+                return false;
+            }
+            // start from 6.7.8.9
+            if (!(num[0] == 6 || num[0] == 7 || num[0] == 8 || num[0] == 9)) {
+                alert("Mobile must start with 6,7,8,9");
+                return false;
+            }
+
+            // EMAIL
+            let mail = f1.mail.value;
+            //Not empty
+            if (mail == "") {
+                alert("Enter email");
+                return false;
+            }
+            // @ compulsory 
+            if (!mail.includes("@")) {
+                alert("@ is required in email");
+                return false;
+            }
+            // .com .in compulsory
+            if (!(mail.endsWith(".com") || mail.endsWith(".in"))) {
+                alert("Invalid email format");
+                return false;
+            }
+
+            // GENDER (radio - compulsory)
+            let gender = document.getElementsByName("gender");
+            let genderSelected = false;
+
+            for (let i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    genderSelected = true;
+                    break;
+                }
+            }
+
+            if (!genderSelected) {
+                alert("Please select gender");
+                return false;
+            }
+
+            // CHECKBOX (at least one compulsory)
+            let hobby = document.getElementsByName("hobby");
+            let hobbySelected = false;
+
+            for (let i = 0; i < hobby.length; i++) {
+                if (hobby[i].checked) {
+                    hobbySelected = true;
+                    break;
+                }
+            }
+
+            if (!hobbySelected) {
+                alert("Please select at least one hobby");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="f1" onsubmit="return fun()">
+
+        Username: <input type="text" name="uname"><br>
+        Password: <input type="password" name="pass"><br>
+        Confirm Password: <input type="password" name="cpass"><br>
+        Mobile Number: <input type="text" name="num"><br>
+        Email: <input type="text" name="mail"><br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="sports"> Sports
+        <input type="checkbox" name="hobby" value="music"> Music
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

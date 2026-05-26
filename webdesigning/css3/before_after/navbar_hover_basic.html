@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Navbar</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        /* navbar */
+        .navbar {
+            position: relative;
+            width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        /* list */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* list items */
+        li {
+            display: inline-block;
+            margin: 0 25px;
+            position: relative;
+        }
+
+        /* links */
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            padding: 8px 10px;
+            transition: 0.3s;
+        }
+
+        /* BEFORE underline + background combo */
+        li::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 3px;
+            background: orange;
+            transition: 0.4s ease-in-out;
+            transform: translateX(-50%);
+        }
+
+        /* hover underline animation (center → sides) */
+        li:hover::before {
+            width: 100%;
+        }
+
+        /* text hover */
+        li:hover a {
+            color: orange;
+        }
+
+        /* slight zoom effect */
+        li:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html> 

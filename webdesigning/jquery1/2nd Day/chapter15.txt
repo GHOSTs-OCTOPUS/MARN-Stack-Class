@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.1.js"></script>
+<script>
+$(document).ready(function(){
+  $(":selected").css("background-color","#f7edab");
+});
+</script>
+</head>
+<body>
+
+<form>
+City:<select>
+<option>Mumbai</option>
+<option selected="selected">Pune</option>
+<option>Nagpur</option>
+</select>
+</form> 
+</body>
+</html>

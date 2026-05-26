@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<table height="100" width="150"
+ background="pic.jpg" >
+<tr><td>This table has a background image</td></tr>
+</table>
+
+<table height="200" width="150"
+ bgcolor="gray" >
+<tr><td>This table has a background image</td></tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+*{
+
+    margin:0;
+    padding:0;
+    position: relative;
+    }
+
+
+main{
+    width:100%;
+    height:200vh;
+    background-color: aqua;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:110vh;
+    background-color: antiquewhite;
+    overflow: hidden;
+  
+}
+
+.info{
+    position: absolute;
+    width:20%;
+margin-left: 75%;
+opacity:0;
+padding-top: 40px;
+}
+
+.img1{
+ width:20%;
+ height: 110vh;
+
+background-image: url("eco-women/pexels-mart-production-8801098.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img2{
+    width:20%;
+    height: 110vh;
+   background-image: url("eco-women/pexels-mart-production-8801108.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display:block;
+
+}
+
+.img3{
+    width:20%;
+    height: 105vh;
+   background-image: url("eco-women/pexels-anna-shvets-11124976.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: block;
+}
+
+
+.section{
+	width:100%;
+	height:100vh;
+	background-color:orange;
+}
+
+
+
+
+
+
