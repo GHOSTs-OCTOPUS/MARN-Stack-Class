@@ -1,45 +1,36 @@
-import React from 'react'
-import './App.css'
-import Header from './Components/Header'
-import Navbar from './Components/Navbar'
-import Sidebar from './Components/Sidebar'
-import Gallery from './Components/Gallery'
-import Services from './Components/Services'
-import Footer from './Components/Footer'
-
+import React from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
+import Sidebar from "./Components/Sidebar";
+import Gallery from "./Components/Gallery";
+import Services from "./Components/Services";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-   // App.jsx
+    // App.jsx
     <div className="page-bg">
       <div className="website-container">
         {/* HEADER */}
-        <Header />  {/* HEADER export from component */}
-      
+        <Header /> {/* Composing Header components */}
         {/* NAVBAR */}
-        <Navbar />  {/* NAVBAR export from component */}
-
+        <Navbar /> {/* Composing Navbar components */}
         {/* MAIN CONTENT */}
         <div className="content-wrapper">
           {/* SIDEBAR */}
-          <Sidebar />  {/* SIDEBAR export from component */}
-
+          <Sidebar /> {/* Composing Sidebar components */}
           {/* MAIN SECTION */}
           <main className="main-content">
             {/* GALLERY */}
-            <Gallery />  {/* GALLERY export from component */}
-
+            <Gallery /> {/* Composing Gallery components */}
             {/* SERVICES */}
-            <Services /> {/* SERVICES export from component */}
+            <Services /> {/* Composing Services components */}
           </main>
         </div>
-
         {/* FOOTER */}
-        <Footer /> {/* FOOTER export from component */}
+        <Footer /> {/* Composing Footer components */}
       </div>
     </div>
-  )
+  );
 }
-
-
-
