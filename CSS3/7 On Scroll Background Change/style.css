@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+/* #one{
+    background: red;
+}
+#two{
+    background: pink;
+}
+#three{
+    background: purple;
+}
+#four{
+    background: white;
+} */
+
+#one .content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1{
+    font-size: 3.5vw;
+}
+
+.content2{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#three .left{
+    padding-left: 0vw;
+    padding-right: 20vw;
+}
+#content3{
+    flex-direction: row-reverse;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20vw;
+    height: 100vh;
+    gap: 4vh;
+}
+.left h1{
+    font-size: 2.5vw;
+}
+.left p{
+    font-size: 1.5vw;
+}
+.left button{
+    width: 5vw;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+.img1{
+    top: 19%;
+    left: 19%;
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: orange;
+}
+.img2{
+    width: 20vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: blue;
+}
+.img3{
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 20px;
+    background-color: blue;
+}
