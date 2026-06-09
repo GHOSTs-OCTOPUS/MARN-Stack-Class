@@ -1,0 +1,68 @@
+:root {
+  --primary: #ff4f87;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.navbar .nav-link.active {
+  color: #ff4f87 !important;
+  border-bottom: 2px solid #ff4f87;
+}
+
+.navbar .nav-link:hover {
+  color: #ff4f87;
+}
+
+.btn-pink {
+  background: var(--primary);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+.btn-pink:hover {
+  color: white;
+}
+
+.hero-section {
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0,0,0,.5),
+      rgba(0,0,0,.5)
+    ),
+    url("../assets/istockphoto-1428594094-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: auto;
+}
+
+.feature-wrapper {
+  margin-top: -80px;
+  position: relative;
+  z-index: 10;
+}
+
+.pink-text {
+  color: var(--primary);
+}
+
+.reasons-section {
+  background: linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)
+    ),
+    url("../assets/1484691-pretty-cafes-cover.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  border-radius: 4px;
+}
