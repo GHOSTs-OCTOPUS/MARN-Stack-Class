@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Myprops from './props/Myprops'
+import MyState from './use State/MyState'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       </Routes>
 
       <Myprops/>
+      <MyState />
 
       <Footer/>
       </BrowserRouter>
