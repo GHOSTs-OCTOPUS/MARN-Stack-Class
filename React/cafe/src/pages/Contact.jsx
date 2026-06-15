@@ -8,7 +8,15 @@ const About = () => {
         Welcome to our cafe. We provide premium coffee
         and a relaxing atmosphere.
       </p>
-
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      <br /><br />
+      
       <Footer />
     </div>
   );

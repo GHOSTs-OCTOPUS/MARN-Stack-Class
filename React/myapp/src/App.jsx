@@ -11,6 +11,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Myprops from './props/Myprops'
 import MyState from './use State/MyState'
+import Mymap from './map/Mymap'
 
 export default function App() {
   return (
@@ -27,6 +28,14 @@ export default function App() {
 
       <Myprops/>
       <MyState />
+
+      <hr />
+      <Mymap />
+
+      <hr />
+      <hr />
+
+      
 
       <Footer/>
       </BrowserRouter>
