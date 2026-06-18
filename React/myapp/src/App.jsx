@@ -12,6 +12,7 @@ import Contact from './pages/Contact'
 import Myprops from './props/Myprops'
 import MyState from './use State/MyState'
 import Mymap from './map/Mymap'
+import Myfilter from './Myfilter'
 
 export default function App() {
   return (
@@ -35,7 +36,11 @@ export default function App() {
       <hr />
       <hr />
 
-      
+      <Myfilter />
+
+      <hr />
+      <hr />
+
 
       <Footer/>
       </BrowserRouter>
