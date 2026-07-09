@@ -9,6 +9,7 @@ import Myapi from './Myapi'
 createRoot(document.getElementById('root')).render(
   <>
   <App/>
+  
   {/* <Myclassprops id={101} name="raj"/> */}
 
   {/* <Myone id={1} name="sahil"/> */}
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
   <br />
   <hr />
   <Myapi/>
+  
   
   </>
 )
