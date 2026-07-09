@@ -1,0 +1,26 @@
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 1.5s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+  .product-img {
+    height: 220px;
+  }
+  .btn {
+    width: 200px;
+  }
+}

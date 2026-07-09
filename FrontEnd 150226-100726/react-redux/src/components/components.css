@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #7cde6dfa;
+  transition: all 0.4s ease;
+  border-radius: 60px;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.transparent-nav {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.transparent-nav .nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.transparent-nav .nav-link:hover {
+  color: #7cde6dfa!important;
+  text-shadow: 1px 1px 2px rgb(217, 113, 113);
+}
+
+.nav-item .nav-link {
+  color: #f5f5f5;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navbar .navbar-brand {
+  color: #e1e3e3fa;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow:
+    1px 1px 0px #eb452b,
+    2px 2px 0px #efa032,
+    4px 4px 0px #46b59b,
+    7px 7px 0px #052939,
+    8px 8px 0px #aa4848fa,
+    9px 9px 0px #aa4848fa,
+    10px 10px 0px #aa4848fa,
+    11px 11px 0px #aa4848fa;
+}
+
+.filterbtn button {
+  border: none;
+  background-color: #5a80a4;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.filterbtn button:hover {
+  background-color: #0e4760;
+  box-shadow: 5px 5px 2px #76a1c9;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 0px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background: #ee8c8cfa;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #7cde6dfa;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #1f7911fa;
+  padding-left: 5px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f2937;
+  color: #7cde6dfa;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  background: #0b6e8c;
+  transform: translateY(-5px);
+}
+
+.payment svg {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #0e4106fa;
+}
+
+.footer p {
+  color: #d1d5db;
+}
+
+hr {
+  opacity: 0.2;
+}
