@@ -34,9 +34,9 @@ OR To process with default package use:
 
 ``` npm i nodemon ```
 
-### To install .evn
+### To install .evn 
 
-``` npm i dotenv ```
+``` npm i dotenv```
 
 - To store API, DB Configuration
 
