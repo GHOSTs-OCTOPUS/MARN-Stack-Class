@@ -34,9 +34,9 @@ OR To process with default package use:
 
 ``` npm i nodemon ```
 
-### To install .evn 
+### To install .evn
 
-``` npm i dotenv```
+``` npm i dotenv ```
 
 - To store API, DB Configuration
 
@@ -54,9 +54,8 @@ OR To process with default package use:
 
 ``` node server.js ```
 
-### For Stop Server 
+### For Stop Server
 
 ``` Ctrl+c ```
 
 - click ctrl+c to terminate or stop server
-
