@@ -59,3 +59,33 @@ OR To process with default package use:
 ``` Ctrl+c ```
 
 - click ctrl+c to terminate or stop server
+
+### For Database Connectivity
+
+- Create folder as config in backend folder in that create db.js file for DataBase
+
+- In dotenv file create one string as MONGO_URL=your Connection string.
+
+``` MONGO_URL=mongodb+srv://<UserName>:<Password>@cluster0.-----.mongodb.net/databaseName ```
+
+### For creating live Database
+
+- Use MongoDB Atlas and signIn/SignUp Using Gmail or GitHub Account It create free cluster, add IP Address then you Connect it as MongoDB Compass.
+
+### TO Download MongoDB compass
+
+- Open chrome And Search for
+
+``` https://www.mongodb.com/try/download/community ```
+
+- Download  it according to your system it download MongoDB Compass on your system.
+
+- Copy the string of your database for connectivity or you can use your cluster in your MongoDB compass for long time support
+
+### For Use database as localhost
+
+- In dotenv file create one string as MONGO_URL=your Connection string. it look like:
+
+- copy localhost URL from MongoDB compass and past after MONGO_URL=``` past copied URL ```
+
+``` MONGO_URL=mongodb://localhost:27017/backendDB ```
