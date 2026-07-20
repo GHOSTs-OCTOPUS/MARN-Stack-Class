@@ -1,5 +1,6 @@
 import { hashPassword } from "../helpers/authHelper.js"
 import userModel from "../models/userModel.js"
+import JWT from "jsonwebtoken"
 
 export const registerController = async (req,res) =>{
     try {
@@ -43,4 +44,55 @@ export const registerController = async (req,res) =>{
 }
 
 
-export const loginController = () =>{}
+export const loginController = async (req,res) =>{
+    try{
+        const {email , password} = req.body
+        if(!email || !password){
+            res.send({
+                success:false,
+                message:"Invalid email or password" 
+            })
+        }
+
+        const user = await userModel.findOne({email})
+        if(!user){
+            res.status(404).send({
+                success:false,
+                message:"User not register yet" 
+            })
+        }
+
+        const match = await comparePassword(password , user.password)
+        if(!match){
+            res.status(404).send({
+                success:false,
+                message:"Incorrect password"
+            })
+        }
+
+        const token = await JWT.sign({_id:user._id} , process.env.JWT_SECRET , {expiresIn: "1d"})
+
+        res.status(201).send({
+            success:true,
+            message:"Successfully login",
+            user:{
+                _id:user._id,
+                name:user.name,
+                email:user.mail,
+                address:user.address,
+                phone:user.phone,
+                role:user.role
+            },
+            token
+        })
+    }
+
+    catch(error){
+       console.log(error)
+        res.status(500).send({
+            success:false,
+            message:"Error in login",
+            error
+        }) 
+    }
+}

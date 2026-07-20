@@ -89,3 +89,7 @@ OR To process with default package use:
 - copy localhost URL from MongoDB compass and past after MONGO_URL=``` past copied URL ```
 
 ``` MONGO_URL=mongodb://localhost:27017/backendDB ```
+
+### For install JsonWebToken
+
+``` npm i jsonwebtoken ```
