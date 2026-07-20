@@ -1,13 +1,13 @@
 .services-section {
   background: linear-gradient(
     50deg,
-    rgb(198, 109, 109) 0%,
-    rgba(237, 179, 179, 0.812) 50%,
-    #a9f19ec4 50%,
-    #7cde6dfa 100%
+    rgb(215, 148, 148) 0%,
+    rgb(215, 148, 148) 50%,
+    #488d9b 50%,
+    #3b828f 100%
   );
   font-family: "Courier New", Courier, monospace;
-  color: black;
+  color: white;
 }
 
 h2 {
@@ -36,7 +36,7 @@ h2 {
   height: 90px;
   margin: auto;
   border-radius: 50%;
-  background: #e7a6a6;
+  background: rgb(217, 126, 126);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,7 +1,12 @@
 import React from "react";
 import "./Cart.css";
+import { useDispatch, useSelector } from "react-redux";
+import { clearCart } from "../redux/slice";
 
 export default function Cart() {
+  const cartItems = useSelector((state) => state.cart.items);
+
+  const dispatch = useDispatch();
   return (
     <section className="cart-section py-5 pt-5 mt-5">
       <div className="container">
@@ -10,38 +15,44 @@ export default function Cart() {
         <div className="row g-4">
           {/* Cart Items */}
           <div className="col-lg-8">
-            <div className="cart-card mb-3" key="">
-              <div className="row g-2 align-items-center">
-                <div className="col-lg-2 text-center">
-                  <img src="" alt="" className="product-img" />
-                </div>
+            {cartItems.map((v) => (
+              <div className="cart-card mb-3" key="">
+                <div className="row g-2 align-items-center">
+                  <div className="col-lg-2 text-center">
+                    <img src={v.thumbnail} alt="" className="product-img" />
+                  </div>
 
-                <div className="col-lg-4 text-center">
-                  <h5 className="mb-1">Product Category</h5>
-                  <p className="text-muted mb-0">Product Title</p>
-                </div>
+                  <div className="col-lg-4 text-center">
+                    <h5 className="mb-1">{v.category}</h5>
+                    <p className="text-muted mb-0">{v.title}</p>
+                  </div>
 
-                <div className="col-lg-2 text-center">
-                  <h6 className="fw-bold text-success">Product Price</h6>
-                </div>
+                  <div className="col-lg-2 text-center">
+                    <h6 className="fw-bold text-success">{v.price}</h6>
+                  </div>
 
-                <div className="col-lg-2">
-                  <div className="qty-box">
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+                  <div className="col-lg-2">
+                    <div className="qty-box">
+                      <button>-</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-2">
+                    <button className="btn btn-outline-danger w-100">
+                      Remove
+                    </button>
                   </div>
                 </div>
-
-                <div className="col-lg-2">
-                  <button className="btn btn-outline-danger w-100">
-                    Remove
-                  </button>
-                </div>
               </div>
-            </div>
+            ))}
 
-            <button className="btn btn-clear">Clear Cart</button>
+            <button
+              className="btn btn-clear"
+              onClick={() => dispatch(clearCart())}>
+              Clear Cart
+            </button>
           </div>
 
           {/* Order Summary */}

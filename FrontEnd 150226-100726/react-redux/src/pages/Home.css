@@ -1,12 +1,12 @@
 .hero-section {
-  background: linear-gradient(150deg, #e7a6a6, #7cde6dfa);
+  background: linear-gradient(135deg, #e7a6a6, #3b828f);
   color: white;
   overflow: hidden;
   font-family: "Courier New", Courier, monospace;
 }
 
 h5 {
-  color: white !important;
+  color: #0d4953 !important;
 }
 
 .hero-subtitle {
@@ -24,7 +24,7 @@ h5 {
 }
 
 .hero-title span {
-  color: #14470cfa;
+  color: #ffd54f;
 }
 
 .hero-text {
@@ -56,7 +56,7 @@ h5 {
 }
 
 .btn-primary:hover {
-  background: #7cde6dfa !important;
+  background: #cc5353 !important;
 }
 
 .btn-outline-light {

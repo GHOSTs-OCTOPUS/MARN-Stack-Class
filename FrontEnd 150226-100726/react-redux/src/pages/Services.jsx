@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCode, FaLaptopCode, FaMobileAlt, FaPaintBrush, FaSearch, FaHeadset,} from "react-icons/fa";
+import { FaCode, FaLaptopCode, FaMobileAlt, FaPaintBrush, FaSearch, FaHeadset, } from "react-icons/fa";
 import "./Services.css";
 
 export default function Services() {
@@ -42,7 +42,7 @@ export default function Services() {
         <div className="text-center mb-5">
           <h5 className="text-warning fw-bold">OUR SERVICES</h5>
           <h2 className="fw-bold display-5">What We Offer</h2>
-          <p className="text-muted">
+          <p className="text-light">
             We provide innovative digital solutions to help your business grow.
           </p>
         </div>
@@ -52,8 +52,11 @@ export default function Services() {
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="service-card">
                 <div className="service-icon">{service.icon}</div>
+
                 <h4>{service.title}</h4>
+
                 <p>{service.desc}</p>
+
                 <button className="btn btn-warning rounded-pill px-4">
                   Read More
                 </button>

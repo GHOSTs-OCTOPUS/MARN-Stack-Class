@@ -42,13 +42,17 @@ export default function Testimonial() {
             <div className="col-lg-4 col-md-6" key={item.id}>
               <div className="testimonial-card">
                 <img src={item.image} alt={item.name} />
+
                 <h5>{item.name}</h5>
+
                 <div className="rating">{item.rating}</div>
+
                 <p>{item.review}</p>
               </div>
             </div>
           ))}
         </div>
+        
       </div>
     </section>
   );

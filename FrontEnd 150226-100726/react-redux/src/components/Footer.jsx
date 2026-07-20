@@ -39,6 +39,7 @@ export default function Footer() {
                 <li> <NavLink to="/about">About</NavLink> </li>
                 <li> <NavLink to="/contact">Contact</NavLink> </li>
               </ul>
+
             </div>
 
             {/* Customer */}
@@ -51,6 +52,7 @@ export default function Footer() {
                 <li> <NavLink to="/return-policy">Returns</NavLink> </li>
                 <li> <NavLink to="/privacy-policy">Privacy Policy</NavLink> </li>
               </ul>
+
             </div>
 
             {/* Contact */}
@@ -66,6 +68,7 @@ export default function Footer() {
                 <FaCcMastercard />
                 <FaCcPaypal />
               </div>
+              
             </div>
           </div>
 

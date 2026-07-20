@@ -39,17 +39,17 @@ h2 {
 
 .feature-box:hover {
   transform: translateY(-6px);
-  background: #7cde6dfa;
+  background: #689cc9;
   color: #ffffff;
 }
 
 .icon {
   font-size: 28px;
-  color: #7cde6dfa;
+  color: #689cc9;
 }
 
 .feature-box:hover .icon {
-  color: #e7a6a6;
+  color: #fff;
 }
 
 .btn-primary {

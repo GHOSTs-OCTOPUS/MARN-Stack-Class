@@ -15,7 +15,7 @@ export default function About() {
 
           {/* Right Content */}
           <div className="col-lg-6">
-            <h5    >About Us</h5>
+            <h5 className="text-uppercase   mt-0  fw-bold">About Us</h5>
             <h2 className="fw-bold mb-4">
               We Build Amazing Digital Experiences
             </h2>

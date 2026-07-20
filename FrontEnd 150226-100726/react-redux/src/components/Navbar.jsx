@@ -14,6 +14,7 @@ export default function Navbar() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div ca>
       <nav
@@ -24,6 +25,7 @@ export default function Navbar() {
           <NavLink className="navbar-brand ps-3" to="/">
             SHOPCART
           </NavLink>
+
           <button className="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,6 +48,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
+          
         </div>
       </nav>
     </div>

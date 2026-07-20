@@ -1,4 +1,3 @@
-
 .card {
   overflow: hidden;
 }
@@ -20,6 +19,7 @@
   .product-img {
     height: 220px;
   }
+  
   .btn {
     width: 200px;
   }

@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Products.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../redux/slice";
 
 export default function Products() {
   const [data, setData] = useState([]);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,9 +17,21 @@ export default function Products() {
     fetchData();
   }, []);
 
+  const cartItems = useSelector((state) => state.cart.items);
+
+  const handleAddToCart = (product) => {
+    const alreadyInCart = cartItems.some((item) => item.id === product.id);
+    if (alreadyInCart) {
+      alert("Product is already in cart");
+      return;
+    }
+    dispatch(addToCart(product));
+    alert("Added to cart");
+  };
+
   return (
     <div>
-      <div className="container " style={{ paddingTop: "130px", marginBottom: "50px" }}>
+      <div className="container " style={{ paddingTop: "130px" }}>
         <div className="row g-3">
           {data.map((v) => (
             <>
@@ -23,22 +39,21 @@ export default function Products() {
                 <div className="card h-100">
                   {" "}
                   <img src={v.images[0]} style={{ height: "200px", width: "200px" }}
-                    className="card-img-top ms-auto" alt="..."/>
-
+                    className="card-img-top ms-auto" alt="..."
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{v.title.slice(0, 23)}...</h5>
                     <p className="card-text">{v.description.slice(0, 70)}...</p>
                     <div className="d-flex justify-content-evenly">
-                      <button className="btn product-btn" style={{
-                          backgroundClip: "white", color: "black", 
+                      <button className="btn product-btn"
+                        style={{ backgroundClip: "white", color: "black",
                           fontWeight: "600", boxShadow: "3px 3px 5px gray",
                         }}>
                         ${v.price}
                       </button>
 
-                      <button
-                        className="btn btn-primary"
-                        
+                      <button className="btn btn-primary"
+                        onClick={() => handleAddToCart(v)}
                         style={{ backgroundColor: "#3a6382fa", border: "none",
                           fontWeight: "600", boxShadow: "5px 5px 5px gray",
                         }}>
