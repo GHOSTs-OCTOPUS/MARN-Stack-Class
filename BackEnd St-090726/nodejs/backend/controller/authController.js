@@ -2,6 +2,7 @@ import { hashPassword } from "../helpers/authHelper.js"
 import userModel from "../models/userModel.js"
 import JWT from "jsonwebtoken"
 
+// Controller for Register
 export const registerController = async (req,res) =>{
     try {
         const {name , email , password , address , phone} = req.body
@@ -43,7 +44,7 @@ export const registerController = async (req,res) =>{
     }
 }
 
-
+// Controller for Login
 export const loginController = async (req,res) =>{
     try{
         const {email , password} = req.body
@@ -95,4 +96,12 @@ export const loginController = async (req,res) =>{
             error
         }) 
     }
+}
+
+
+// Controller for Test
+export const testController = async (req,rews) =>{
+    return res.send({
+        message:"Protected Route"
+    })
 }
