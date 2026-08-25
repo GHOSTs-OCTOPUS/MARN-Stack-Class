@@ -27,21 +27,7 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>
-            {user ? (
-              <>
-                <li className="nav-item">
-                  <Link className="nav-link" to={user.role === 1 ? "/admin/dashboard" : "/dashboard"}>
-                    Dashboard
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <span className="nav-link">Hi, {user.name}</span>
-                </li>
-                <li className="nav-item">
-                  <button className="btn btn-outline-light btn-sm mt-1" onClick={handleLogout}>Logout</button>
-                </li>
-              </>
-            ) : (
+            {!user ? (
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="/login">Login</Link>
@@ -50,6 +36,22 @@ export default function Navbar() {
                   <Link className="nav-link" to="/register">Register</Link>
                 </li>
               </>
+            ) : (
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {user.name}
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to={user.role === 1 ? "/admin/dashboard" : "/dashboard"}>
+                      Dashboard
+                    </Link>
+                  </li>
+                  <li>
+                    <button className="dropdown-item" onClick={handleLogout}>Logout</button>
+                  </li>
+                </ul>
+              </li>
             )}
           </ul>
         </div>
