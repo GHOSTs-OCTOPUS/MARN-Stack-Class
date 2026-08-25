@@ -79,7 +79,7 @@ export const loginController = async (req,res) =>{
             user:{
                 _id:user._id,
                 name:user.name,
-                email:user.mail,
+                email:user.email,
                 address:user.address,
                 phone:user.phone,
                 role:user.role
@@ -104,4 +104,67 @@ export const testController = async (req,res) =>{
     return res.send({
         message:"Protected Route"
     })
+}
+
+// Controller for Update Profile
+export const updateProfileController = async (req,res) =>{
+    try {
+        const {name, phone, address} = req.body
+        const user = await userModel.findByIdAndUpdate(req.user._id, {
+            name, phone, address
+        }, {new: true})
+        res.status(200).send({
+            success:true,
+            message:"Profile updated successfully",
+            user:{
+                _id:user._id,
+                name:user.name,
+                email:user.email,
+                address:user.address,
+                phone:user.phone,
+                role:user.role
+            }
+        })
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({
+            success:false,
+            message:"Error in updating profile",
+            error
+        })
+    }
+}
+
+// Controller for Change Password
+export const changePasswordController = async (req,res) =>{
+    try {
+        const {oldPassword, newPassword} = req.body
+        if(!oldPassword || !newPassword){
+            return res.status(400).send({
+                success:false,
+                message:"All fields are required"
+            })
+        }
+        const user = await userModel.findById(req.user._id)
+        const match = await comparePassword(oldPassword, user.password)
+        if(!match){
+            return res.status(400).send({
+                success:false,
+                message:"Old password is incorrect"
+            })
+        }
+        const hashedPassword = await hashPassword(newPassword)
+        await userModel.findByIdAndUpdate(req.user._id, {password: hashedPassword})
+        res.status(200).send({
+            success:true,
+            message:"Password changed successfully"
+        })
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({
+            success:false,
+            message:"Error in changing password",
+            error
+        })
+    }
 }

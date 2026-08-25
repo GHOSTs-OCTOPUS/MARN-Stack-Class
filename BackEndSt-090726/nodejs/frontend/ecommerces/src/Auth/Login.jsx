@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { loginSuccess } from '../redux/authSlice'
 
 export default function Login() {
 
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
 
-
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const handleSubmit = async (e) =>{
           e.preventDefault()
@@ -17,7 +19,9 @@ export default function Login() {
          email,password
           })
           if(res.data.success){
-            console.log(res.data.message)
+            localStorage.setItem("user", JSON.stringify(res.data.user))
+            localStorage.setItem("token", JSON.stringify(res.data.token))
+            dispatch(loginSuccess({ user: res.data.user, token: res.data.token }))
             alert(res.data.message)
             navigate("/")
           }
